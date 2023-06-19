@@ -15,7 +15,7 @@
     <nodes xmi:type="eer:Entity" xmi:id="_gZwAAAsUEe6elMxghinu5Q" name="Funcionário" inheritanceSL="_iZDlUAsUEe6elMxghinu5Q" inheritanceGL="_-TAtwAsfEe6elMxghinu5Q"/>
     <nodes xmi:type="eer:Entity" xmi:id="_hEp-MAsUEe6elMxghinu5Q" name="Visitante" relationshipLink="_bsgVIAsREe6elMxghinu5Q" inheritanceSL="_iz01wAsUEe6elMxghinu5Q"/>
     <nodes xmi:type="eer:Relationship" xmi:id="_qZlGMAsUEe6elMxghinu5Q" name="participa" relationshipLink="_ukCUcAsUEe6elMxghinu5Q _vP4t0AsUEe6elMxghinu5Q"/>
-    <nodes xmi:type="eer:Relationship" xmi:id="_l_ECsAsUEe6elMxghinu5Q" name="presta serviço" relationshipLink="_xBDpIAsXEe6elMxghinu5Q _T2z1IAsaEe6elMxghinu5Q"/>
+    <nodes xmi:type="eer:Relationship" xmi:id="_l_ECsAsUEe6elMxghinu5Q" name="auxilia" relationshipLink="_xBDpIAsXEe6elMxghinu5Q _T2z1IAsaEe6elMxghinu5Q"/>
     <nodes xmi:type="eer:AssociativeEntity" xmi:id="_pnpLkAsXEe6elMxghinu5Q" name="se apresenta" relationshipLink="_xBDpIAsXEe6elMxghinu5Q">
       <contains xmi:type="eer:Relationship" xmi:id="_--0zQAsREe6elMxghinu5Q" name="se apresenta" AttributeLinkSource="_UQNtQAsSEe6elMxghinu5Q" relationshipLink="_--2BYAsREe6elMxghinu5Q _BDjEEAsSEe6elMxghinu5Q"/>
     </nodes>
@@ -48,7 +48,7 @@
     <links xmi:type="eer:RelationshipLink" xmi:id="_ukCUcAsUEe6elMxghinu5Q" source="_3USJcAsREe6elMxghinu5Q" target="_qZlGMAsUEe6elMxghinu5Q" role="banda principal"/>
     <links xmi:type="eer:RelationshipLink" xmi:id="_vP4t0AsUEe6elMxghinu5Q" source="_3USJcAsREe6elMxghinu5Q" target="_qZlGMAsUEe6elMxghinu5Q" cardinality="MANY" role="participante"/>
     <links xmi:type="eer:InheritanceGL" xmi:id="_LRBn4AsWEe6elMxghinu5Q" completeness="TOTAL" source="_YbgecAsREe6elMxghinu5Q" target="_e487oAsUEe6elMxghinu5Q"/>
-    <links xmi:type="eer:RelationshipLink" xmi:id="_xBDpIAsXEe6elMxghinu5Q" source="_pnpLkAsXEe6elMxghinu5Q" target="_l_ECsAsUEe6elMxghinu5Q" cardinality="MANY"/>
+    <links xmi:type="eer:RelationshipLink" xmi:id="_xBDpIAsXEe6elMxghinu5Q" source="_pnpLkAsXEe6elMxghinu5Q" target="_l_ECsAsUEe6elMxghinu5Q" cardinality="MANY" role="auxilia-show"/>
     <links xmi:type="eer:InheritanceSL" xmi:id="_cW9twAsZEe6elMxghinu5Q"/>
     <links xmi:type="eer:RelationshipLink" xmi:id="_T2z1IAsaEe6elMxghinu5Q" source="_Ajh-4AsgEe6elMxghinu5Q" target="_l_ECsAsUEe6elMxghinu5Q"/>
     <links xmi:type="eer:AttributeLink" xmi:id="_iySV8AsaEe6elMxghinu5Q" source="_3USJcAsREe6elMxghinu5Q" target="_iyRH0AsaEe6elMxghinu5Q"/>
@@ -173,7 +173,7 @@
       <styles xmi:type="notation:DescriptionStyle" xmi:id="_w2Qj0QsWEe6elMxghinu5Q"/>
       <styles xmi:type="notation:FontStyle" xmi:id="_w2Qj0gsWEe6elMxghinu5Q" fontName="Segoe UI"/>
       <styles xmi:type="notation:FillStyle" xmi:id="_w2Qj0wsWEe6elMxghinu5Q"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l_EpwwsUEe6elMxghinu5Q" x="665" y="750" width="110" height="51"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l_EpwwsUEe6elMxghinu5Q" x="675" y="755" width="90" height="41"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_pnpLkQsXEe6elMxghinu5Q" type="2002" element="_pnpLkAsXEe6elMxghinu5Q">
       <children xmi:type="notation:DecorationNode" xmi:id="_pnpyoAsXEe6elMxghinu5Q" type="5003"/>
@@ -428,7 +428,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_xBDpJgsXEe6elMxghinu5Q" x="-9" y="11"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_xBDpJwsXEe6elMxghinu5Q" type="6007">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_xBDpKAsXEe6elMxghinu5Q" x="5" y="5"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xBDpKAsXEe6elMxghinu5Q" x="-110" y="45"/>
       </children>
       <styles xmi:type="notation:RoutingStyle" xmi:id="_xBDpIgsXEe6elMxghinu5Q"/>
       <styles xmi:type="notation:FontStyle" xmi:id="_xBDpIwsXEe6elMxghinu5Q" fontName="Segoe UI"/>
