@@ -564,7 +564,7 @@
       <styles xmi:type="notation:RoutingStyle" xmi:id="_WMw7Ag6rEe6tYuzRtZorrQ"/>
       <styles xmi:type="notation:FontStyle" xmi:id="_WMw7Aw6rEe6tYuzRtZorrQ" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WMw7BA6rEe6tYuzRtZorrQ" points="[2, -16, 536, 116]$[-534, -132, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMyJIA6rEe6tYuzRtZorrQ" id="(0.17777777777777778,0.88)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMyJIA6rEe6tYuzRtZorrQ" id="(0.24444444444444444,0.92)"/>
     </edges>
     <edges xmi:type="notation:Edge" xmi:id="_arZpgQ6rEe6tYuzRtZorrQ" type="4007" element="_arZpgA6rEe6tYuzRtZorrQ" source="_BK4coA6rEe6tYuzRtZorrQ" target="_arX0UA6rEe6tYuzRtZorrQ">
       <styles xmi:type="notation:RoutingStyle" xmi:id="_arZpgg6rEe6tYuzRtZorrQ"/>
