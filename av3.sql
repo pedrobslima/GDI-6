@@ -1,5 +1,23 @@
 DROP TABLE Endereco;
 DROP TABLE Pessoa;
+DROP TABLE Telefones;
+DROP TABLE Funcionario;
+DROP TABLE Tecnico;
+DROP TABLE Vendedor;
+DROP TABLE Visitante;
+DROP TABLE Dia_preco;
+DROP TABLE Ingresso;
+DROP TABLE Compra;
+DROP TABLE Nome_equipamento;
+DROP TABLE Equipamentos;
+DROP TABLE Encarrega;
+DROP TABLE Palco;
+DROP TABLE Disponibiliza;
+DROP TABLE Atracao;
+DROP TABLE Contatos;
+DROP TABLE Cronograma;
+DROP TABLE Show;
+DROP TABLE Garantir_acesso;
 
 CREATE TABLE Endereco ( 
     cep NUMBER NOT NULL, 
