@@ -697,6 +697,21 @@ INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('amplificador yamaha',
 
 -- POVOANDO ENCRREGA
 INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('87886107463', 3535);
+INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('87886107463', 741644);
+INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('73000266174', 3433);
+INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('97026469138', 9352522);
+INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('35420815293', 8886444);
+INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('64369224486', 4434);
+INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('17329073342', 3252555);
+INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('33222808842', 6466444);
+INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('74249536227', 7332544);
+INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('48706382013', 5432543);
+INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('10330515020', 4353454);
+INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('46047735257', 4958234);
+INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('74249536227', 1231225);
+INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('48706382013', 1234444);
+INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('10330515020', 5335353);
+INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('46047735257', 7000522);
 
 -- POVOANDO PALCOS
 
