@@ -88,8 +88,7 @@ CREATE TABLE Ingresso (
     num_ingresso INTEGER,
     dia_evento DATE,
     CONSTRAINT ingresso_pkey PRIMARY KEY (id_comprad, num_ingresso),
-    CONSTRAINT ingresso_visi_fkey FOREIGN KEY (id_comprad) REFERENCES Visitante(id_visi),
-    CONSTRAINT ingresso_dia_fkey FOREIGN KEY (dia_evento) REFERENCES Dia_preco(dia_evento)
+    CONSTRAINT ingresso_visi_fkey FOREIGN KEY (id_comprad) REFERENCES Visitante(id_visi)
 );
 
 CREATE TABLE Compra (
@@ -136,32 +135,29 @@ CREATE TABLE Disponibiliza (
 );
 
 CREATE TABLE Atracao (
-    nome VARCHAR2(20),
-    colaborante VARCHAR2(20),
+    nome VARCHAR2(30),
+    colaborante VARCHAR2(30),
     cache NUMBER,
-    CONSTRAINT atracao_pkey PRIMARY KEY (nome, colaborante),
-    CONSTRAINT atracao_fkey FOREIGN KEY (colaborante) REFERENCES Atracao(nome)
-);
+    CONSTRAINT atracao_pkey PRIMARY KEY (nome));
 
 CREATE TABLE Contatos (
-    atracao VARCHAR2(20),
-    contatos VARCHAR2(20),
+    atracao VARCHAR2(30),
+    contatos VARCHAR2(50),
     CONSTRAINT contatos_pkey PRIMARY KEY (atracao, contatos),
-    CONSTRAINT contatos_fkey FOREIGN KEY (atracao) REFERENCES Atracao(nome)
-);
+    CONSTRAINT contatos_fkey FOREIGN KEY (atracao) REFERENCES Atracao(nome));
 
 CREATE TABLE Cronograma (
-    atracao VARCHAR2(20),
-    data_hora_inicio VARCHAR2(11), -- <DD/MM HH:mm> (dps mudar para TIMESTAMP)
-    data_hora_termino VARCHAR2(11),
+    atracao VARCHAR2(30),
+    data_hora_inicio VARCHAR2(16), -- <DD/MM HH:mm> (dps mudar para TIMESTAMP)
+    data_hora_termino VARCHAR2(16),
     CONSTRAINT cronograma_pkey PRIMARY KEY (atracao),
     CONSTRAINT cronograma_fkey FOREIGN KEY (atracao) REFERENCES Atracao(nome)
 );
 
 CREATE TABLE Show (
-    atracao VARCHAR2(20),
+    atracao VARCHAR2(30),
     palco NUMBER,
-    horario VARCHAR2(11), -- <HH:mm-HH:mm> (dps mudar para TIMESTAMP)
+    horario VARCHAR2(22), -- <HH:mm-HH:mm> (dps mudar para TIMESTAMP)
     id_tecn CHAR(11),
     CONSTRAINT show_pkey PRIMARY KEY (atracao, palco, horario),
     CONSTRAINT show_atracao_fkey FOREIGN KEY (atracao) REFERENCES Atracao(nome),
@@ -170,7 +166,7 @@ CREATE TABLE Show (
 );
 
 CREATE TABLE Garantir_acesso (
-    atracao VARCHAR2(20),
+    atracao VARCHAR2(30),
     num_palco NUMBER,
     horario VARCHAR2(11),
     id_comprad CHAR(11),
