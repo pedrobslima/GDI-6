@@ -85,7 +85,7 @@ CREATE TABLE Dia_preco (
 
 CREATE TABLE Ingresso (
     id_comprad CHAR(11),
-    num_ingresso NUMBER,
+    num_ingresso INTEGER,
     dia_evento DATE,
     CONSTRAINT ingresso_pkey PRIMARY KEY (id_comprad, num_ingresso),
     CONSTRAINT ingresso_visi_fkey FOREIGN KEY (id_comprad) REFERENCES Visitante(id_visi),
@@ -93,13 +93,10 @@ CREATE TABLE Ingresso (
 );
 
 CREATE TABLE Compra (
-    comprador CHAR(11),
-    num_ingresso NUMBER,
-    id_vendedor CHAR(11),
-    CONSTRAINT compra_pkey PRIMARY KEY (comprador, num_ingresso, id_vendedor),
-    CONSTRAINT compra_pessa_fkey FOREIGN KEY (comprador) REFERENCES Pessoa(cpf),
-    CONSTRAINT compra_ingresso_fkey FOREIGN KEY (num_ingresso) REFERENCES Ingresso(num_ingresso),
-    CONSTRAINT compra_vendedor_fkey FOREIGN KEY (id_vendedor) REFERENCES Vendedor(id_func)
+    id_visitant CHAR(11), -- iguais Ingresso(cpf que está no ingresso)
+    num_ingresso INTEGER, -- diferenciador Ingresso(id diferenciador)
+    CONSTRAINT compra_pkey PRIMARY KEY (id_visitant, num_ingresso),
+    CONSTRAINT compra_ingresso_fkey FOREIGN KEY (id_visitant, num_ingresso) REFERENCES Ingresso(id_comprad, num_ingresso)
 );
 
 CREATE TABLE Nome_equipamento (
@@ -119,7 +116,7 @@ CREATE TABLE Equipamentos (
 CREATE TABLE Encarrega (
     id_manut CHAR(11),
     num_serie VARCHAR2(30),
-    CONSTRAINT encarrega_pkey PRIMARY KEY (id_func, num_serie),
+    CONSTRAINT encarrega_pkey PRIMARY KEY (id_manut, num_serie),
     CONSTRAINT encarrega_manut_fkey FOREIGN KEY (id_manut) REFERENCES Manutencao(id_func),
     CONSTRAINT encarrega_equip_fkey FOREIGN KEY (num_serie) REFERENCES Equipamentos(num_serie)
 );
@@ -156,7 +153,7 @@ CREATE TABLE Contatos (
 
 CREATE TABLE Cronograma (
     atracao VARCHAR2(20),
-    data_hora_inicio VARCHAR2(11), -- <DD/MM HH:mm>
+    data_hora_inicio VARCHAR2(11), -- <DD/MM HH:mm> (dps mudar para TIMESTAMP)
     data_hora_termino VARCHAR2(11),
     CONSTRAINT cronograma_pkey PRIMARY KEY (atracao),
     CONSTRAINT cronograma_fkey FOREIGN KEY (atracao) REFERENCES Atracao(nome)
@@ -165,7 +162,7 @@ CREATE TABLE Cronograma (
 CREATE TABLE Show (
     atracao VARCHAR2(20),
     palco NUMBER,
-    horario VARCHAR2(11), -- <HH:mm-HH:mm>
+    horario VARCHAR2(11), -- <HH:mm-HH:mm> (dps mudar para TIMESTAMP)
     id_tecn CHAR(11),
     CONSTRAINT show_pkey PRIMARY KEY (atracao, palco, horario),
     CONSTRAINT show_atracao_fkey FOREIGN KEY (atracao) REFERENCES Atracao(nome),
@@ -176,9 +173,10 @@ CREATE TABLE Show (
 CREATE TABLE Garantir_acesso (
     atracao VARCHAR2(20),
     num_palco NUMBER,
+    horario VARCHAR2(11),
     id_comprad CHAR(11),
-    CONSTRAINT garAcesso_pkey PRIMARY KEY (atracao, num_palco, id_comprad),
-    CONSTRAINT garAcesso_show1_fkey FOREIGN KEY (atracao) REFERENCES Show(atracao),
-    CONSTRAINT garAcesso_show2_fkey FOREIGN KEY (num_palco) REFERENCES Show(num_palco),
-    CONSTRAINT garAcesso_ingresso_fkey FOREIGN KEY (id_comprad) REFERENCES Ingresso(id_comprad)
+    num_ingresso INTEGER,
+    CONSTRAINT garAcesso_pkey PRIMARY KEY (atracao, num_palco, horario, id_comprad, num_ingresso),
+    CONSTRAINT garAcesso_show_fkey FOREIGN KEY (atracao, num_palco, horario) REFERENCES Show(atracao, palco, horario),
+    CONSTRAINT garAcesso_ingresso_fkey FOREIGN KEY (id_comprad, num_ingresso) REFERENCES Ingresso(id_comprad, num_ingresso)
 );
