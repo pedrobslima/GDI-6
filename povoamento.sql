@@ -302,78 +302,6 @@ INSERT INTO Pessoa (cpf, nome) VALUES ('31902575592', 'Bruno Alves');
 INSERT INTO Pessoa (cpf, nome) VALUES ('96035303733', 'Juliana Costa');
 INSERT INTO Pessoa (cpf, nome) VALUES ('66234401144', 'André Martins');
 
--- POVOANDO FUNCIONARIOS
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('87886107463', 'MANHÃ', 120000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('73000266174', 'MANHÃ', 120000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('97026469138', 'MANHÃ', 120000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('35420815293', 'MANHÃ', 120000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('64369224486', 'TARDE', 120000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('17329073342', 'TARDE', 120000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('33222808842', 'TARDE', 120000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('74249536227', 'TARDE', 120000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('48706382013', 'TARDE', 120000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('10330515020', 'INTEGRAL', 160000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('46047735257', 'INTEGRAL', 160000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('94806948879', 'INTEGRAL', 180000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('82624610006', 'INTEGRAL', 180000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('20620832203', 'INTEGRAL', 180000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('23476315168', 'INTEGRAL', 180000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('22307947437', 'INTEGRAL', 180000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('69997282400', 'INTEGRAL', 180000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('49696630305', 'NOITE', 205000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('31099445960', 'NOITE', 205000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('61961415780', 'INTEGRAL', 150000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('38587038568', 'INTEGRAL', 150000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('13688435778', 'INTEGRAL', 150000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('67272810335', 'INTEGRAL', 150000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('57803122458', 'INTEGRAL', 150000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('51582409964', 'INTEGRAL', 150000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('75353326627', 'INTEGRAL', 150000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('95303335098', 'INTEGRAL', 150000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('56507795988', 'INTEGRAL', 150000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('98652590784', 'NOITE', 165000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('31902575592', 'NOITE', 165000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('96035303733', 'NOITE', 165000);
-INSERT INTO Funcionarios (id_func, turno, salario) VALUES ('66234401144', 'NOITE', 165000);
-
--- POVOANDO MANUTENCAO
-INSERT INTO Manutencao (id_func) VALUES ('87886107463');
-INSERT INTO Manutencao (id_func) VALUES ('73000266174');
-INSERT INTO Manutencao (id_func) VALUES ('97026469138');
-INSERT INTO Manutencao (id_func) VALUES ('35420815293');
-INSERT INTO Manutencao (id_func) VALUES ('64369224486');
-INSERT INTO Manutencao (id_func) VALUES ('17329073342');
-INSERT INTO Manutencao (id_func) VALUES ('33222808842');
-INSERT INTO Manutencao (id_func) VALUES ('74249536227');
-INSERT INTO Manutencao (id_func) VALUES ('48706382013');
-INSERT INTO Manutencao (id_func) VALUES ('10330515020');
-INSERT INTO Manutencao (id_func) VALUES ('46047735257');
-
--- POVOANDO TECNICOS
-INSERT INTO Tecnico (id_func) VALUES ('94806948879');
-INSERT INTO Tecnico (id_func) VALUES ('82624610006');
-INSERT INTO Tecnico (id_func) VALUES ('20620832203');
-INSERT INTO Tecnico (id_func) VALUES ('23476315168');
-INSERT INTO Tecnico (id_func) VALUES ('22307947437');
-INSERT INTO Tecnico (id_func) VALUES ('69997282400');
-INSERT INTO Tecnico (id_func) VALUES ('49696630305');
-INSERT INTO Tecnico (id_func) VALUES ('31099445960');
-
--- POVOANDO VENDEDORES
-INSERT INTO Vendedor (id_func) VALUES ('61961415780');
-INSERT INTO Vendedor (id_func) VALUES ('38587038568');
-INSERT INTO Vendedor (id_func) VALUES ('13688435778');
-INSERT INTO Vendedor (id_func) VALUES ('67272810335');
-INSERT INTO Vendedor (id_func) VALUES ('57803122458');
-INSERT INTO Vendedor (id_func) VALUES ('51582409964');
-INSERT INTO Vendedor (id_func) VALUES ('75353326627');
-INSERT INTO Vendedor (id_func) VALUES ('95303335098');
-INSERT INTO Vendedor (id_func) VALUES ('56507795988');
-INSERT INTO Vendedor (id_func) VALUES ('98652590784');
-INSERT INTO Vendedor (id_func) VALUES ('31902575592');
-INSERT INTO Vendedor (id_func) VALUES ('96035303733');
-INSERT INTO Vendedor (id_func) VALUES ('66234401144');
-
 -- POVOANDO TELEFONES
 INSERT INTO Telefones (cpf, numero) VALUES ('30199388385', '81 985478965');
 INSERT INTO Telefones (cpf, numero) VALUES ('47427712610', '11 988547896');
@@ -525,6 +453,78 @@ INSERT INTO Telefones (cpf, numero) VALUES ('98652590784', '81 984856763');
 INSERT INTO Telefones (cpf, numero) VALUES ('31902575592', '81 987224664');
 INSERT INTO Telefones (cpf, numero) VALUES ('96035303733', '81 985432896');
 INSERT INTO Telefones (cpf, numero) VALUES ('66234401144', '81 985477573');
+
+-- POVOANDO Funcionario
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('87886107463', 'MANHÃ', 120000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('73000266174', 'MANHÃ', 120000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('97026469138', 'MANHÃ', 120000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('35420815293', 'MANHÃ', 120000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('64369224486', 'TARDE', 120000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('17329073342', 'TARDE', 120000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('33222808842', 'TARDE', 120000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('74249536227', 'TARDE', 120000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('48706382013', 'TARDE', 120000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('10330515020', 'INTEGRAL', 160000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('46047735257', 'INTEGRAL', 160000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('94806948879', 'INTEGRAL', 180000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('82624610006', 'INTEGRAL', 180000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('20620832203', 'INTEGRAL', 180000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('23476315168', 'INTEGRAL', 180000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('22307947437', 'INTEGRAL', 180000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('69997282400', 'INTEGRAL', 180000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('49696630305', 'NOITE', 205000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('31099445960', 'NOITE', 205000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('61961415780', 'INTEGRAL', 150000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('38587038568', 'INTEGRAL', 150000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('13688435778', 'INTEGRAL', 150000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('67272810335', 'INTEGRAL', 150000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('57803122458', 'INTEGRAL', 150000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('51582409964', 'INTEGRAL', 150000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('75353326627', 'INTEGRAL', 150000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('95303335098', 'INTEGRAL', 150000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('56507795988', 'INTEGRAL', 150000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('98652590784', 'NOITE', 165000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('31902575592', 'NOITE', 165000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('96035303733', 'NOITE', 165000);
+INSERT INTO Funcionario (id_func, turno, salario) VALUES ('66234401144', 'NOITE', 165000);
+
+-- POVOANDO TECNICOS
+INSERT INTO Tecnico (id_func) VALUES ('94806948879');
+INSERT INTO Tecnico (id_func) VALUES ('82624610006');
+INSERT INTO Tecnico (id_func) VALUES ('20620832203');
+INSERT INTO Tecnico (id_func) VALUES ('23476315168');
+INSERT INTO Tecnico (id_func) VALUES ('22307947437');
+INSERT INTO Tecnico (id_func) VALUES ('69997282400');
+INSERT INTO Tecnico (id_func) VALUES ('49696630305');
+INSERT INTO Tecnico (id_func) VALUES ('31099445960');
+
+-- POVOANDO VENDEDORES
+INSERT INTO Vendedor (id_func) VALUES ('61961415780');
+INSERT INTO Vendedor (id_func) VALUES ('38587038568');
+INSERT INTO Vendedor (id_func) VALUES ('13688435778');
+INSERT INTO Vendedor (id_func) VALUES ('67272810335');
+INSERT INTO Vendedor (id_func) VALUES ('57803122458');
+INSERT INTO Vendedor (id_func) VALUES ('51582409964');
+INSERT INTO Vendedor (id_func) VALUES ('75353326627');
+INSERT INTO Vendedor (id_func) VALUES ('95303335098');
+INSERT INTO Vendedor (id_func) VALUES ('56507795988');
+INSERT INTO Vendedor (id_func) VALUES ('98652590784');
+INSERT INTO Vendedor (id_func) VALUES ('31902575592');
+INSERT INTO Vendedor (id_func) VALUES ('96035303733');
+INSERT INTO Vendedor (id_func) VALUES ('66234401144');
+
+-- POVOANDO MANUTENCAO
+INSERT INTO Manutencao (id_func) VALUES ('87886107463');
+INSERT INTO Manutencao (id_func) VALUES ('73000266174');
+INSERT INTO Manutencao (id_func) VALUES ('97026469138');
+INSERT INTO Manutencao (id_func) VALUES ('35420815293');
+INSERT INTO Manutencao (id_func) VALUES ('64369224486');
+INSERT INTO Manutencao (id_func) VALUES ('17329073342');
+INSERT INTO Manutencao (id_func) VALUES ('33222808842');
+INSERT INTO Manutencao (id_func) VALUES ('74249536227');
+INSERT INTO Manutencao (id_func) VALUES ('48706382013');
+INSERT INTO Manutencao (id_func) VALUES ('10330515020');
+INSERT INTO Manutencao (id_func) VALUES ('46047735257');
 
 -- POVOANDO DIAS E PRECOS
 INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-05', 'YYYY/MM/DD'), 800);
@@ -847,13 +847,49 @@ INSERT INTO Palco (numero, tamanho) VALUES (3, '1300');
 INSERT INTO Palco (numero, tamanho) VALUES (4, '400');
 
 -- Populando tabela "Atracao"
-INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Banda Rockstar', NULL, 5000),
-INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Palestra Motivacional', 'Palestrante Y', 3000),
-INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Stand-up Comedy', NULL, 4000),
-INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Circo Mágico', NULL, 3500),
-INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Orquestra Sinfônica', NULL, 4500),
-INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Festival de Dança', NULL, 3800),
-INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Feira de Gastronomia', NULL, 4200),
-INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Espetáculo de Ilusionismo', NULL, 3200),
-INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Exposição de Arte', NULL, 3900),
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Banda Rockstar', NULL, 5000);
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Palestra Motivacional', 'Palestrante Y', 3000);
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Stand-up Comedy', NULL, 4000);
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Circo Mágico', NULL, 3500);
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Orquestra Sinfônica', NULL, 4500);
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Festival de Dança', NULL, 3800);
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Feira de Gastronomia', NULL, 4200);
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Espetáculo de Ilusionismo', NULL, 3200);
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Exposição de Arte', NULL, 3900);
 INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Filme ao ar livre', NULL, 2700);
+
+-- povoamento tabela "Contatos"
+INSERT INTO Contatos (atracao, contatos) VALUES ('Banda Rockstar', 'contato.bandarockstar@gmail.com');
+INSERT INTO Contatos (atracao, contatos) VALUES ('Palestra Motivacional', 'contato.palestrantey@gov.com.br');
+INSERT INTO Contatos (atracao, contatos) VALUES ('Stand-up Comedy', 'contato.standup@gov.com');
+INSERT INTO Contatos (atracao, contatos) VALUES ('Circo Mágico', 'contato.circomagico@hotmail.com');
+INSERT INTO Contatos (atracao, contatos) VALUES ('Orquestra Sinfônica', 'contato.orquestrasinfonica@yahoo.com');
+INSERT INTO Contatos (atracao, contatos) VALUES ('Festival de Dança', 'contato.festivaldedanca@hotmail.com');
+INSERT INTO Contatos (atracao, contatos) VALUES ('Feira de Gastronomia', 'contato.feiradegastronomia@gmail.com');
+INSERT INTO Contatos (atracao, contatos) VALUES ('Espetáculo de Ilusionismo', 'contato.espetaculodeilusionismo@outlook.com');
+INSERT INTO Contatos (atracao, contatos) VALUES ('Exposição de Arte', 'contato.exposicaodearte@hotmail.com');
+INSERT INTO Contatos (atracao, contatos) VALUES ('Filme ao ar livre', 'contato.filmeaoarlivre@gmail.com');
+
+-- povoamento tabela "Cronograma"
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Banda Rockstar', '2023-07-20 18:00', '2023-07-20 20:00');
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Palestra Motivacional', '2023-07-20 14:00', '2023-07-20 16:00');
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Stand-up Comedy', '2023-07-21 20:30', '2023-07-21 22:30');
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Circo Mágico', '2023-07-22 15:00', '2023-07-22 17:00');
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Orquestra Sinfônica', '2023-07-23 19:30', '2023-07-23 22:00');
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Festival de Dança', '2023-07-24 16:00', '2023-07-24 18:00');
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Feira de Gastronomia', '2023-07-25 12:00', '2023-07-25 20:00');
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Espetáculo de Ilusionismo', '2023-07-26 19:00', '2023-07-26 21:00');
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Exposição de Arte', '2023-07-27 10:00', '2023-07-27 18:00');
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Filme ao ar livre', '2023-07-28 19:30', '2023-07-28 22:00');
+
+-- povoamento tabela "Show"
+INSERT INTO Show (atracao, palco, horario, id_tecn) VALUES ('Banda Rockstar', 1, '2023-07-20 18:00-20:00', '94806948879');
+INSERT INTO Show (atracao, palco, horario, id_tecn) VALUES ('Palestra Motivacional', 2, '2023-07-20 14:00-16:00', '82624610006');
+INSERT INTO Show (atracao, palco, horario, id_tecn) VALUES ('Stand-up Comedy', 3, '2023-07-21 20:30-22:30', '20620832203');
+INSERT INTO Show (atracao, palco, horario, id_tecn) VALUES ('Circo Mágico', 4, '2023-07-22 15:00-17:00', '23476315168');
+INSERT INTO Show (atracao, palco, horario, id_tecn) VALUES ('Orquestra Sinfônica', 1, '2023-07-23 19:30-22:00', '22307947437');
+INSERT INTO Show (atracao, palco, horario, id_tecn) VALUES ('Festival de Dança', 2, '2023-07-24 16:00-18:00', '69997282400');
+INSERT INTO Show (atracao, palco, horario, id_tecn) VALUES ('Feira de Gastronomia', 3, '2023-07-25 12:00-20:00', '49696630305');
+INSERT INTO Show (atracao, palco, horario, id_tecn) VALUES ('Espetáculo de Ilusionismo', 4, '2023-07-26 19:00-21:00', '31099445960');
+INSERT INTO Show (atracao, palco, horario, id_tecn) VALUES ('Exposição de Arte', 1, '2023-07-27 10:00-18:00', '22307947437');
+INSERT INTO Show (atracao, palco, horario, id_tecn) VALUES ('Filme ao ar livre', 2, '2023-07-28 19:30-22:00', '22307947437');
