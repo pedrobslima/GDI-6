@@ -1,154 +1,154 @@
 -- POVOANDO ENDERECOS
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-876', 'Avenida Principal', 'Avenida Principal', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-678', 'Avenida das Flores', 'Avenida das Flores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-432', 'Rua dos Pássaros', 'Rua dos Pássaros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-789', 'Alameda das Palmeiras', 'Alameda das Palmeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Praça Central', 'Praça Central', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Rua da Esperança', 'Rua da Esperança', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Avenida da Liberdade', 'Avenida da Liberdade', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-456', 'Rua dos Girassóis', 'Rua dos Girassóis', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-654', 'Praça das Águas', 'Praça das Águas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-890', 'Rua do Mar', 'Rua do Mar', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-234', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-789', 'Alameda dos Ipês', 'Alameda dos Ipês', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Estrelas', 'Rua das Estrelas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Praça do Sol', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua das Ondas', 'Rua das Ondas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Gaivotas', 'Avenida das Gaivotas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Coqueiros', 'Alameda dos Coqueiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Nuvens', 'Rua das Nuvens', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça das Laranjeiras', 'Praça das Laranjeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua dos Ventos', 'Rua dos Ventos', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Avenida das Árvores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Alameda do Lago', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Cachoeiras', 'Rua das Cachoeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça do Largo', 'Praça do Largo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua do Bosque', 'Rua do Bosque', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Praias', 'Avenida das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Dunas', 'Alameda das Dunas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua do Rio', 'Rua do Rio', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Cais', 'Praça do Cais', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua das Pedras', 'Rua das Pedras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Pássaros', 'Alameda dos Pássaros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua do Maracanã', 'Rua do Maracanã', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça da Sé', 'Praça da Sé', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua dos Pinheiros', 'Rua dos Pinheiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Flores', 'Avenida das Flores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda das Águas', 'Alameda das Águas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Rua das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Praça das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Rua dos Coqueiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Avenida das Estrelas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Alameda das Nuvens', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Rua das Gaivotas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Praça do Sol', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Rua dos Girassóis', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Alameda dos Ipês', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Rua das Laranjeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'Praça do Largo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rua do Bosque', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Avenida das Árvores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Alameda do Lago', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Rua das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça do Cais', 'Praça do Cais', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Ventos', 'Rua dos Ventos', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Praias', 'Avenida das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Dunas', 'Alameda das Dunas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua do Rio', 'Rua do Rio', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Largo', 'Praça do Largo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua das Pedras', 'Rua das Pedras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Pássaros', 'Alameda dos Pássaros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua do Maracanã', 'Rua do Maracanã', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça da Sé', 'Praça da Sé', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua dos Pinheiros', 'Rua dos Pinheiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Flores', 'Avenida das Flores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda das Águas', 'Alameda das Águas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Rua das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Praça das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Rua dos Coqueiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Avenida das Estrelas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Alameda das Nuvens', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Rua das Gaivotas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Praça do Sol', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Rua dos Girassóis', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Alameda dos Ipês', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Rua das Laranjeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'Praça do Largo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rua do Bosque', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Avenida das Árvores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Alameda do Lago', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Rua das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Praça das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Rua dos Coqueiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Avenida das Estrelas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Alameda das Nuvens', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Rua das Gaivotas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Praça do Sol', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Rua dos Girassóis', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Alameda dos Ipês', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Rua das Laranjeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'Praça do Largo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rua do Bosque', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Avenida das Árvores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Alameda do Lago', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Rua das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Praça das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Rua dos Coqueiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Avenida das Estrelas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Alameda das Nuvens', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Rua das Gaivotas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Praça do Sol', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Rua dos Girassóis', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Alameda dos Ipês', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Rua das Laranjeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'Praça do Largo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rua do Bosque', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Avenida das Árvores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Alameda do Lago', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Rua das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Praça das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Rua dos Coqueiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Avenida das Estrelas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Alameda das Nuvens', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Rua das Gaivotas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Praça do Sol', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Rua dos Girassóis', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Alameda dos Ipês', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Rua das Laranjeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'Praça do Largo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rua do Bosque', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Avenida das Árvores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Alameda do Lago', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Rua das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Praça das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Rua dos Coqueiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Avenida das Estrelas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Alameda das Nuvens', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Rua das Gaivotas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Praça do Sol', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Rua dos Girassóis', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Alameda dos Ipês', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Rua das Laranjeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'Praça do Largo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rua do Bosque', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Avenida das Árvores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Alameda do Lago', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Rua das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Praça das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Rua dos Coqueiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Avenida das Estrelas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Alameda das Nuvens', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Rua das Gaivotas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Praça do Sol', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Rua dos Girassóis', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-876', 'Avenida Principal', 'Rio de Janeiro', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-678', 'Avenida das Flores', 'São Paulo', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-432', 'Rua dos Pássaros', 'Belo Horizonte', 'Minas Gerais', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-789', 'Alameda das Palmeiras', 'Porto Alegre', 'Rio Grande do Sul', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Praça Central', 'Salvador', 'Bahia', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Rua da Esperança', 'Recife', 'Pernambuco', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Avenida da Liberdade', 'Brasília', 'Distrito Federal', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-456', 'Rua dos Girassóis', 'Fortaleza', 'Ceará', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-654', 'Praça das Águas', 'Manaus', 'Amazonas', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-890', 'Rua do Mar', 'Curitiba', 'Paraná', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-234', 'Avenida das Montanhas', 'Goiania', 'Goiás', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-789', 'Alameda dos Ipês', 'Belém', 'Pará', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Estrelas', 'Campinas', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Vitória', 'Espírito Santo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua das Ondas', 'Maceió', 'Alagoas', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Gaivotas', 'João Pessoa', 'Paraíba', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Coqueiros', 'Teresina', 'Piauí', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Nuvens', 'Aracaju', 'Sergipe', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça das Laranjeiras', 'Cuiabá', 'Mato Grosso', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua dos Ventos', 'Ponta Grossa', 'Paraná', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Feira de Santana', 'Bahia', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Joinville', 'Santa Catarina', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Cachoeiras', 'Blumenau', 'Santa Catarina', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça do Largo', 'Sorocaba', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua do Bosque', 'Itaquaquecetuba', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Praias', 'Santarém', 'Pará', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Dunas', 'Anápolis', 'Goiás', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua do Rio', 'Marabá', 'Pará', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Cais', 'Colombo', 'Paraná', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua das Pedras', 'Novo Hamburgo', 'Rio Grande do Sul', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Barueri', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Pássaros', 'Londrina', 'Paraná', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua do Maracanã', 'Taubaté', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça da Sé', 'Santarém', 'Pará', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua dos Pinheiros', 'Pindamonhangaba', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Flores', 'Araguaína', 'Tocantins', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda das Águas', 'Paulista', 'Pernambuco', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Camaragibe', 'Pernambuco', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Passo Fundo', 'Rio Grande do Sul', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Alvorada', 'Rio Grande do Sul', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Itapecerica da Serra', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Várzea Paulista', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Marília', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Limeira', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'São Carlos', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Barra Mansa', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Embu', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Jacareí', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'Taubaté', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rio Claro', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Santa Bárbara d'Oeste', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Jaú', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Bragança Paulista', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça do Cais', 'Francisco Morato', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Ventos', 'Leme', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Praias', 'Porto Feliz', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Dunas', 'Guaratinguetá', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua do Rio', 'São Sebastião', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Largo', 'Itanhaém', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua das Pedras', 'Itapevi', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Tatuí', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Pássaros', 'Mogi Mirim', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua do Maracanã', 'Cruzeiro', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça da Sé', 'Sertãozinho', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua dos Pinheiros', 'Ourinhos', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Flores', 'Americana', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda das Águas', 'Itapeva', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Palhoça', 'Santa Catarina', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Araraquara', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Itapetininga', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Teresópolis', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Alagoinhas', 'Bahia', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Valparaíso de Goiás', 'Goiás', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Santana de Parnaíba', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Juazeiro do Norte', 'Ceará', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Barcarena', 'Pará', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Itaituba', 'Pará', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Colatina', 'Espírito Santo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'Várzea Grande', 'Mato Grosso', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Ananindeua', 'Pará', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Macaé', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Nilópolis', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Angra dos Reis', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Maricá', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Cabo Frio', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Itaboraí', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Nova Friburgo', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Rio das Ostras', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Três Rios', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Queimados', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Belford Roxo', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'São João de Meriti', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Resende', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'Campos dos Goytacazes', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Volta Redonda', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'São Gonçalo', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Duque de Caxias', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Niterói', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Nova Iguaçu', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Belford Roxo', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Mage', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Cabo Frio', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Campos dos Goytacazes', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Itaboraí', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Queimados', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Angra dos Reis', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Nova Iguaçu', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Resende', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'São Gonçalo', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rio de Janeiro', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Duque de Caxias', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Niterói', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Barra Mansa', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'São João de Meriti', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Itaboraí', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Mage', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Cabo Frio', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Campos dos Goytacazes', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Itaboraí', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Queimados', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Angra dos Reis', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Nova Iguaçu', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Resende', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'São Gonçalo', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rio de Janeiro', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Duque de Caxias', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Niterói', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Barra Mansa', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'São João de Meriti', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Itaboraí', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Mage', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Cabo Frio', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Campos dos Goytacazes', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Itaboraí', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Queimados', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Angra dos Reis', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Nova Iguaçu', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Resende', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'São Gonçalo', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rio de Janeiro', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Duque de Caxias', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Niterói', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Barra Mansa', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'São João de Meriti', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Itaboraí', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Mage', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Cabo Frio', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Campos dos Goytacazes', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Itaboraí', 'Rio de Janeiro', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Queimados', 'Rio de Janeiro', 'Brasil');
 
 -- POVOANDO PESSOAS
 INSERT INTO Pessoa (cpf, nome, cep, numero, comp) VALUES ('30199388385', 'Ricardo Almeida', '54321-876', 355, 'casa');
@@ -672,124 +672,124 @@ CREATE SEQUENCE sqCompra
     START WITH 1
     INCREMENT BY 1;
 
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('30199388385', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('47427712610', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('29599507565', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('57628148722', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('12812080044', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('64295837740', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('65134974386', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('49071844654', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('56167488077', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('38336868424', sqIngresso.nextval, '33222808842')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('58162796706', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74758815612', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('56122432090', sqIngresso.nextval, '17329073342')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('12247919297', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('17490321338', sqIngresso.nextval, '33222808842')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('29700737817', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('27612094332', sqIngresso.nextval, '17329073342')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('40117047008', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('52416538966', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('42657296455', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('71122532810', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('43560681056', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('80905097415', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('14059155304', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('19253087598', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('37401423730', sqIngresso.nextval, '10330515020')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('32759444139', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('14649378973', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('58000327447', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('48240968479', sqIngresso.nextval, '17329073342')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('78335091139', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('70546768636', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('22404928750', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('70308341124', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('25989990251', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('75366156457', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('69025221605', sqIngresso.nextval, '10330515020')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('54301553913', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('66952515360', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('20274888371', sqIngresso.nextval, '10330515020')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('38335808648', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('96591124058', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74577588172', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('28421344502', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('98596987343', sqIngresso.nextval, '17329073342')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('68116821185', sqIngresso.nextval, '17329073342')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('46064949648', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('81040473720', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('59000464227', sqIngresso.nextval, '17329073342')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('34584407779', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('28629680688', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18723001906', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('23969104695', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('52156994899', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18843477859', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('42829067599', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('42373211369', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('85736048930', sqIngresso.nextval, '10330515020')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('43406326054', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('78833704759', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('75123135279', sqIngresso.nextval, '17329073342')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('60139985343', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('81961611946', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('15510735175', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('12107757211', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18013645667', sqIngresso.nextval, '33222808842')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('27733831081', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('31293248577', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('84770625781', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('32139874646', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('59746510270', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('51893041336', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('73750364257', sqIngresso.nextval, '17329073342')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('73974779210', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('91168976406', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('31317938896', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('21959150729', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('34691155999', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('21944131764', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('21795171289', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('72232910851', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('69789991554', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('10265446611', sqIngresso.nextval, '33222808842')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('76790529780', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('15259053368', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('43427744211', sqIngresso.nextval, '10330515020')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('76699805375', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('55307207600', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('77872434457', sqIngresso.nextval, '33222808842')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('24007615038', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('76793968263', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74954875328', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74007414244', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('98295843260', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('12855832666', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('95898659143', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('30603694922', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('97349443678', sqIngresso.nextval, '10330515020')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('43267758510', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('97729351634', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('98585861961', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('63879736715', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18167681462', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('96540305579', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('44671342173', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('77326388107', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('13624832200', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('30053124352', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('73208730933', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('49879549811', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('32540289848', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74503391806', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18508230195', sqIngresso.nextval, '33222808842')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('13963126181', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('39418726593', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('88179303872', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('87198181231', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('49280045710', sqIngresso.nextval, '35420815293')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('30199388385', 13728, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('47427712610', 19908, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('29599507565', 49437, '35420815293');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('57628148722', 69826, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('12812080044', 96928, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('64295837740', 1035, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('65134974386', 58107, '64369224486');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('49071844654', 76970, '35420815293');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('56167488077', 20493, '35420815293');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('38336868424', 92990, '33222808842');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('58162796706', 37426, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74758815612', 42262, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('56122432090', 35686, '17329073342');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('12247919297', 87109, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('17490321338', 84223, '33222808842');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('29700737817', 59754, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('27612094332', 65737, '17329073342');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('40117047008', 12755, '74249536227');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('52416538966', 99437, '64369224486');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('42657296455', 18138, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('71122532810', 80137, '74249536227');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('43560681056', 65955, '48706382013');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('80905097415', 1942, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('14059155304', 55087, '46047735257');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('19253087598', 88921, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('37401423730', 70400, '10330515020');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('32759444139', 39529, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('14649378973', 46192, '48706382013');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('58000327447', 24002, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('48240968479', 73344, '17329073342');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('78335091139', 36847, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('70546768636', 90088, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('22404928750', 70871, '46047735257');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('70308341124', 29079, '64369224486');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('25989990251', 30361, '64369224486');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('75366156457', 78030, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('69025221605', 63242, '10330515020');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('54301553913', 50877, '35420815293');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('66952515360', 53740, '35420815293');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('20274888371', 90974, '10330515020');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('38335808648', 55690, '48706382013');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('96591124058', 18623, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74577588172', 53636, '74249536227');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('28421344502', 50096, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('98596987343', 44902, '17329073342');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('68116821185', 13853, '17329073342');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('46064949648', 35392, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('81040473720', 57763, '46047735257');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('59000464227', 18818, '17329073342');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('34584407779', 16503, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('28629680688', 61010, '48706382013');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18723001906', 5097, '46047735257');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('23969104695', 74801, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('52156994899', 38388, '46047735257');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18843477859', 47580, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('42829067599', 89559, '48706382013');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('42373211369', 62880, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('85736048930', 87296, '10330515020');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('43406326054', 43352, '64369224486');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('78833704759', 81414, '74249536227');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('75123135279', 78199, '17329073342');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('60139985343', 52538, '64369224486');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('81961611946', 90803, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('15510735175', 1449, '48706382013');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('12107757211', 47971, '64369224486');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18013645667', 77908, '33222808842');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('27733831081', 21261, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('31293248577', 23988, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('84770625781', 32598, '46047735257');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('32139874646', 41205, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('59746510270', 64064, '46047735257');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('51893041336', 99027, '74249536227');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('73750364257', 87999, '17329073342');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('73974779210', 90849, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('91168976406', 94709, '35420815293');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('31317938896', 95228, '48706382013');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('21959150729', 16805, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('34691155999', 99576, '74249536227');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('21944131764', 91100, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('21795171289', 1549, '48706382013');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('72232910851', 69752, '46047735257');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('69789991554', 82787, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('10265446611', 14719, '33222808842');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('76790529780', 89427, '48706382013');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('15259053368', 45401, '35420815293');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('43427744211', 94876, '10330515020');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('76699805375', 84476, '64369224486');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('55307207600', 29749, '35420815293');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('77872434457', 76308, '33222808842');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('24007615038', 60682, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('76793968263', 64954, '74249536227');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74954875328', 79223, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74007414244', 82757, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('98295843260', 21192, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('12855832666', 47905, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('95898659143', 99321, '48706382013');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('30603694922', 21443, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('97349443678', 72741, '10330515020');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('43267758510', 66127, '35420815293');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('97729351634', 47612, '46047735257');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('98585861961', 55739, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('63879736715', 57129, '48706382013');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18167681462', 42201, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('96540305579', 86091, '35420815293');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('44671342173', 26667, '74249536227');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('77326388107', 16477, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('13624832200', 41094, '64369224486');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('30053124352', 84029, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('73208730933', 9242, '74249536227');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('49879549811', 61079, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('32540289848', 65251, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74503391806', 53887, '64369224486');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18508230195', 97540, '33222808842');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('13963126181', 11120, '73000266174');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('39418726593', 3553, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('88179303872', 48013, '97026469138');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('87198181231', 73691, '35420815293');
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('49280045710', 63852, '35420815293');
 
 -- POVOANDO NOME_EQUIPAMENTOS
 INSERT INTO Nome_equipamento (nome, preco) VALUES ('guitarra aceim preta', 500);
@@ -1015,3 +1015,105 @@ INSERT INTO Visitante (id_visi) VALUES ('39418726593');
 INSERT INTO Visitante (id_visi) VALUES ('88179303872');
 INSERT INTO Visitante (id_visi) VALUES ('87198181231');
 INSERT INTO Visitante (id_visi) VALUES ('49280045710');
+
+
+-- POVOANDO GARANTIR_ACESSO
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Palestra Motivacional', 1, '07/01 13:00', 0);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Palestra Motivacional', 1, '07/01 13:00', 1);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Palestra Motivacional', 1, '07/01 13:00', 2);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Palestra Motivacional', 1, '07/01 13:00', 3);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Palestra Motivacional', 1, '07/01 13:00', 4);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Palestra Motivacional', 1, '07/01 13:00', 5);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Palestra Motivacional', 1, '07/01 13:00', 6);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Palestra Motivacional', 1, '07/01 13:00', 7);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Palestra Motivacional', 1, '07/01 13:00', 8);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '08/01 18:00', 9);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '08/01 18:00', 10);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '08/01 18:00', 11);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '08/01 18:00', 12);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '08/01 18:00', 13);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '08/01 18:00', 14);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '08/01 18:00', 15);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '08/01 18:00', 16);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '08/01 18:00', 17);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Circo Mágico', 1, '14/01 13:00', 18);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Circo Mágico', 1, '14/01 13:00', 19);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Circo Mágico', 1, '14/01 13:00', 20);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Circo Mágico', 1, '14/01 13:00', 21);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Circo Mágico', 1, '14/01 13:00', 22);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Circo Mágico', 1, '14/01 13:00', 23);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Circo Mágico', 1, '14/01 13:00', 24);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Circo Mágico', 1, '14/01 13:00', 25);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Circo Mágico', 1, '14/01 13:00', 26);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Orquestra Sinfônica', 2, '15/01 13:00', 27);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Orquestra Sinfônica', 2, '15/01 13:00', 28);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Orquestra Sinfônica', 2, '15/01 13:00', 29);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Orquestra Sinfônica', 2, '15/01 13:00', 30);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Orquestra Sinfônica', 2, '15/01 13:00', 31);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Orquestra Sinfônica', 2, '15/01 13:00', 32);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Orquestra Sinfônica', 2, '15/01 13:00', 33);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Orquestra Sinfônica', 2, '15/01 13:00', 34);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Orquestra Sinfônica', 2, '15/01 13:00', 35);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Festival de Dança', 1, '21/01 13:00', 36);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Festival de Dança', 1, '21/01 13:00', 37);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Festival de Dança', 1, '21/01 13:00', 38);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Festival de Dança', 1, '21/01 13:00', 39);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Festival de Dança', 1, '21/01 13:00', 40);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Festival de Dança', 1, '21/01 13:00', 41);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Festival de Dança', 1, '21/01 13:00', 42);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Festival de Dança', 1, '21/01 13:00', 43);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Festival de Dança', 1, '21/01 13:00', 44);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Feira de Gastronomia', 2, '22/01 13:00', 45);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Feira de Gastronomia', 2, '22/01 13:00', 46);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Feira de Gastronomia', 2, '22/01 13:00', 47);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Feira de Gastronomia', 2, '22/01 13:00', 48);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Feira de Gastronomia', 2, '22/01 13:00', 49);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Feira de Gastronomia', 2, '22/01 13:00', 50);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Feira de Gastronomia', 2, '22/01 13:00', 51);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Feira de Gastronomia', 2, '22/01 13:00', 52);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Feira de Gastronomia', 2, '22/01 13:00', 53);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Espetáculo de Ilusionismo', 2, '22/01 13:00', 54);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Espetáculo de Ilusionismo', 2, '22/01 13:00', 55);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Espetáculo de Ilusionismo', 2, '22/01 13:00', 56);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Espetáculo de Ilusionismo', 2, '22/01 13:00', 57);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Espetáculo de Ilusionismo', 2, '22/01 13:00', 58);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Espetáculo de Ilusionismo', 2, '22/01 13:00', 59);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Espetáculo de Ilusionismo', 2, '22/01 13:00', 60);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Espetáculo de Ilusionismo', 2, '22/01 13:00', 61);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Espetáculo de Ilusionismo', 2, '22/01 13:00', 62);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Exposição de Arte', 1, '29/01 13:00', 63);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Exposição de Arte', 1, '29/01 13:00', 64);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Exposição de Arte', 1, '29/01 13:00', 65);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Exposição de Arte', 1, '29/01 13:00', 66);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Exposição de Arte', 1, '29/01 13:00', 67);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Exposição de Arte', 1, '29/01 13:00', 68);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Exposição de Arte', 1, '29/01 13:00', 69);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Exposição de Arte', 1, '29/01 13:00', 70);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Exposição de Arte', 1, '29/01 13:00', 71);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Rockstar', 3, '04/02 13:00', 72);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Rockstar', 3, '04/02 13:00', 73);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Rockstar', 3, '04/02 13:00', 74);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Rockstar', 3, '04/02 13:00', 75);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Rockstar', 3, '04/02 13:00', 76);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Rockstar', 3, '04/02 13:00', 77);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Rockstar', 3, '04/02 13:00', 78);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Rockstar', 3, '04/02 13:00', 79);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Rockstar', 3, '04/02 13:00', 80);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Revelações', 2, '05/02 3:00', 81);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Revelações', 2, '05/02 3:00', 82);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Revelações', 2, '05/02 3:00', 83);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Revelações', 2, '05/02 3:00', 84);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Revelações', 2, '05/02 3:00', 85);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Revelações', 2, '05/02 3:00', 86);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Revelações', 2, '05/02 3:00', 87);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Revelações', 2, '05/02 3:00', 88);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Banda Revelações', 2, '05/02 3:00', 89);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '04/03 13:00', 90);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '04/03 13:00', 91);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '04/03 13:00', 92);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '04/03 13:00', 93);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '04/03 13:00', 94);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '04/03 13:00', 95);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '04/03 13:00', 96);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '04/03 13:00', 97);
+INSERT INTO Garantir_acesso (atracao, num_palco, horario, id_comprad, num_ingresso) VALUES ('Stand-up Comedy', 5, '04/03 13:00', 98);
