@@ -141,7 +141,6 @@ CREATE TABLE Atracao (
     cache NUMBER,
     CONSTRAINT atracao_pkey PRIMARY KEY (nome, colaborante),
     CONSTRAINT atracao_fkey FOREIGN KEY (colaborante) REFERENCES Atracao(nome)
-
 );
 
 CREATE TABLE Contatos (
