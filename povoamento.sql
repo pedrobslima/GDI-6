@@ -678,17 +678,22 @@ INSERT INTO Nome_equipamento (nome, preco) VALUES ('teclado shueizer', 890)
 
 
 -- POVOANDO EQUIPAMENTOS
-INSERT INTO Equipamentos (nome, num_serie, tipo, valor)  VALUES ('guitarra aceim preta', 3535, 'instrumento', 54000);
-INSERT INTO Equipamentos (nome, num_serie, tipo, valor)  VALUES ('bateria yamaha', 741644, 'instrumento', 27000);
-INSERT INTO Equipamentos (nome, num_serie, tipo, valor)  VALUES ('baixo weiser', 3433, 'instrumento', 34000);
-INSERT INTO Equipamentos (nome, num_serie, tipo, valor)  VALUES ('amplificador yamaha', 9352522, 'eletronico', 76500);
-INSERT INTO Equipamentos (nome, num_serie, tipo, valor)  VALUES ('guitarra jonson', 4434, 'instrumento', 48500);
-INSERT INTO Equipamentos (nome, num_serie, tipo, valor)  VALUES ('refletor móvel', 3252555, 'eletronico', 70000);
-INSERT INTO Equipamentos (nome, num_serie, tipo, valor)  VALUES ('amplificador yamaha', 7332544, 'eletronico', 76500);
-INSERT INTO Equipamentos (nome, num_serie, tipo, valor)  VALUES ('microfone sem fio', 3525525, 'eletronico', 20000);
-INSERT INTO Equipamentos (nome, num_serie, tipo, valor)  VALUES ('liberador de fumaça grande', 6466444, 'eletronico', 45000);
-INSERT INTO Equipamentos (nome, num_serie, tipo, valor)  VALUES ('teclado shueizer', 5335353, 'instrumento', 78000);
-INSERT INTO Equipamentos (nome, num_serie, tipo, valor)  VALUES ('amplificador yamaha', 9352522, 'eletronico', 76500);
+INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('guitarra aceim preta', 3535, 'instrumento');
+INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('bateria yamaha', 741644, 'instrumento');
+INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('baixo weiser', 3433, 'instrumento');
+INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('amplificador yamaha', 9352522, 'eletronico');
+INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('liberador de fumaça grande', 8886444, 'eletronico');
+INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('guitarra jonson', 4434, 'instrumento');
+INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('refletor móvel', 3252555, 'eletronico');
+INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('liberador de fumaça grande', 6466444, 'eletronico');
+INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('amplificador yamaha', 7332544, 'eletronico');
+INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('microfone sem fio', 5432543, 'eletronico');
+INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('microfone sem fio', 4353454, 'eletronico');
+INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('microfone sem fio', 4958234, 'eletronico');
+INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('microfone sem fio', 1231225, 'eletronico');
+INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('liberador de fumaça grande', 1234444, 'eletronico');
+INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('teclado shueizer', 5335353, 'instrumento');
+INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('amplificador yamaha', 7000522, 'eletronico');
 
 -- POVOANDO ENCRREGA
 INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('87886107463', )
