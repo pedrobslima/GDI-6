@@ -666,15 +666,15 @@ INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('88179303872
 INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('87198181231', sqTeste.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
 
 -- POVOANDO NOME_EQUIPAMENTOS
-INSERT INTO Nome_equipamento (nome, preco) VALUES ('guitarra aceim preta', 500)
-INSERT INTO Nome_equipamento (nome, preco) VALUES ('bateria yamaha', 2000)
-INSERT INTO Nome_equipamento (nome, preco) VALUES ('baixo weiser', 400)
-INSERT INTO Nome_equipamento (nome, preco) VALUES ('amplificador yamaha', 300)
-INSERT INTO Nome_equipamento (nome, preco) VALUES ('guitarra jonson', 580)
-INSERT INTO Nome_equipamento (nome, preco) VALUES ('refletor móvel', 890)
-INSERT INTO Nome_equipamento (nome, preco) VALUES ('microfone sem fio', 30)
-INSERT INTO Nome_equipamento (nome, preco) VALUES ('liberador de fumaça grande', 75)
-INSERT INTO Nome_equipamento (nome, preco) VALUES ('teclado shueizer', 890)
+INSERT INTO Nome_equipamento (nome, preco) VALUES ('guitarra aceim preta', 500);
+INSERT INTO Nome_equipamento (nome, preco) VALUES ('bateria yamaha', 2000);
+INSERT INTO Nome_equipamento (nome, preco) VALUES ('baixo weiser', 400);
+INSERT INTO Nome_equipamento (nome, preco) VALUES ('amplificador yamaha', 300);
+INSERT INTO Nome_equipamento (nome, preco) VALUES ('guitarra jonson', 580);
+INSERT INTO Nome_equipamento (nome, preco) VALUES ('refletor móvel', 890);
+INSERT INTO Nome_equipamento (nome, preco) VALUES ('microfone sem fio', 30);
+INSERT INTO Nome_equipamento (nome, preco) VALUES ('liberador de fumaça grande', 75);
+INSERT INTO Nome_equipamento (nome, preco) VALUES ('teclado shueizer', 890);
 
 
 -- POVOANDO EQUIPAMENTOS
@@ -696,7 +696,7 @@ INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('teclado shueizer', 53
 INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('amplificador yamaha', 7000522, 'eletronico');
 
 -- POVOANDO ENCRREGA
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('87886107463', )
+INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('87886107463', 3535);
 
 -- POVOANDO PALCOS
 
