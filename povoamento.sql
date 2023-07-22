@@ -49,7 +49,7 @@ INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alam
 INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Jacareí', 'São Paulo', 'Brasil');
 INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'Taubaté', 'São Paulo', 'Brasil');
 INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rio Claro', 'São Paulo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Santa Bárbara d'Oeste', 'São Paulo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Santa Bárbara dOeste', 'São Paulo', 'Brasil');
 INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Jaú', 'São Paulo', 'Brasil');
 INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Bragança Paulista', 'São Paulo', 'Brasil');
 INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça do Cais', 'Francisco Morato', 'São Paulo', 'Brasil');

@@ -20,7 +20,7 @@ DROP TABLE Show;
 DROP TABLE Garantir_acesso;
 
 CREATE TABLE Endereco ( 
-    cep NUMBER NOT NULL, 
+    cep CHAR(9) NOT NULL, 
     rua VARCHAR2(30), 
     cidade VARCHAR2(30), 
     pais VARCHAR2(20), 
@@ -30,7 +30,7 @@ CREATE TABLE Endereco (
 CREATE TABLE Pessoa(
     cpf CHAR(11),
     nome VARCHAR2(40),
-    cep NUMBER NOT NULL,
+    cep CHAR(9) NOT NULL,
     numero VARCHAR(5),
     comp VARCHAR(2),
     CONSTRAINT pessoa_pkey PRIMARY KEY (cpf),
