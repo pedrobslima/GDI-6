@@ -540,130 +540,256 @@ INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-14', 'YYYY/MM
 INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-15', 'YYYY/MM/DD'), 800);
 
 -- POVOANDO INGRESSOS
-CREATE SEQUENCE sqTeste
+CREATE SEQUENCE sqIngresso
     MINVALUE 0
     MAXVALUE 300
     START WITH 1
     INCREMENT BY 1;
 
 -- POVOANDO INGRESSOS
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('30199388385', sqTeste.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('47427712610', sqTeste.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('29599507565', sqTeste.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('57628148722', sqTeste.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('12812080044', sqTeste.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('64295837740', sqTeste.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('65134974386', sqTeste.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('49071844654', sqTeste.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('56167488077', sqTeste.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('38336868424', sqTeste.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('58162796706', sqTeste.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74758815612', sqTeste.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('56122432090', sqTeste.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('12247919297', sqTeste.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('17490321338', sqTeste.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('29700737817', sqTeste.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('27612094332', sqTeste.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('40117047008', sqTeste.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('52416538966', sqTeste.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('42657296455', sqTeste.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('71122532810', sqTeste.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('43560681056', sqTeste.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('80905097415', sqTeste.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('14059155304', sqTeste.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('19253087598', sqTeste.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('37401423730', sqTeste.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('32759444139', sqTeste.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('14649378973', sqTeste.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('58000327447', sqTeste.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('48240968479', sqTeste.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('78335091139', sqTeste.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('70546768636', sqTeste.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('22404928750', sqTeste.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('70308341124', sqTeste.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('25989990251', sqTeste.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('75366156457', sqTeste.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('69025221605', sqTeste.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('54301553913', sqTeste.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('66952515360', sqTeste.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('20274888371', sqTeste.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('38335808648', sqTeste.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('96591124058', sqTeste.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74577588172', sqTeste.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('28421344502', sqTeste.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('98596987343', sqTeste.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('68116821185', sqTeste.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('46064949648', sqTeste.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('81040473720', sqTeste.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('59000464227', sqTeste.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('34584407779', sqTeste.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('28629680688', sqTeste.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18723001906', sqTeste.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('23969104695', sqTeste.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('52156994899', sqTeste.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18843477859', sqTeste.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('42829067599', sqTeste.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('42373211369', sqTeste.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('85736048930', sqTeste.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('43406326054', sqTeste.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('78833704759', sqTeste.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('75123135279', sqTeste.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('60139985343', sqTeste.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('81961611946', sqTeste.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('15510735175', sqTeste.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('12107757211', sqTeste.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18013645667', sqTeste.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('27733831081', sqTeste.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('31293248577', sqTeste.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('84770625781', sqTeste.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('32139874646', sqTeste.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('59746510270', sqTeste.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('51893041336', sqTeste.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('73750364257', sqTeste.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('73974779210', sqTeste.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('91168976406', sqTeste.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('31317938896', sqTeste.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('21959150729', sqTeste.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('34691155999', sqTeste.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('21944131764', sqTeste.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('21795171289', sqTeste.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('72232910851', sqTeste.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('69789991554', sqTeste.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('10265446611', sqTeste.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('76790529780', sqTeste.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('15259053368', sqTeste.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('43427744211', sqTeste.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('76699805375', sqTeste.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('55307207600', sqTeste.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('77872434457', sqTeste.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('24007615038', sqTeste.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('76793968263', sqTeste.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74954875328', sqTeste.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74007414244', sqTeste.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('98295843260', sqTeste.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('12855832666', sqTeste.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('95898659143', sqTeste.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('30603694922', sqTeste.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('97349443678', sqTeste.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('43267758510', sqTeste.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('97729351634', sqTeste.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('98585861961', sqTeste.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('63879736715', sqTeste.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18167681462', sqTeste.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('96540305579', sqTeste.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('44671342173', sqTeste.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('77326388107', sqTeste.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('13624832200', sqTeste.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('30053124352', sqTeste.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('73208730933', sqTeste.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('49879549811', sqTeste.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('32540289848', sqTeste.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74503391806', sqTeste.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18508230195', sqTeste.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('13963126181', sqTeste.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('39418726593', sqTeste.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('88179303872', sqTeste.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('87198181231', sqTeste.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('30199388385', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('47427712610', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('29599507565', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('57628148722', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('12812080044', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('64295837740', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('65134974386', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('49071844654', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('56167488077', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('38336868424', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('58162796706', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74758815612', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('56122432090', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('12247919297', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('17490321338', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('29700737817', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('27612094332', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('40117047008', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('52416538966', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('42657296455', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('71122532810', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('43560681056', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('80905097415', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('14059155304', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('19253087598', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('37401423730', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('32759444139', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('14649378973', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('58000327447', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('48240968479', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('78335091139', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('70546768636', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('22404928750', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('70308341124', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('25989990251', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('75366156457', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('69025221605', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('54301553913', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('66952515360', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('20274888371', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('38335808648', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('96591124058', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74577588172', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('28421344502', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('98596987343', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('68116821185', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('46064949648', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('81040473720', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('59000464227', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('34584407779', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('28629680688', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18723001906', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('23969104695', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('52156994899', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18843477859', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('42829067599', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('42373211369', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('85736048930', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('43406326054', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('78833704759', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('75123135279', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('60139985343', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('81961611946', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('15510735175', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('12107757211', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18013645667', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('27733831081', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('31293248577', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('84770625781', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('32139874646', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('59746510270', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('51893041336', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('73750364257', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('73974779210', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('91168976406', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('31317938896', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('21959150729', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('34691155999', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('21944131764', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('21795171289', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('72232910851', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('69789991554', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('10265446611', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('76790529780', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('15259053368', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('43427744211', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('76699805375', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('55307207600', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('77872434457', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('24007615038', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('76793968263', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74954875328', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74007414244', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('98295843260', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('12855832666', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('95898659143', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('30603694922', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('97349443678', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('43267758510', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('97729351634', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('98585861961', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('63879736715', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18167681462', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('96540305579', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('44671342173', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('77326388107', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('13624832200', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('30053124352', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('73208730933', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('49879549811', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('32540289848', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74503391806', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18508230195', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('13963126181', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('39418726593', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('88179303872', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('87198181231', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
+
+-- POVOANDO COMPRA
+CREATE SEQUENCE sqCompra
+    MINVALUE 0
+    MAXVALUE 300
+    START WITH 1
+    INCREMENT BY 1;
+
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('30199388385', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('47427712610', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('29599507565', sqIngresso.nextval, '35420815293')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('57628148722', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('12812080044', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('64295837740', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('65134974386', sqIngresso.nextval, '64369224486')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('49071844654', sqIngresso.nextval, '35420815293')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('56167488077', sqIngresso.nextval, '35420815293')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('38336868424', sqIngresso.nextval, '33222808842')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('58162796706', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74758815612', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('56122432090', sqIngresso.nextval, '17329073342')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('12247919297', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('17490321338', sqIngresso.nextval, '33222808842')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('29700737817', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('27612094332', sqIngresso.nextval, '17329073342')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('40117047008', sqIngresso.nextval, '74249536227')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('52416538966', sqIngresso.nextval, '64369224486')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('42657296455', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('71122532810', sqIngresso.nextval, '74249536227')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('43560681056', sqIngresso.nextval, '48706382013')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('80905097415', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('14059155304', sqIngresso.nextval, '46047735257')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('19253087598', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('37401423730', sqIngresso.nextval, '10330515020')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('32759444139', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('14649378973', sqIngresso.nextval, '48706382013')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('58000327447', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('48240968479', sqIngresso.nextval, '17329073342')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('78335091139', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('70546768636', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('22404928750', sqIngresso.nextval, '46047735257')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('70308341124', sqIngresso.nextval, '64369224486')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('25989990251', sqIngresso.nextval, '64369224486')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('75366156457', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('69025221605', sqIngresso.nextval, '10330515020')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('54301553913', sqIngresso.nextval, '35420815293')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('66952515360', sqIngresso.nextval, '35420815293')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('20274888371', sqIngresso.nextval, '10330515020')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('38335808648', sqIngresso.nextval, '48706382013')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('96591124058', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74577588172', sqIngresso.nextval, '74249536227')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('28421344502', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('98596987343', sqIngresso.nextval, '17329073342')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('68116821185', sqIngresso.nextval, '17329073342')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('46064949648', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('81040473720', sqIngresso.nextval, '46047735257')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('59000464227', sqIngresso.nextval, '17329073342')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('34584407779', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('28629680688', sqIngresso.nextval, '48706382013')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18723001906', sqIngresso.nextval, '46047735257')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('23969104695', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('52156994899', sqIngresso.nextval, '46047735257')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18843477859', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('42829067599', sqIngresso.nextval, '48706382013')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('42373211369', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('85736048930', sqIngresso.nextval, '10330515020')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('43406326054', sqIngresso.nextval, '64369224486')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('78833704759', sqIngresso.nextval, '74249536227')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('75123135279', sqIngresso.nextval, '17329073342')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('60139985343', sqIngresso.nextval, '64369224486')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('81961611946', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('15510735175', sqIngresso.nextval, '48706382013')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('12107757211', sqIngresso.nextval, '64369224486')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18013645667', sqIngresso.nextval, '33222808842')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('27733831081', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('31293248577', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('84770625781', sqIngresso.nextval, '46047735257')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('32139874646', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('59746510270', sqIngresso.nextval, '46047735257')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('51893041336', sqIngresso.nextval, '74249536227')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('73750364257', sqIngresso.nextval, '17329073342')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('73974779210', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('91168976406', sqIngresso.nextval, '35420815293')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('31317938896', sqIngresso.nextval, '48706382013')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('21959150729', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('34691155999', sqIngresso.nextval, '74249536227')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('21944131764', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('21795171289', sqIngresso.nextval, '48706382013')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('72232910851', sqIngresso.nextval, '46047735257')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('69789991554', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('10265446611', sqIngresso.nextval, '33222808842')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('76790529780', sqIngresso.nextval, '48706382013')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('15259053368', sqIngresso.nextval, '35420815293')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('43427744211', sqIngresso.nextval, '10330515020')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('76699805375', sqIngresso.nextval, '64369224486')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('55307207600', sqIngresso.nextval, '35420815293')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('77872434457', sqIngresso.nextval, '33222808842')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('24007615038', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('76793968263', sqIngresso.nextval, '74249536227')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74954875328', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74007414244', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('98295843260', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('12855832666', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('95898659143', sqIngresso.nextval, '48706382013')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('30603694922', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('97349443678', sqIngresso.nextval, '10330515020')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('43267758510', sqIngresso.nextval, '35420815293')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('97729351634', sqIngresso.nextval, '46047735257')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('98585861961', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('63879736715', sqIngresso.nextval, '48706382013')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18167681462', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('96540305579', sqIngresso.nextval, '35420815293')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('44671342173', sqIngresso.nextval, '74249536227')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('77326388107', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('13624832200', sqIngresso.nextval, '64369224486')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('30053124352', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('73208730933', sqIngresso.nextval, '74249536227')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('49879549811', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('32540289848', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74503391806', sqIngresso.nextval, '64369224486')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18508230195', sqIngresso.nextval, '33222808842')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('13963126181', sqIngresso.nextval, '73000266174')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('39418726593', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('88179303872', sqIngresso.nextval, '97026469138')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('87198181231', sqIngresso.nextval, '35420815293')
+INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('49280045710', sqIngresso.nextval, '35420815293')
 
 -- POVOANDO NOME_EQUIPAMENTOS
 INSERT INTO Nome_equipamento (nome, preco) VALUES ('guitarra aceim preta', 500);
@@ -719,3 +845,15 @@ INSERT INTO Palco (numero, tamanho) VALUES (1, '1000');
 INSERT INTO Palco (numero, tamanho) VALUES (2, '2000');
 INSERT INTO Palco (numero, tamanho) VALUES (3, '1300');
 INSERT INTO Palco (numero, tamanho) VALUES (4, '400');
+
+-- Populando tabela "Atracao"
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Banda Rockstar', NULL, 5000),
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Palestra Motivacional', 'Palestrante Y', 3000),
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Stand-up Comedy', NULL, 4000),
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Circo Mágico', NULL, 3500),
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Orquestra Sinfônica', NULL, 4500),
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Festival de Dança', NULL, 3800),
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Feira de Gastronomia', NULL, 4200),
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Espetáculo de Ilusionismo', NULL, 3200),
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Exposição de Arte', NULL, 3900),
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Filme ao ar livre', NULL, 2700);
