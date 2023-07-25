@@ -1,156 +1,32 @@
 -- POVOANDO ENDERECOS
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-876', 'Avenida Principal', 'Avenida Principal', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-678', 'Avenida das Flores', 'Avenida das Flores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-432', 'Rua dos Pássaros', 'Rua dos Pássaros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-789', 'Alameda das Palmeiras', 'Alameda das Palmeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Praça Central', 'Praça Central', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Rua da Esperança', 'Rua da Esperança', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Avenida da Liberdade', 'Avenida da Liberdade', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-456', 'Rua dos Girassóis', 'Rua dos Girassóis', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-654', 'Praça das Águas', 'Praça das Águas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-890', 'Rua do Mar', 'Rua do Mar', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-234', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-789', 'Alameda dos Ipês', 'Alameda dos Ipês', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Estrelas', 'Rua das Estrelas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Praça do Sol', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua das Ondas', 'Rua das Ondas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Gaivotas', 'Avenida das Gaivotas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Coqueiros', 'Alameda dos Coqueiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Nuvens', 'Rua das Nuvens', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça das Laranjeiras', 'Praça das Laranjeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua dos Ventos', 'Rua dos Ventos', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Avenida das Árvores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Alameda do Lago', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Cachoeiras', 'Rua das Cachoeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça do Largo', 'Praça do Largo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua do Bosque', 'Rua do Bosque', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Praias', 'Avenida das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Dunas', 'Alameda das Dunas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua do Rio', 'Rua do Rio', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Cais', 'Praça do Cais', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua das Pedras', 'Rua das Pedras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Pássaros', 'Alameda dos Pássaros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua do Maracanã', 'Rua do Maracanã', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça da Sé', 'Praça da Sé', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua dos Pinheiros', 'Rua dos Pinheiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Flores', 'Avenida das Flores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda das Águas', 'Alameda das Águas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Rua das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Praça das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Rua dos Coqueiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Avenida das Estrelas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Alameda das Nuvens', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Rua das Gaivotas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Praça do Sol', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Rua dos Girassóis', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Alameda dos Ipês', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Rua das Laranjeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'Praça do Largo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rua do Bosque', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Avenida das Árvores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Alameda do Lago', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Rua das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça do Cais', 'Praça do Cais', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Ventos', 'Rua dos Ventos', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Praias', 'Avenida das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Dunas', 'Alameda das Dunas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua do Rio', 'Rua do Rio', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Largo', 'Praça do Largo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua das Pedras', 'Rua das Pedras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Pássaros', 'Alameda dos Pássaros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua do Maracanã', 'Rua do Maracanã', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça da Sé', 'Praça da Sé', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua dos Pinheiros', 'Rua dos Pinheiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Flores', 'Avenida das Flores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda das Águas', 'Alameda das Águas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Rua das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Praça das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Rua dos Coqueiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Avenida das Estrelas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Alameda das Nuvens', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Rua das Gaivotas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Praça do Sol', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Rua dos Girassóis', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Alameda dos Ipês', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Rua das Laranjeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'Praça do Largo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rua do Bosque', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Avenida das Árvores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Alameda do Lago', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Rua das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Praça das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Rua dos Coqueiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Avenida das Estrelas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Alameda das Nuvens', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Rua das Gaivotas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Praça do Sol', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Rua dos Girassóis', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Alameda dos Ipês', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Rua das Laranjeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'Praça do Largo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rua do Bosque', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Avenida das Árvores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Alameda do Lago', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Rua das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Praça das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Rua dos Coqueiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Avenida das Estrelas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Alameda das Nuvens', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Rua das Gaivotas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Praça do Sol', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Rua dos Girassóis', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Alameda dos Ipês', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Rua das Laranjeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'Praça do Largo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rua do Bosque', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Avenida das Árvores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Alameda do Lago', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Rua das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Praça das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Rua dos Coqueiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Avenida das Estrelas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Alameda das Nuvens', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Rua das Gaivotas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Praça do Sol', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Rua dos Girassóis', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Alameda dos Ipês', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Rua das Laranjeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'Praça do Largo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rua do Bosque', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Avenida das Árvores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Alameda do Lago', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Rua das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Praça das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Rua dos Coqueiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Avenida das Estrelas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Alameda das Nuvens', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Rua das Gaivotas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Praça do Sol', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Rua dos Girassóis', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Montanhas', 'Avenida das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Ipês', 'Alameda dos Ipês', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Laranjeiras', 'Rua das Laranjeiras', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça do Largo', 'Praça do Largo', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua do Bosque', 'Rua do Bosque', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Avenida das Árvores', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Alameda do Lago', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Praias', 'Rua das Praias', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça das Montanhas', 'Praça das Montanhas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Rua dos Coqueiros', 'Rua dos Coqueiros', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Avenida das Estrelas', 'Avenida das Estrelas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Alameda das Nuvens', 'Alameda das Nuvens', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Gaivotas', 'Rua das Gaivotas', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Praça do Sol', 'Brasil');
-INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua dos Girassóis', 'Rua dos Girassóis', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-876', 'Avenida Principal', 'Recife', 'Avenida Principal', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-678', 'Avenida das Flores', 'Cabo', 'Avenida das Flores', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-432', 'Rua dos Pássaros', 'Porto', 'Rua dos Pássaros', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-789', 'Alameda das Palmeiras', 'Garanhuns', 'Alameda das Palmeiras', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-321', 'Praça Central', 'Buenos Aires', 'Praça Central', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-098', 'Rua da Esperança', 'São Paulo', 'Rua da Esperança', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-567', 'Avenida da Liberdade', 'Rio de Janeiro', 'Avenida da Liberdade', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-456', 'Rua dos Girassóis', 'Palmas', 'Rua dos Girassóis', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-654', 'Praça das Águas', 'Palmas', 'Praça das Águas', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-890', 'Rua do Mar', 'Porto','Rua do Mar', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-234', 'Avenida das Montanhas', 'Manaus', 'Avenida das Montanhas', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-789', 'Alameda dos Ipês', 'Garanhuns', 'Alameda dos Ipês', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-890', 'Rua das Estrelas', 'Muribeca', 'Rua das Estrelas', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-123', 'Praça do Sol', 'Belem', 'Praça do Sol', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-567', 'Rua das Ondas', 'Belo Horizonte', 'Rua das Ondas', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-678', 'Avenida das Gaivotas', 'Porto Alegre', 'Avenida das Gaivotas', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-321', 'Alameda dos Coqueiros', 'Belo Horizonte', 'Alameda dos Coqueiros', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-567', 'Rua das Nuvens', 'Curitiba', 'Rua das Nuvens', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-890', 'Praça das Laranjeiras', 'Rio de Janeiro', 'Praça das Laranjeiras', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-234', 'Rua dos Ventos', 'Recife', 'Rua dos Ventos', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('54321-789', 'Avenida das Árvores', 'Jabotão', 'Avenida das Árvores', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('12345-456', 'Alameda do Lago', 'Rio Branco', 'Alameda do Lago', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('98765-123', 'Rua das Cachoeiras', 'Recife', 'Rua das Cachoeiras', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('23456-678', 'Praça do Largo', 'Recife', 'Praça do Largo', 'Brasil');
+INSERT INTO Endereco (cep, rua, cidade, pais, estado) VALUES ('87654-320', 'Rua do Bosque', 'Recife', 'Rua do Bosque', 'Brasil');
 
 -- POVOANDO PESSOAS
+
 INSERT INTO Pessoa (cpf, nome, cep, numero, comp) VALUES ('30199388385', 'Ricardo Almeida', '54321-876', 355, 'casa');
 INSERT INTO Pessoa (cpf, nome, cep, numero, comp) VALUES ('47427712610', 'Carla Pereira', '12345-678', 200, 'casa');
 INSERT INTO Pessoa (cpf, nome, cep, numero, comp) VALUES ('29599507565', 'Roberto Mendes', '98765-432', 466, 'casa');
@@ -303,156 +179,157 @@ INSERT INTO Pessoa (cpf, nome, cep, numero, comp) VALUES ('96035303733', 'Julian
 INSERT INTO Pessoa (cpf, nome, cep, numero, comp) VALUES ('66234401144', 'André Martins', '87654-567', 298, 'casa');
 
 -- POVOANDO TELEFONES
-INSERT INTO Telefones (cpf, numero) VALUES ('30199388385', '81 985478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('47427712610', '11 988547896');
-INSERT INTO Telefones (cpf, numero) VALUES ('29599507565', '47 944875896');
-INSERT INTO Telefones (cpf, numero) VALUES ('57628148722', '31 977489654');
-INSERT INTO Telefones (cpf, numero) VALUES ('12812080044', '21 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('64295837740', '62 933145896');
-INSERT INTO Telefones (cpf, numero) VALUES ('65134974386', '85 966534789');
-INSERT INTO Telefones (cpf, numero) VALUES ('49071844654', '41 911127854');
-INSERT INTO Telefones (cpf, numero) VALUES ('56167488077', '51 988478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('38336868424', '32 955412365');
-INSERT INTO Telefones (cpf, numero) VALUES ('58162796706', '86 966142789');
-INSERT INTO Telefones (cpf, numero) VALUES ('74758815612', '84 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('56122432090', '33 922145896');
-INSERT INTO Telefones (cpf, numero) VALUES ('12247919297', '12 922542896');
-INSERT INTO Telefones (cpf, numero) VALUES ('17490321338', '71 988478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('29700737817', '92 988478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('27612094332', '61 944875896');
-INSERT INTO Telefones (cpf, numero) VALUES ('40117047008', '35 944528965');
-INSERT INTO Telefones (cpf, numero) VALUES ('52416538966', '62 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('42657296455', '61 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('71122532810', '62 955478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('43560681056', '87 933478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('80905097415', '81 944578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('14059155304', '61 955478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('19253087598', '41 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('37401423730', '61 933478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('32759444139', '51 922478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('14649378973', '81 988478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('58000327447', '21 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('48240968479', '62 944578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('78335091139', '86 977478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('70546768636', '12 933478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('22404928750', '35 933478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('70308341124', '87 988478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('25989990251', '31 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('75366156457', '41 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('69025221605', '47 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('54301553913', '11 944875896');
-INSERT INTO Telefones (cpf, numero) VALUES ('66952515360', '86 955478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('20274888371', '21 977478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('38335808648', '81 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('96591124058', '84 955478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('74577588172', '86 933478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('28421344502', '33 955478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('98596987343', '47 933478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('68116821185', '71 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('46064949648', '21 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('81040473720', '92 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('59000464227', '62 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('34584407779', '92 933478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('28629680688', '84 988478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('18723001906', '33 988478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('23969104695', '92 944875896');
-INSERT INTO Telefones (cpf, numero) VALUES ('52156994899', '41 977478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('18843477859', '12 988478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('42829067599', '61 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('42373211369', '81 933478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('85736048930', '12 944875896');
-INSERT INTO Telefones (cpf, numero) VALUES ('43406326054', '71 933478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('78833704759', '21 955478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('75123135279', '51 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('60139985343', '87 944875896');
-INSERT INTO Telefones (cpf, numero) VALUES ('81961611946', '31 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('15510735175', '35 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('12107757211', '87 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('18013645667', '41 955478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('27733831081', '81 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('31293248577', '61 988478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('84770625781', '51 933478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('32139874646', '12 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('59746510270', '35 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('51893041336', '33 977478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('73750364257', '86 988478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('73974779210', '71 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('91168976406', '62 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('31317938896', '47 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('21959150729', '81 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('34691155999', '84 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('21944131764', '33 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('21795171289', '21 933478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('72232910851', '41 944875896');
-INSERT INTO Telefones (cpf, numero) VALUES ('69789991554', '87 977478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('10265446611', '92 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('76790529780', '62 977478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('15259053368', '71 944875896');
-INSERT INTO Telefones (cpf, numero) VALUES ('43427744211', '11 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('76699805375', '81 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('55307207600', '92 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('77872434457', '35 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('24007615038', '33 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('76793968263', '62 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('74954875328', '47 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('74007414244', '12 944875896');
-INSERT INTO Telefones (cpf, numero) VALUES ('98295843260', '81 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('12855832666', '21 955478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('95898659143', '51 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('30603694922', '87 944875896');
-INSERT INTO Telefones (cpf, numero) VALUES ('97349443678', '31 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('43267758510', '35 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('97729351634', '87 988478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('98585861961', '41 933478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('63879736715', '81 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('18167681462', '61 988478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('96540305579', '51 933478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('44671342173', '12 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('77326388107', '35 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('13624832200', '33 977478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('30053124352', '86 988478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('73208730933', '71 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('49879549811', '62 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('32540289848', '47 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('74503391806', '81 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('18508230195', '84 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('13963126181', '33 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('39418726593', '21 933478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('88179303872', '41 944875896');
-INSERT INTO Telefones (cpf, numero) VALUES ('87198181231', '87 977478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('49280045710', '92 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('87886107463', '62 977478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('73000266174', '71 944875896');
-INSERT INTO Telefones (cpf, numero) VALUES ('97026469138', '11 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('35420815293', '81 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('64369224486', '92 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('17329073342', '35 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('33222808842', '33 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('74249536227', '62 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('48706382013', '47 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('10330515020', '12 944875896');
-INSERT INTO Telefones (cpf, numero) VALUES ('46047735257', '81 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('94806948879', '21 955478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('82624610006', '51 966578965');
-INSERT INTO Telefones (cpf, numero) VALUES ('20620832203', '87 944875896');
-INSERT INTO Telefones (cpf, numero) VALUES ('23476315168', '31 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('22307947437', '35 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('69997282400', '87 988478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('49696630305', '41 933478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('31099445960', '81 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('61961415780', '61 988478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('38587038568', '51 933478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('13688435778', '12 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('67272810335', '35 922175896');
-INSERT INTO Telefones (cpf, numero) VALUES ('57803122458', '33 977478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('51582409964', '86 988478965');
-INSERT INTO Telefones (cpf, numero) VALUES ('75353326627', '71 911147896');
-INSERT INTO Telefones (cpf, numero) VALUES ('95303335098', '81 945423045');
-INSERT INTO Telefones (cpf, numero) VALUES ('56507795988', '81 987724563');
-INSERT INTO Telefones (cpf, numero) VALUES ('98652590784', '81 984856763');
-INSERT INTO Telefones (cpf, numero) VALUES ('31902575592', '81 987224664');
-INSERT INTO Telefones (cpf, numero) VALUES ('96035303733', '81 985432896');
-INSERT INTO Telefones (cpf, numero) VALUES ('66234401144', '81 985477573');
+
+INSERT INTO Telefones (cpf, num_tel) VALUES ('30199388385', '81 985478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('47427712610', '11 988547896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('29599507565', '47 944875896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('57628148722', '31 977489654');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('12812080044', '21 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('64295837740', '62 933145896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('65134974386', '85 966534789');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('49071844654', '41 911127854');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('56167488077', '51 988478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('38336868424', '32 955412365');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('58162796706', '86 966142789');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('74758815612', '84 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('56122432090', '33 922145896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('12247919297', '12 922542896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('17490321338', '71 988478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('29700737817', '92 988478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('27612094332', '61 944875896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('40117047008', '35 944528965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('52416538966', '62 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('42657296455', '61 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('71122532810', '62 955478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('43560681056', '87 933478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('80905097415', '81 944578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('14059155304', '61 955478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('19253087598', '41 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('37401423730', '61 933478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('32759444139', '51 922478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('14649378973', '81 988478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('58000327447', '21 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('48240968479', '62 944578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('78335091139', '86 977478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('70546768636', '12 933478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('22404928750', '35 933478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('70308341124', '87 988478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('25989990251', '31 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('75366156457', '41 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('69025221605', '47 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('54301553913', '11 944875896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('66952515360', '86 955478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('20274888371', '21 977478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('38335808648', '81 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('96591124058', '84 955478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('74577588172', '86 933478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('28421344502', '33 955478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('98596987343', '47 933478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('68116821185', '71 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('46064949648', '21 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('81040473720', '92 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('59000464227', '62 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('34584407779', '92 933478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('28629680688', '84 988478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('18723001906', '33 988478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('23969104695', '92 944875896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('52156994899', '41 977478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('18843477859', '12 988478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('42829067599', '61 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('42373211369', '81 933478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('85736048930', '12 944875896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('43406326054', '71 933478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('78833704759', '21 955478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('75123135279', '51 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('60139985343', '87 944875896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('81961611946', '31 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('15510735175', '35 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('12107757211', '87 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('18013645667', '41 955478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('27733831081', '81 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('31293248577', '61 988478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('84770625781', '51 933478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('32139874646', '12 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('59746510270', '35 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('51893041336', '33 977478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('73750364257', '86 988478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('73974779210', '71 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('91168976406', '62 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('31317938896', '47 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('21959150729', '81 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('34691155999', '84 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('21944131764', '33 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('21795171289', '21 933478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('72232910851', '41 944875896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('69789991554', '87 977478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('10265446611', '92 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('76790529780', '62 977478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('15259053368', '71 944875896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('43427744211', '11 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('76699805375', '81 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('55307207600', '92 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('77872434457', '35 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('24007615038', '33 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('76793968263', '62 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('74954875328', '47 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('74007414244', '12 944875896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('98295843260', '81 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('12855832666', '21 955478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('95898659143', '51 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('30603694922', '87 944875896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('97349443678', '31 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('43267758510', '35 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('97729351634', '87 988478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('98585861961', '41 933478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('63879736715', '81 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('18167681462', '61 988478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('96540305579', '51 933478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('44671342173', '12 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('77326388107', '35 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('13624832200', '33 977478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('30053124352', '86 988478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('73208730933', '71 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('49879549811', '62 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('32540289848', '47 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('74503391806', '81 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('18508230195', '84 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('13963126181', '33 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('39418726593', '21 933478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('88179303872', '41 944875896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('87198181231', '87 977478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('49280045710', '92 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('87886107463', '62 977478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('73000266174', '71 944875896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('97026469138', '11 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('35420815293', '81 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('64369224486', '92 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('17329073342', '35 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('33222808842', '33 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('74249536227', '62 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('48706382013', '47 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('10330515020', '12 944875896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('46047735257', '81 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('94806948879', '21 955478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('82624610006', '51 966578965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('20620832203', '87 944875896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('23476315168', '31 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('22307947437', '35 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('69997282400', '87 988478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('49696630305', '41 933478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('31099445960', '81 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('61961415780', '61 988478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('38587038568', '51 933478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('13688435778', '12 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('67272810335', '35 922175896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('57803122458', '33 977478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('51582409964', '86 988478965');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('75353326627', '71 911147896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('95303335098', '81 945423045');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('56507795988', '81 987724563');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('98652590784', '81 984856763');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('31902575592', '81 987224664');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('96035303733', '81 985432896');
+INSERT INTO Telefones (cpf, num_tel) VALUES ('66234401144', '81 985477573');
 
 -- POVOANDO Funcionario
 INSERT INTO Funcionario (id_func, turno, salario) VALUES ('87886107463', 'MANHÃ', 120000);
@@ -526,18 +403,138 @@ INSERT INTO Manutencao (id_func) VALUES ('48706382013');
 INSERT INTO Manutencao (id_func) VALUES ('10330515020');
 INSERT INTO Manutencao (id_func) VALUES ('46047735257');
 
+-- POVOANDO VISITANTE
+
+INSERT INTO Visitante (id_visi) VALUES ('30199388385');
+INSERT INTO Visitante (id_visi) VALUES ('47427712610');
+INSERT INTO Visitante (id_visi) VALUES ('29599507565');
+INSERT INTO Visitante (id_visi) VALUES ('57628148722');
+INSERT INTO Visitante (id_visi) VALUES ('12812080044');
+INSERT INTO Visitante (id_visi) VALUES ('64295837740');
+INSERT INTO Visitante (id_visi) VALUES ('65134974386');
+INSERT INTO Visitante (id_visi) VALUES ('49071844654');
+INSERT INTO Visitante (id_visi) VALUES ('56167488077');
+INSERT INTO Visitante (id_visi) VALUES ('38336868424');
+INSERT INTO Visitante (id_visi) VALUES ('58162796706');
+INSERT INTO Visitante (id_visi) VALUES ('74758815612');
+INSERT INTO Visitante (id_visi) VALUES ('56122432090');
+INSERT INTO Visitante (id_visi) VALUES ('12247919297');
+INSERT INTO Visitante (id_visi) VALUES ('17490321338');
+INSERT INTO Visitante (id_visi) VALUES ('29700737817');
+INSERT INTO Visitante (id_visi) VALUES ('27612094332');
+INSERT INTO Visitante (id_visi) VALUES ('40117047008');
+INSERT INTO Visitante (id_visi) VALUES ('52416538966');
+INSERT INTO Visitante (id_visi) VALUES ('42657296455');
+INSERT INTO Visitante (id_visi) VALUES ('71122532810');
+INSERT INTO Visitante (id_visi) VALUES ('43560681056');
+INSERT INTO Visitante (id_visi) VALUES ('80905097415');
+INSERT INTO Visitante (id_visi) VALUES ('14059155304');
+INSERT INTO Visitante (id_visi) VALUES ('19253087598');
+INSERT INTO Visitante (id_visi) VALUES ('37401423730');
+INSERT INTO Visitante (id_visi) VALUES ('32759444139');
+INSERT INTO Visitante (id_visi) VALUES ('14649378973');
+INSERT INTO Visitante (id_visi) VALUES ('58000327447');
+INSERT INTO Visitante (id_visi) VALUES ('48240968479');
+INSERT INTO Visitante (id_visi) VALUES ('78335091139');
+INSERT INTO Visitante (id_visi) VALUES ('70546768636');
+INSERT INTO Visitante (id_visi) VALUES ('22404928750');
+INSERT INTO Visitante (id_visi) VALUES ('70308341124');
+INSERT INTO Visitante (id_visi) VALUES ('25989990251');
+INSERT INTO Visitante (id_visi) VALUES ('75366156457');
+INSERT INTO Visitante (id_visi) VALUES ('69025221605');
+INSERT INTO Visitante (id_visi) VALUES ('54301553913');
+INSERT INTO Visitante (id_visi) VALUES ('66952515360');
+INSERT INTO Visitante (id_visi) VALUES ('20274888371');
+INSERT INTO Visitante (id_visi) VALUES ('38335808648');
+INSERT INTO Visitante (id_visi) VALUES ('96591124058');
+INSERT INTO Visitante (id_visi) VALUES ('74577588172');
+INSERT INTO Visitante (id_visi) VALUES ('28421344502');
+INSERT INTO Visitante (id_visi) VALUES ('98596987343');
+INSERT INTO Visitante (id_visi) VALUES ('68116821185');
+INSERT INTO Visitante (id_visi) VALUES ('46064949648');
+INSERT INTO Visitante (id_visi) VALUES ('81040473720');
+INSERT INTO Visitante (id_visi) VALUES ('59000464227');
+INSERT INTO Visitante (id_visi) VALUES ('34584407779');
+INSERT INTO Visitante (id_visi) VALUES ('28629680688');
+INSERT INTO Visitante (id_visi) VALUES ('18723001906');
+INSERT INTO Visitante (id_visi) VALUES ('23969104695');
+INSERT INTO Visitante (id_visi) VALUES ('52156994899');
+INSERT INTO Visitante (id_visi) VALUES ('18843477859');
+INSERT INTO Visitante (id_visi) VALUES ('42829067599');
+INSERT INTO Visitante (id_visi) VALUES ('42373211369');
+INSERT INTO Visitante (id_visi) VALUES ('85736048930');
+INSERT INTO Visitante (id_visi) VALUES ('43406326054');
+INSERT INTO Visitante (id_visi) VALUES ('78833704759');
+INSERT INTO Visitante (id_visi) VALUES ('75123135279');
+INSERT INTO Visitante (id_visi) VALUES ('60139985343');
+INSERT INTO Visitante (id_visi) VALUES ('81961611946');
+INSERT INTO Visitante (id_visi) VALUES ('15510735175');
+INSERT INTO Visitante (id_visi) VALUES ('12107757211');
+INSERT INTO Visitante (id_visi) VALUES ('18013645667');
+INSERT INTO Visitante (id_visi) VALUES ('27733831081');
+INSERT INTO Visitante (id_visi) VALUES ('31293248577');
+INSERT INTO Visitante (id_visi) VALUES ('84770625781');
+INSERT INTO Visitante (id_visi) VALUES ('32139874646');
+INSERT INTO Visitante (id_visi) VALUES ('59746510270');
+INSERT INTO Visitante (id_visi) VALUES ('51893041336');
+INSERT INTO Visitante (id_visi) VALUES ('73750364257');
+INSERT INTO Visitante (id_visi) VALUES ('73974779210');
+INSERT INTO Visitante (id_visi) VALUES ('91168976406');
+INSERT INTO Visitante (id_visi) VALUES ('31317938896');
+INSERT INTO Visitante (id_visi) VALUES ('21959150729');
+INSERT INTO Visitante (id_visi) VALUES ('34691155999');
+INSERT INTO Visitante (id_visi) VALUES ('21944131764');
+INSERT INTO Visitante (id_visi) VALUES ('21795171289');
+INSERT INTO Visitante (id_visi) VALUES ('72232910851');
+INSERT INTO Visitante (id_visi) VALUES ('69789991554');
+INSERT INTO Visitante (id_visi) VALUES ('10265446611');
+INSERT INTO Visitante (id_visi) VALUES ('76790529780');
+INSERT INTO Visitante (id_visi) VALUES ('15259053368');
+INSERT INTO Visitante (id_visi) VALUES ('43427744211');
+INSERT INTO Visitante (id_visi) VALUES ('76699805375');
+INSERT INTO Visitante (id_visi) VALUES ('55307207600');
+INSERT INTO Visitante (id_visi) VALUES ('77872434457');
+INSERT INTO Visitante (id_visi) VALUES ('24007615038');
+INSERT INTO Visitante (id_visi) VALUES ('76793968263');
+INSERT INTO Visitante (id_visi) VALUES ('74954875328');
+INSERT INTO Visitante (id_visi) VALUES ('74007414244');
+INSERT INTO Visitante (id_visi) VALUES ('98295843260');
+INSERT INTO Visitante (id_visi) VALUES ('12855832666');
+INSERT INTO Visitante (id_visi) VALUES ('95898659143');
+INSERT INTO Visitante (id_visi) VALUES ('30603694922');
+INSERT INTO Visitante (id_visi) VALUES ('97349443678');
+INSERT INTO Visitante (id_visi) VALUES ('43267758510');
+INSERT INTO Visitante (id_visi) VALUES ('97729351634');
+INSERT INTO Visitante (id_visi) VALUES ('98585861961');
+INSERT INTO Visitante (id_visi) VALUES ('63879736715');
+INSERT INTO Visitante (id_visi) VALUES ('18167681462');
+INSERT INTO Visitante (id_visi) VALUES ('96540305579');
+INSERT INTO Visitante (id_visi) VALUES ('44671342173');
+INSERT INTO Visitante (id_visi) VALUES ('77326388107');
+INSERT INTO Visitante (id_visi) VALUES ('13624832200');
+INSERT INTO Visitante (id_visi) VALUES ('30053124352');
+INSERT INTO Visitante (id_visi) VALUES ('73208730933');
+INSERT INTO Visitante (id_visi) VALUES ('49879549811');
+INSERT INTO Visitante (id_visi) VALUES ('32540289848');
+INSERT INTO Visitante (id_visi) VALUES ('74503391806');
+INSERT INTO Visitante (id_visi) VALUES ('18508230195');
+INSERT INTO Visitante (id_visi) VALUES ('13963126181');
+INSERT INTO Visitante (id_visi) VALUES ('39418726593');
+INSERT INTO Visitante (id_visi) VALUES ('88179303872');
+INSERT INTO Visitante (id_visi) VALUES ('87198181231');
+
 -- POVOANDO DIAS E PRECOS
-INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-05', 'YYYY/MM/DD'), 800);
-INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-06', 'YYYY/MM/DD'), 800);
-INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-07', 'YYYY/MM/DD'), 800);
-INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-08', 'YYYY/MM/DD'), 800);
-INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-09', 'YYYY/MM/DD'), 800);
+INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-05', 'YYYY/MM/DD'), 1000);
+INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-06', 'YYYY/MM/DD'), 500);
+INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-07', 'YYYY/MM/DD'), 550);
+INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-08', 'YYYY/MM/DD'), 550);
+INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-09', 'YYYY/MM/DD'), 550);
 INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-10', 'YYYY/MM/DD'), 800);
-INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-11', 'YYYY/MM/DD'), 800);
-INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-12', 'YYYY/MM/DD'), 800);
-INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-13', 'YYYY/MM/DD'), 800);
+INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-11', 'YYYY/MM/DD'), 1200);
+INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-12', 'YYYY/MM/DD'), 1400);
+INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-13', 'YYYY/MM/DD'), 700);
 INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-14', 'YYYY/MM/DD'), 800);
-INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-15', 'YYYY/MM/DD'), 800);
+INSERT INTO Dia_preco (dia_evento, preco) VALUES (TO_DATE('2023-02-15', 'YYYY/MM/DD'), 900);
 
 -- POVOANDO INGRESSOS
 CREATE SEQUENCE sqIngresso
@@ -547,123 +544,123 @@ CREATE SEQUENCE sqIngresso
     INCREMENT BY 1;
 
 -- POVOANDO INGRESSOS
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('30199388385', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('47427712610', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('29599507565', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('57628148722', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('12812080044', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('64295837740', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('65134974386', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('49071844654', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('56167488077', sqIngresso.nextval, TO_DATE('2023-01-07', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('38336868424', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('58162796706', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74758815612', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('56122432090', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('12247919297', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('17490321338', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('29700737817', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('27612094332', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('40117047008', sqIngresso.nextval, TO_DATE('2023-01-08', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('52416538966', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('42657296455', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('71122532810', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('43560681056', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('80905097415', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('14059155304', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('19253087598', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('37401423730', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('32759444139', sqIngresso.nextval, TO_DATE('2023-01-14', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('14649378973', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('58000327447', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('48240968479', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('78335091139', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('70546768636', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('22404928750', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('70308341124', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('25989990251', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('75366156457', sqIngresso.nextval, TO_DATE('2023-01-15', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('69025221605', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('54301553913', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('66952515360', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('20274888371', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('38335808648', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('96591124058', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74577588172', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('28421344502', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('98596987343', sqIngresso.nextval, TO_DATE('2023-01-21', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('68116821185', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('46064949648', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('81040473720', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('59000464227', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('34584407779', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('28629680688', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18723001906', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('23969104695', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('52156994899', sqIngresso.nextval, TO_DATE('2023-01-22', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18843477859', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('42829067599', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('42373211369', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('85736048930', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('43406326054', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('78833704759', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('75123135279', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('60139985343', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('81961611946', sqIngresso.nextval, TO_DATE('2023-01-28', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('15510735175', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('12107757211', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18013645667', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('27733831081', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('31293248577', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('84770625781', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('32139874646', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('59746510270', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('51893041336', sqIngresso.nextval, TO_DATE('2023-01-29', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('73750364257', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('73974779210', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('91168976406', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('31317938896', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('21959150729', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('34691155999', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('21944131764', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('21795171289', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('72232910851', sqIngresso.nextval, TO_DATE('2023-02-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('69789991554', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('10265446611', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('76790529780', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('15259053368', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('30199388385', sqIngresso.nextval, TO_DATE('2023-02-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('47427712610', sqIngresso.nextval, TO_DATE('2023-02-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('29599507565', sqIngresso.nextval, TO_DATE('2023-02-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('57628148722', sqIngresso.nextval, TO_DATE('2023-02-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('12812080044', sqIngresso.nextval, TO_DATE('2023-02-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('64295837740', sqIngresso.nextval, TO_DATE('2023-02-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('65134974386', sqIngresso.nextval, TO_DATE('2023-02-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('49071844654', sqIngresso.nextval, TO_DATE('2023-02-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('56167488077', sqIngresso.nextval, TO_DATE('2023-02-07', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('38336868424', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('58162796706', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74758815612', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('56122432090', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('12247919297', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('17490321338', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('29700737817', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('27612094332', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('40117047008', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('52416538966', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('42657296455', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('71122532810', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('43560681056', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('80905097415', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('14059155304', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('19253087598', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('37401423730', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('32759444139', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('14649378973', sqIngresso.nextval, TO_DATE('2023-02-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('58000327447', sqIngresso.nextval, TO_DATE('2023-02-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('48240968479', sqIngresso.nextval, TO_DATE('2023-02-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('78335091139', sqIngresso.nextval, TO_DATE('2023-02-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('70546768636', sqIngresso.nextval, TO_DATE('2023-02-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('22404928750', sqIngresso.nextval, TO_DATE('2023-02-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('70308341124', sqIngresso.nextval, TO_DATE('2023-02-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('25989990251', sqIngresso.nextval, TO_DATE('2023-02-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('75366156457', sqIngresso.nextval, TO_DATE('2023-02-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('69025221605', sqIngresso.nextval, TO_DATE('2023-02-11', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('54301553913', sqIngresso.nextval, TO_DATE('2023-02-11', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('66952515360', sqIngresso.nextval, TO_DATE('2023-02-11', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('20274888371', sqIngresso.nextval, TO_DATE('2023-02-11', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('38335808648', sqIngresso.nextval, TO_DATE('2023-02-11', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('96591124058', sqIngresso.nextval, TO_DATE('2023-02-11', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74577588172', sqIngresso.nextval, TO_DATE('2023-02-11', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('28421344502', sqIngresso.nextval, TO_DATE('2023-02-11', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('98596987343', sqIngresso.nextval, TO_DATE('2023-02-11', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('68116821185', sqIngresso.nextval, TO_DATE('2023-02-12', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('46064949648', sqIngresso.nextval, TO_DATE('2023-02-12', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('81040473720', sqIngresso.nextval, TO_DATE('2023-02-12', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('59000464227', sqIngresso.nextval, TO_DATE('2023-02-12', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('34584407779', sqIngresso.nextval, TO_DATE('2023-02-12', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('28629680688', sqIngresso.nextval, TO_DATE('2023-02-12', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18723001906', sqIngresso.nextval, TO_DATE('2023-02-12', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('23969104695', sqIngresso.nextval, TO_DATE('2023-02-12', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('52156994899', sqIngresso.nextval, TO_DATE('2023-02-12', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18843477859', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('42829067599', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('42373211369', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('85736048930', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('43406326054', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('78833704759', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('75123135279', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('60139985343', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('81961611946', sqIngresso.nextval, TO_DATE('2023-02-08', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('15510735175', sqIngresso.nextval, TO_DATE('2023-02-09', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('12107757211', sqIngresso.nextval, TO_DATE('2023-02-09', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18013645667', sqIngresso.nextval, TO_DATE('2023-02-09', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('27733831081', sqIngresso.nextval, TO_DATE('2023-02-09', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('31293248577', sqIngresso.nextval, TO_DATE('2023-02-09', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('84770625781', sqIngresso.nextval, TO_DATE('2023-02-09', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('32139874646', sqIngresso.nextval, TO_DATE('2023-02-09', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('59746510270', sqIngresso.nextval, TO_DATE('2023-02-09', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('51893041336', sqIngresso.nextval, TO_DATE('2023-02-09', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('73750364257', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('73974779210', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('91168976406', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('31317938896', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('21959150729', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('34691155999', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('21944131764', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('21795171289', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('72232910851', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('69789991554', sqIngresso.nextval, TO_DATE('2023-02-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('10265446611', sqIngresso.nextval, TO_DATE('2023-02-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('76790529780', sqIngresso.nextval, TO_DATE('2023-02-15', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('15259053368', sqIngresso.nextval, TO_DATE('2023-02-15', 'YYYY/MM/DD'));
 INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('43427744211', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
 INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('76699805375', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
 INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('55307207600', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
 INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('77872434457', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
 INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('24007615038', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('76793968263', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74954875328', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74007414244', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('98295843260', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('12855832666', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('95898659143', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('30603694922', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('97349443678', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('43267758510', sqIngresso.nextval, TO_DATE('2023-03-04', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('97729351634', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('98585861961', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('63879736715', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18167681462', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('96540305579', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('44671342173', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('77326388107', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('13624832200', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('30053124352', sqIngresso.nextval, TO_DATE('2023-03-05', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('73208730933', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('49879549811', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('32540289848', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74503391806', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18508230195', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('13963126181', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('39418726593', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('88179303872', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
-INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('87198181231', sqIngresso.nextval, TO_DATE('2023-03-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('76793968263', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74954875328', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74007414244', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('98295843260', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('12855832666', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('95898659143', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('30603694922', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('97349443678', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('43267758510', sqIngresso.nextval, TO_DATE('2023-02-14', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('97729351634', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('98585861961', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('63879736715', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18167681462', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('96540305579', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('44671342173', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('77326388107', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('13624832200', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('30053124352', sqIngresso.nextval, TO_DATE('2023-02-05', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('73208730933', sqIngresso.nextval, TO_DATE('2023-02-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('49879549811', sqIngresso.nextval, TO_DATE('2023-02-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('32540289848', sqIngresso.nextval, TO_DATE('2023-02-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('74503391806', sqIngresso.nextval, TO_DATE('2023-02-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('18508230195', sqIngresso.nextval, TO_DATE('2023-02-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('13963126181', sqIngresso.nextval, TO_DATE('2023-02-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('39418726593', sqIngresso.nextval, TO_DATE('2023-02-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('88179303872', sqIngresso.nextval, TO_DATE('2023-02-10', 'YYYY/MM/DD'));
+INSERT INTO Ingresso (id_comprad, num_ingresso, dia_evento) VALUES ('87198181231', sqIngresso.nextval, TO_DATE('2023-02-10', 'YYYY/MM/DD'));
 
 -- POVOANDO COMPRA
 CREATE SEQUENCE sqCompra
@@ -672,124 +669,123 @@ CREATE SEQUENCE sqCompra
     START WITH 1
     INCREMENT BY 1;
 
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('30199388385', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('47427712610', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('29599507565', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('57628148722', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('12812080044', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('64295837740', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('65134974386', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('49071844654', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('56167488077', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('38336868424', sqIngresso.nextval, '33222808842')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('58162796706', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74758815612', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('56122432090', sqIngresso.nextval, '17329073342')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('12247919297', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('17490321338', sqIngresso.nextval, '33222808842')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('29700737817', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('27612094332', sqIngresso.nextval, '17329073342')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('40117047008', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('52416538966', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('42657296455', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('71122532810', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('43560681056', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('80905097415', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('14059155304', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('19253087598', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('37401423730', sqIngresso.nextval, '10330515020')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('32759444139', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('14649378973', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('58000327447', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('48240968479', sqIngresso.nextval, '17329073342')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('78335091139', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('70546768636', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('22404928750', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('70308341124', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('25989990251', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('75366156457', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('69025221605', sqIngresso.nextval, '10330515020')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('54301553913', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('66952515360', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('20274888371', sqIngresso.nextval, '10330515020')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('38335808648', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('96591124058', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74577588172', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('28421344502', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('98596987343', sqIngresso.nextval, '17329073342')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('68116821185', sqIngresso.nextval, '17329073342')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('46064949648', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('81040473720', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('59000464227', sqIngresso.nextval, '17329073342')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('34584407779', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('28629680688', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18723001906', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('23969104695', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('52156994899', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18843477859', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('42829067599', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('42373211369', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('85736048930', sqIngresso.nextval, '10330515020')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('43406326054', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('78833704759', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('75123135279', sqIngresso.nextval, '17329073342')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('60139985343', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('81961611946', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('15510735175', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('12107757211', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18013645667', sqIngresso.nextval, '33222808842')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('27733831081', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('31293248577', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('84770625781', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('32139874646', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('59746510270', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('51893041336', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('73750364257', sqIngresso.nextval, '17329073342')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('73974779210', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('91168976406', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('31317938896', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('21959150729', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('34691155999', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('21944131764', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('21795171289', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('72232910851', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('69789991554', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('10265446611', sqIngresso.nextval, '33222808842')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('76790529780', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('15259053368', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('43427744211', sqIngresso.nextval, '10330515020')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('76699805375', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('55307207600', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('77872434457', sqIngresso.nextval, '33222808842')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('24007615038', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('76793968263', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74954875328', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74007414244', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('98295843260', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('12855832666', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('95898659143', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('30603694922', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('97349443678', sqIngresso.nextval, '10330515020')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('43267758510', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('97729351634', sqIngresso.nextval, '46047735257')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('98585861961', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('63879736715', sqIngresso.nextval, '48706382013')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18167681462', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('96540305579', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('44671342173', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('77326388107', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('13624832200', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('30053124352', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('73208730933', sqIngresso.nextval, '74249536227')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('49879549811', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('32540289848', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('74503391806', sqIngresso.nextval, '64369224486')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('18508230195', sqIngresso.nextval, '33222808842')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('13963126181', sqIngresso.nextval, '73000266174')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('39418726593', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('88179303872', sqIngresso.nextval, '97026469138')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('87198181231', sqIngresso.nextval, '35420815293')
-INSERT INTO Compra (comprador, num_ingresso, id_vendedor) VALUES ('49280045710', sqIngresso.nextval, '35420815293')
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('30199388385', sqCompra.nextval, '61961415780');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('47427712610', sqCompra.nextval, '38587038568');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('29599507565', sqCompra.nextval, '13688435778');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('57628148722', sqCompra.nextval, '67272810335');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('12812080044', sqCompra.nextval, '57803122458');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('64295837740', sqCompra.nextval, '51582409964');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('65134974386', sqCompra.nextval, '75353326627');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('49071844654', sqCompra.nextval, '95303335098');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('56167488077', sqCompra.nextval, '56507795988');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('38336868424', sqCompra.nextval, '98652590784');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('58162796706', sqCompra.nextval, '31902575592');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('74758815612', sqCompra.nextval, '96035303733');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('56122432090', sqCompra.nextval, '66234401144');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('12247919297', sqCompra.nextval, '61961415780');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('17490321338', sqCompra.nextval, '38587038568');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('29700737817', sqCompra.nextval, '13688435778');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('27612094332', sqCompra.nextval, '67272810335');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('40117047008', sqCompra.nextval, '57803122458');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('52416538966', sqCompra.nextval, '51582409964');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('42657296455', sqCompra.nextval, '75353326627');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('71122532810', sqCompra.nextval, '95303335098');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('43560681056', sqCompra.nextval, '56507795988');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('80905097415', sqCompra.nextval, '98652590784');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('14059155304', sqCompra.nextval, '31902575592');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('19253087598', sqCompra.nextval, '96035303733');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('37401423730', sqCompra.nextval, '66234401144');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('32759444139', sqCompra.nextval, '61961415780');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('14649378973', sqCompra.nextval, '38587038568');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('58000327447', sqCompra.nextval, '13688435778');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('48240968479', sqCompra.nextval, '67272810335');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('78335091139', sqCompra.nextval, '57803122458');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('70546768636', sqCompra.nextval, '51582409964');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('22404928750', sqCompra.nextval, '75353326627');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('70308341124', sqCompra.nextval, '95303335098');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('25989990251', sqCompra.nextval, '56507795988');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('75366156457', sqCompra.nextval, '98652590784');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('69025221605', sqCompra.nextval, '31902575592');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('54301553913', sqCompra.nextval, '96035303733');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('66952515360', sqCompra.nextval, '66234401144');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('20274888371', sqCompra.nextval, '61961415780');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('38335808648', sqCompra.nextval, '38587038568');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('96591124058', sqCompra.nextval, '13688435778');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('74577588172', sqCompra.nextval, '67272810335');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('28421344502', sqCompra.nextval, '57803122458');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('98596987343', sqCompra.nextval, '51582409964');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('68116821185', sqCompra.nextval, '75353326627');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('46064949648', sqCompra.nextval, '95303335098');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('81040473720', sqCompra.nextval, '56507795988');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('59000464227', sqCompra.nextval, '98652590784');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('34584407779', sqCompra.nextval, '31902575592');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('28629680688', sqCompra.nextval, '96035303733');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('18723001906', sqCompra.nextval, '66234401144');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('23969104695', sqCompra.nextval, '61961415780');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('52156994899', sqCompra.nextval, '38587038568');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('18843477859', sqCompra.nextval, '13688435778');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('42829067599', sqCompra.nextval, '67272810335');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('42373211369', sqCompra.nextval, '57803122458');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('85736048930', sqCompra.nextval, '51582409964');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('43406326054', sqCompra.nextval, '75353326627');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('78833704759', sqCompra.nextval, '95303335098');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('75123135279', sqCompra.nextval, '56507795988');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('60139985343', sqCompra.nextval, '98652590784');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('81961611946', sqCompra.nextval, '31902575592');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('15510735175', sqCompra.nextval, '96035303733');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('12107757211', sqCompra.nextval, '66234401144');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('18013645667', sqCompra.nextval, '61961415780');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('27733831081', sqCompra.nextval, '38587038568');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('31293248577', sqCompra.nextval, '13688435778');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('84770625781', sqCompra.nextval, '67272810335');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('32139874646', sqCompra.nextval, '57803122458');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('59746510270', sqCompra.nextval, '51582409964');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('51893041336', sqCompra.nextval, '75353326627');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('73750364257', sqCompra.nextval, '95303335098');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('73974779210', sqCompra.nextval, '56507795988');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('91168976406', sqCompra.nextval, '98652590784');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('31317938896', sqCompra.nextval, '31902575592');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('21959150729', sqCompra.nextval, '96035303733');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('34691155999', sqCompra.nextval, '66234401144');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('21944131764', sqCompra.nextval, '61961415780');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('21795171289', sqCompra.nextval, '38587038568');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('72232910851', sqCompra.nextval, '13688435778');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('69789991554', sqCompra.nextval, '67272810335');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('10265446611', sqCompra.nextval, '57803122458');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('76790529780', sqCompra.nextval, '51582409964');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('15259053368', sqCompra.nextval, '75353326627');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('43427744211', sqCompra.nextval, '95303335098');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('76699805375', sqCompra.nextval, '56507795988');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('55307207600', sqCompra.nextval, '98652590784');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('77872434457', sqCompra.nextval, '31902575592');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('24007615038', sqCompra.nextval, '96035303733');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('76793968263', sqCompra.nextval, '66234401144');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('74954875328', sqCompra.nextval, '61961415780');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('74007414244', sqCompra.nextval, '38587038568');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('98295843260', sqCompra.nextval, '13688435778');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('12855832666', sqCompra.nextval, '67272810335');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('95898659143', sqCompra.nextval, '57803122458');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('30603694922', sqCompra.nextval, '51582409964');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('97349443678', sqCompra.nextval, '75353326627');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('43267758510', sqCompra.nextval, '95303335098');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('97729351634', sqCompra.nextval, '56507795988');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('98585861961', sqCompra.nextval, '98652590784');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('63879736715', sqCompra.nextval, '31902575592');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('18167681462', sqCompra.nextval, '96035303733');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('96540305579', sqCompra.nextval, '66234401144');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('44671342173', sqCompra.nextval, '61961415780');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('77326388107', sqCompra.nextval, '38587038568');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('13624832200', sqCompra.nextval, '13688435778');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('30053124352', sqCompra.nextval, '67272810335');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('73208730933', sqCompra.nextval, '57803122458');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('49879549811', sqCompra.nextval, '51582409964');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('32540289848', sqCompra.nextval, '75353326627');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('74503391806', sqCompra.nextval, '95303335098');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('18508230195', sqCompra.nextval, '56507795988');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('13963126181', sqCompra.nextval, '98652590784');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('39418726593', sqCompra.nextval, '31902575592');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('88179303872', sqCompra.nextval, '96035303733');
+INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('87198181231', sqCompra.nextval, '66234401144');
 
 -- POVOANDO NOME_EQUIPAMENTOS
 INSERT INTO Nome_equipamento (nome, preco) VALUES ('guitarra aceim preta', 500);
@@ -822,22 +818,22 @@ INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('teclado shueizer', 53
 INSERT INTO Equipamentos (nome, num_serie, tipo)  VALUES ('amplificador yamaha', 7000522, 'eletronico');
 
 -- POVOANDO ENCRREGA
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('87886107463', 3535);
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('87886107463', 741644);
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('73000266174', 3433);
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('97026469138', 9352522);
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('35420815293', 8886444);
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('64369224486', 4434);
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('17329073342', 3252555);
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('33222808842', 6466444);
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('74249536227', 7332544);
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('48706382013', 5432543);
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('10330515020', 4353454);
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('46047735257', 4958234);
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('74249536227', 1231225);
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('48706382013', 1234444);
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('10330515020', 5335353);
-INSERT INTO Encarrrega (id_manut, num_serie) VALUES ('46047735257', 7000522);
+INSERT INTO Encarrega (id_manut, num_serie) VALUES ('87886107463', 3535);
+INSERT INTO Encarrega (id_manut, num_serie) VALUES ('87886107463', 741644);
+INSERT INTO Encarrega (id_manut, num_serie) VALUES ('73000266174', 3433);
+INSERT INTO Encarrega (id_manut, num_serie) VALUES ('97026469138', 9352522);
+INSERT INTO Encarrega (id_manut, num_serie) VALUES ('35420815293', 8886444);
+INSERT INTO Encarrega (id_manut, num_serie) VALUES ('64369224486', 4434);
+INSERT INTO Encarrega (id_manut, num_serie) VALUES ('17329073342', 3252555);
+INSERT INTO Encarrega (id_manut, num_serie) VALUES ('33222808842', 6466444);
+INSERT INTO Encarrega (id_manut, num_serie) VALUES ('74249536227', 7332544);
+INSERT INTO Encarrega (id_manut, num_serie) VALUES ('48706382013', 5432543);
+INSERT INTO Encarrega (id_manut, num_serie) VALUES ('10330515020', 4353454);
+INSERT INTO Encarrega (id_manut, num_serie) VALUES ('46047735257', 4958234);
+INSERT INTO Encarrega (id_manut, num_serie) VALUES ('74249536227', 1231225);
+INSERT INTO Encarrega (id_manut, num_serie) VALUES ('48706382013', 1234444);
+INSERT INTO Encarrega (id_manut, num_serie) VALUES ('10330515020', 5335353);
+INSERT INTO Encarrega (id_manut, num_serie) VALUES ('46047735257', 7000522);
 
 -- POVOANDO PALCOS
 
@@ -848,7 +844,7 @@ INSERT INTO Palco (numero, tamanho) VALUES (4, '400');
 
 -- Populando tabela "Atracao"
 INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Banda Rockstar', NULL, 5000);
-INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Palestra Motivacional', 'Palestrante Y', 3000);
+INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Palestra Motivacional', 'Banda Rockstar', 3000);
 INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Stand-up Comedy', NULL, 4000);
 INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Circo Mágico', NULL, 3500);
 INSERT INTO Atracao (nome, colaborante, cache) VALUES ('Orquestra Sinfônica', NULL, 4500);
