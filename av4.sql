@@ -85,3 +85,28 @@ SELECT * FROM Vendas_info
 --    SELECT AVG(total)
 --    FROM Vendas_info
 --    );
+
+-- da bonificacao para funcionarios que trabalharam em periodo integral
+UPDATE Funcionario
+SET salario = salario * 1.25
+WHERE turno = 'INTEGRAL';
+
+-- retorna os dados do dono do cpf buscado
+DECLARE
+  TYPE dados_pessoa IS RECORD (
+    id Pessoa.cpf%TYPE,
+    nome Pessoa.nome%TYPE,
+    cep Pessoa.cep%TYPE
+  );
+  
+  pessoa_info dados_pessoa;
+BEGIN
+  SELECT cpf, nome, cep
+  INTO pessoa_info
+  FROM Pessoa
+  WHERE cpf = '30603694922';
+  
+  DBMS_OUTPUT.PUT_LINE('ID: ' || pessoa_info.id);
+  DBMS_OUTPUT.PUT_LINE('NOME: ' || pessoa_info.nome);
+  DBMS_OUTPUT.PUT_LINE('CEP: ' || pessoa_info.cep);
+END;
