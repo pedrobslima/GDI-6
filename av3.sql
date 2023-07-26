@@ -20,19 +20,19 @@ DROP TABLE Show;
 DROP TABLE Garantir_acesso;
 
 CREATE TABLE Endereco ( 
-    cep NUMBER NOT NULL, 
+    cep VARCHAR2(9), 
     rua VARCHAR2(30), 
     cidade VARCHAR2(30), 
-    pais VARCHAR2(20), 
+    pais VARCHAR2(30), 
     estado VARCHAR2(20), 
     CONSTRAINT endereco_pkey PRIMARY KEY (cep));
 
 CREATE TABLE Pessoa(
     cpf CHAR(11),
     nome VARCHAR2(40),
-    cep NUMBER NOT NULL,
+    cep VARCHAR2(9),
     numero VARCHAR(5),
-    comp VARCHAR(2),
+    comp VARCHAR(5),
     CONSTRAINT pessoa_pkey PRIMARY KEY (cpf),
     CONSTRAINT pessoa_fkey FOREIGN KEY (cep) REFERENCES Endereco(cep)
 );
@@ -95,8 +95,10 @@ CREATE TABLE Ingresso (
 CREATE TABLE Compra (
     id_visitant CHAR(11), -- iguais Ingresso(cpf que está no ingresso)
     num_ingresso INTEGER, -- diferenciador Ingresso(id diferenciador)
+    vendedor CHAR(11),
     CONSTRAINT compra_pkey PRIMARY KEY (id_visitant, num_ingresso),
-    CONSTRAINT compra_ingresso_fkey FOREIGN KEY (id_visitant, num_ingresso) REFERENCES Ingresso(id_comprad, num_ingresso)
+    CONSTRAINT compra_ingresso_fkey FOREIGN KEY (id_visitant, num_ingresso) REFERENCES Ingresso(id_comprad, num_ingresso),
+    CONSTRAINT compra_venda_fkey FOREIGN KEY (vendedor) REFERENCES Vendedor(id_func)
 );
 
 CREATE TABLE Nome_equipamento (
@@ -108,7 +110,7 @@ CREATE TABLE Nome_equipamento (
 CREATE TABLE Equipamentos (
     num_serie VARCHAR2(30) NOT NULL,
     nome VARCHAR2(30),
-    tipo VARCHAR2(10),
+    tipo VARCHAR2(20),
     CONSTRAINT equipamentos_pkey PRIMARY KEY (num_serie),
     CONSTRAINT equipamentos_fkey FOREIGN KEY (nome) REFERENCES Nome_equipamento(nome)
 );
@@ -135,33 +137,33 @@ CREATE TABLE Disponibiliza (
     CONSTRAINT disponib_equip_fkey FOREIGN KEY (num_serie) REFERENCES Equipamentos(num_serie)
 );
 
-CREATE TABLE Atracao (
-    nome VARCHAR2(20),
-    colaborante VARCHAR2(20),
-    cache NUMBER,
-    CONSTRAINT atracao_pkey PRIMARY KEY (nome, colaborante),
-    CONSTRAINT atracao_fkey FOREIGN KEY (colaborante) REFERENCES Atracao(nome)
+CREATE TABLE Atracao (  
+    nome VARCHAR2(30),  
+    colaborante VARCHAR2(20),  
+    cache NUMBER,  
+    CONSTRAINT atracao_pkey PRIMARY KEY (nome),  
+    CONSTRAINT atracao_fkey FOREIGN KEY (colaborante) REFERENCES Atracao(nome)  
 );
 
 CREATE TABLE Contatos (
-    atracao VARCHAR2(20),
-    contatos VARCHAR2(20),
+    atracao VARCHAR2(30),
+    contatos VARCHAR2(50),
     CONSTRAINT contatos_pkey PRIMARY KEY (atracao, contatos),
     CONSTRAINT contatos_fkey FOREIGN KEY (atracao) REFERENCES Atracao(nome)
 );
 
 CREATE TABLE Cronograma (
-    atracao VARCHAR2(20),
-    data_hora_inicio VARCHAR2(11), -- <DD/MM HH:mm> (dps mudar para TIMESTAMP)
-    data_hora_termino VARCHAR2(11),
+    atracao VARCHAR2(30),
+    data_hora_inicio VARCHAR2(20), -- <DD/MM HH:mm> (dps mudar para TIMESTAMP)
+    data_hora_termino VARCHAR2(20),
     CONSTRAINT cronograma_pkey PRIMARY KEY (atracao),
     CONSTRAINT cronograma_fkey FOREIGN KEY (atracao) REFERENCES Atracao(nome)
 );
 
 CREATE TABLE Show (
-    atracao VARCHAR2(20),
+    atracao VARCHAR2(30),
     palco NUMBER,
-    horario VARCHAR2(11), -- <HH:mm-HH:mm> (dps mudar para TIMESTAMP)
+    horario VARCHAR2(25), -- <HH:mm-HH:mm> (dps mudar para TIMESTAMP)
     id_tecn CHAR(11),
     CONSTRAINT show_pkey PRIMARY KEY (atracao, palco, horario),
     CONSTRAINT show_atracao_fkey FOREIGN KEY (atracao) REFERENCES Atracao(nome),
@@ -170,9 +172,9 @@ CREATE TABLE Show (
 );
 
 CREATE TABLE Garantir_acesso (
-    atracao VARCHAR2(20),
+    atracao VARCHAR2(30),
     num_palco NUMBER,
-    horario VARCHAR2(11),
+    horario VARCHAR2(20),
     id_comprad CHAR(11),
     num_ingresso INTEGER,
     CONSTRAINT garAcesso_pkey PRIMARY KEY (atracao, num_palco, horario, id_comprad, num_ingresso),
