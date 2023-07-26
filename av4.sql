@@ -62,6 +62,15 @@ SELECT * FROM Vendas_info
     FROM Vendas_info
     );
 
+-- mostra todos os func da noite que ganharam mais em vendas 
+-- doq cada um dos func integrais
+SELECT * FROM Vendas_info
+	WHERE turno = 'NOITE' AND total > ALL (
+    SELECT VI.total
+    FROM Vendas_info VI
+    WHERE VI.turno = 'INTEGRAL'
+    );
+
 --SELECT * FROM Vendas_info 
 --    WHERE total IN (
 --    SELECT AVG(total)
