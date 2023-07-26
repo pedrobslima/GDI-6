@@ -1,3 +1,6 @@
+GRANT SELECT ON Atracao TO PUBLIC;
+REVOKE SELECT ON Atracao FROM PUBLIC;
+
 -- levar em conta salário mínimo:
 
 ALTER TABLE Funcionario ADD (CONSTRAINT funcionario_pay_ck CHECK (salario >= 1320));
