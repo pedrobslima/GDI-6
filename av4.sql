@@ -62,9 +62,12 @@ SELECT * FROM Vendas_info
     FROM Vendas_info
     );
 
--- média de dinheiro ganho para cada turno 
-SELECT turno , AVG(total) FROM Vendas_info
+/* média de dinheiro ganho para cada turno 
+   + média de dinheiro ganho em todos os turnos*/
+SELECT turno, AVG(total) FROM Vendas_info
 	GROUP BY turno
+UNION
+SELECT 'TODOS', AVG(total) FROM Vendas_info;
 
 -- mostra todos os func da noite que ganharam mais em vendas 
 -- doq cada um dos func integrais
