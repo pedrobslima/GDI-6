@@ -62,6 +62,10 @@ SELECT * FROM Vendas_info
     FROM Vendas_info
     );
 
+-- média de dinheiro ganho para cada turno 
+SELECT turno , AVG(total) FROM Vendas_info
+	GROUP BY turno
+
 -- mostra todos os func da noite que ganharam mais em vendas 
 -- doq cada um dos func integrais
 SELECT * FROM Vendas_info
@@ -79,12 +83,6 @@ SELECT * FROM Vendas_info
         FROM Vendas_info VI
         WHERE VI.turno = 'NOITE'
     );
-
---SELECT * FROM Vendas_info 
---    WHERE total IN (
---    SELECT AVG(total)
---    FROM Vendas_info
---    );
 
 -- da bonificacao para funcionarios que trabalharam em periodo integral
 UPDATE Funcionario
