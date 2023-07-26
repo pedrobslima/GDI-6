@@ -1,0 +1,69 @@
+-- levar em conta salário mínimo:
+
+ALTER TABLE Funcionario ADD (CONSTRAINT funcionario_pay_ck CHECK (salario >= 1320));
+
+-- Farei uma indexação dos equipamentos para que uma consulta de tipos de equipamentos
+-- específicos sejam feitos mais facilmente
+-- Tbm farei um parecido para os ingressos
+CREATE INDEX type_idx ON Equipamentos(tipo, nome);
+
+CREATE INDEX id_idx ON Ingresso(id_comprad);
+
+-- mostrar quais vendedores do turno da noite venderam ingressos pra cada dia (não funciona mto bem): 
+
+SELECT V.id_func, I.dia_evento, F.turno
+    FROM Ingresso I 
+    INNER JOIN Compra C 
+    ON C.id_visitant = I.id_comprad AND C.num_ingresso = I.num_ingresso
+    INNER JOIN Vendedor V
+    ON V.id_func = C.vendedor
+    INNER JOIN Funcionario F
+    ON F.id_func = V.id_func
+    WHERE C.vendedor = V.id_func AND F.turno = 'NOITE'
+    GROUP BY I.dia_evento, V.id_func, F.turno
+	ORDER BY I.dia_evento, V.id_func;
+
+
+--___________________________________________________________________
+
+
+DROP TABLE Vendas_info;
+
+CREATE TABLE Vendas_info(
+    id VARCHAR2(11),
+    nome VARCHAR2(40),
+    turno VARCHAR2(8),
+    total INTEGER,
+    CONSTRAINT vandeasinfo_pkey PRIMARY KEY (id)
+    );
+
+INSERT INTO Vendas_info(id, nome, turno, total)
+	SELECT F.id_func, P.nome, F.turno, SUM(DP.preco)
+	FROM Compra C
+	INNER JOIN Funcionario F
+	ON C.vendedor = F.id_func
+	INNER JOIN Pessoa P
+	ON F.id_func = P.cpf
+	INNER JOIN Ingresso I
+	ON C.id_visitant = I.id_comprad AND C.num_ingresso = I.num_ingresso
+	INNER JOIN Dia_preco DP
+	ON I.dia_evento = DP.dia_evento
+	GROUP BY F.id_func, P.nome, F.turno;
+    
+SELECT * FROM Vendas_info 
+    WHERE total IN (
+    SELECT MAX(total)
+    FROM Vendas_info
+    );
+
+SELECT * FROM Vendas_info 
+    WHERE total IN (
+    SELECT MIN(total)
+    FROM Vendas_info
+    );
+
+--SELECT * FROM Vendas_info 
+--    WHERE total IN (
+--    SELECT AVG(total)
+--    FROM Vendas_info
+--    );
