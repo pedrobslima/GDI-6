@@ -71,6 +71,15 @@ SELECT * FROM Vendas_info
     WHERE VI.turno = 'INTEGRAL'
     );
 
+-- mostra todos os func integrais que ganharam no mínimo
+-- o que qualquer um dos func da noite
+SELECT * FROM Vendas_info
+    WHERE turno = 'INTEGRAL' AND total >= ANY (
+        SELECT VI.total
+        FROM Vendas_info VI
+        WHERE VI.turno = 'NOITE'
+    );
+
 --SELECT * FROM Vendas_info 
 --    WHERE total IN (
 --    SELECT AVG(total)
