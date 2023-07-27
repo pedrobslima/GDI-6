@@ -2,13 +2,14 @@
 GRANT SELECT ON Atracao TO PUBLIC;
 REVOKE SELECT ON Atracao FROM PUBLIC;
 
+
 -- ALTER TABLE: Levar em conta salário mínimo
 ALTER TABLE Funcionario ADD (CONSTRAINT funcionario_pay_ck CHECK (salario >= 1320));
+
 
 /* CREATE INDEX: Farei uma indexação dos equipamentos para que uma consulta 
    de tipos de equipamentos específicos sejam feitos mais facilmente*/
 CREATE INDEX type_idx ON Equipamentos(tipo, nome);
-
 -- Tbm farei um parecido para os ingressos
 CREATE INDEX id_idx ON Ingresso(id_comprad);
 
@@ -18,7 +19,8 @@ UPDATE Funcionario
 SET salario = salario * 1.25
 WHERE turno = 'INTEGRAL';
 
--- BLOCO ANÔNIMO: Retorna os dados do dono do cpf buscado
+
+-- Retorna os dados do dono do cpf buscado
 DECLARE
   TYPE dados_pessoa IS RECORD ( --USO DE RECORD
     id Pessoa.cpf%TYPE, -- %TYPE
@@ -37,6 +39,7 @@ BEGIN
   DBMS_OUTPUT.PUT_LINE('NOME: ' || pessoa_info.nome);
   DBMS_OUTPUT.PUT_LINE('CEP: ' || pessoa_info.cep);
 END;
+
 
 -- INSERT INTO
 INSERT INTO Pessoa VALUES ('1234', NULL, '87654-320', NULL, NULL);
