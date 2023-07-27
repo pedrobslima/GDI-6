@@ -10,7 +10,7 @@ BEGIN
         SELECT atracao, data_hora_inicio, data_hora_termino
         INTO v_atracao_nome, v_data_hora_inicio, v_data_hora_termino
         FROM Cronograma
-        WHERE v_data_esc BETWEEN v_data_hora_inicio AND v_data_hora_termino;
+        WHERE v_data_esc BETWEEN v_data_hora_inicio AND v_data_hora_termino; -- BETWEEN
 
         IF v_atracao_nome IS NOT NULL THEN
             DBMS_OUTPUT.PUT_LINE('Data: ' || v_data_esc);

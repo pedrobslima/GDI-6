@@ -1,3 +1,4 @@
+-- LOOP, CASE WHEN, ELSIF e CURSOR
 DECLARE 
     v_atracao show.atracao%TYPE;
     v_palco show.palco%TYPE;
@@ -7,7 +8,7 @@ DECLARE
     CURSOR c_show IS 
         SELECT atracao, palco, horario, id_tecn FROM show
         ORDER BY id_tecn;
-    
+
 BEGIN
     OPEN c_show;
     LOOP
@@ -30,7 +31,7 @@ BEGIN
                 DBMS_OUTPUT.PUT_LINE('Buscando...');
         END CASE;
         
-        EXIT WHEN c_show%NOTFOUND;
+        EXIT WHEN c_show%NOTFOUND; -- LOOP EXIT WHEN
     END LOOP;
     
     CLOSE c_show;
