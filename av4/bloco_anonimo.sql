@@ -1,3 +1,4 @@
+-- BLOCO ANÔNIMO e %ROWTYPE
 DECLARE
     v_atracao Atracao%ROWTYPE;
 	
