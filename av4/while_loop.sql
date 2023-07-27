@@ -1,30 +1,26 @@
+-- WHILE LOOP
 DECLARE
-    v_data_hora_inicio DATE := TO_DATE('2023-07-20 18:00', 'YYYY-MM-DD HH24:MI');
-    v_data_hora_termino DATE := TO_DATE('2023-07-23 17:00', 'YYYY-MM-DD HH24:MI');
-    v_atracao_nome VARCHAR2(100);
-
-    v_data_esc DATE :=TO_DATE('2023-07-20 18:00', 'YYYY-MM-DD HH24:MI');
-
+    v_counter NUMBER := 1;
+    v_total_ingressos NUMBER := 10;
+    v_id_comprad Ingresso.id_comprad%TYPE;
+    v_num_ingresso Ingresso.num_ingresso%TYPE;
+    v_dia_evento Ingresso.dia_evento%TYPE;
 BEGIN
-    WHILE v_data_esc <=  v_data_hora_termino LOOP
-        SELECT atracao, data_hora_inicio, data_hora_termino
-        INTO v_atracao_nome, v_data_hora_inicio, v_data_hora_termino
-        FROM Cronograma
-        WHERE v_data_esc BETWEEN v_data_hora_inicio AND v_data_hora_termino; -- BETWEEN
+    WHILE v_counter <= v_total_ingressos LOOP
+        -- Selecionar as informações do ingresso atual
+        SELECT id_comprad, num_ingresso, dia_evento
+        INTO v_id_comprad, v_num_ingresso, v_dia_evento
+        FROM Ingresso
+        WHERE num_ingresso = v_counter;
 
-        IF v_atracao_nome IS NOT NULL THEN
-            DBMS_OUTPUT.PUT_LINE('Data: ' || v_data_esc);
-            DBMS_OUTPUT.PUT_LINE('Atração: ' || v_atracao_nome);
-            DBMS_OUTPUT.PUT_LINE('Início: ' || v_data_hora_inicio);
-            DBMS_OUTPUT.PUT_LINE('Término: ' || v_data_hora_termino);
-            DBMS_OUTPUT.PUT_LINE('---------------------------');
-        ELSE
-            DBMS_OUTPUT.PUT_LINE('Data: ' || v_data_esc);
-            DBMS_OUTPUT.PUT_LINE('Nenhuma atração agendada para esta data.');
-            DBMS_OUTPUT.PUT_LINE('---------------------------');
-        END IF;
+        -- Exibir as informações do ingresso
+        DBMS_OUTPUT.PUT_LINE('Número do Ingresso: ' || v_num_ingresso);
+      
+        DBMS_OUTPUT.PUT_LINE('ID do Comprador: ' || v_id_comprad);
+        DBMS_OUTPUT.PUT_LINE('Dia do Evento: ' || v_dia_evento);
+        DBMS_OUTPUT.PUT_LINE('---------------------------');
 
-        v_data_esc := v_data_esc + 1;
+        v_counter := v_counter + 1;
     END LOOP;
 END;
 /
