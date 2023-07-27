@@ -867,16 +867,16 @@ INSERT INTO Contatos (atracao, contatos) VALUES ('Exposição de Arte', 'contato
 INSERT INTO Contatos (atracao, contatos) VALUES ('Filme ao ar livre', 'contato.filmeaoarlivre@gmail.com');
 
 -- povoamento tabela "Cronograma"
-INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Banda Rockstar', '2023-07-20 18:00', '2023-07-20 20:00');
-INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Palestra Motivacional', '2023-07-20 14:00', '2023-07-20 16:00');
-INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Stand-up Comedy', '2023-07-21 20:30', '2023-07-21 22:30');
-INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Circo Mágico', '2023-07-22 15:00', '2023-07-22 17:00');
-INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Orquestra Sinfônica', '2023-07-23 19:30', '2023-07-23 22:00');
-INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Festival de Dança', '2023-07-24 16:00', '2023-07-24 18:00');
-INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Feira de Gastronomia', '2023-07-25 12:00', '2023-07-25 20:00');
-INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Espetáculo de Ilusionismo', '2023-07-26 19:00', '2023-07-26 21:00');
-INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Exposição de Arte', '2023-07-27 10:00', '2023-07-27 18:00');
-INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Filme ao ar livre', '2023-07-28 19:30', '2023-07-28 22:00');
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Banda Rockstar', TO_DATE('2023-07-20 18:00', 'YYYY-MM-DD HH24:MI'), TO_DATE('2023-07-20 20:00', 'YYYY-MM-DD HH24:MI'));
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Palestra Motivacional', TO_DATE('2023-07-20 14:00', 'YYYY-MM-DD HH24:MI'), TO_DATE('2023-07-20 16:00', 'YYYY-MM-DD HH24:MI'));
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Stand-up Comedy', TO_DATE('2023-07-21 20:30', 'YYYY-MM-DD HH24:MI'), TO_DATE('2023-07-21 22:30', 'YYYY-MM-DD HH24:MI'));
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Circo Mágico', TO_DATE('2023-07-22 15:00', 'YYYY-MM-DD HH24:MI'), TO_DATE('2023-07-22 17:00', 'YYYY-MM-DD HH24:MI'));
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Orquestra Sinfônica', TO_DATE('2023-07-23 19:30', 'YYYY-MM-DD HH24:MI'), TO_DATE('2023-07-23 22:00', 'YYYY-MM-DD HH24:MI'));
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Festival de Dança', TO_DATE('2023-07-24 16:00', 'YYYY-MM-DD HH24:MI'), TO_DATE('2023-07-24 18:00', 'YYYY-MM-DD HH24:MI'));
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Feira de Gastronomia', TO_DATE('2023-07-25 12:00', 'YYYY-MM-DD HH24:MI'), TO_DATE('2023-07-25 20:00', 'YYYY-MM-DD HH24:MI'));
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Espetáculo de Ilusionismo', TO_DATE('2023-07-26 19:00', 'YYYY-MM-DD HH24:MI'), TO_DATE('2023-07-26 21:00', 'YYYY-MM-DD HH24:MI'));
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Exposição de Arte', TO_DATE('2023-07-27 10:00', 'YYYY-MM-DD HH24:MI'), TO_DATE('2023-07-27 18:00', 'YYYY-MM-DD HH24:MI'));
+INSERT INTO Cronograma (atracao, data_hora_inicio, data_hora_termino) VALUES ('Filme ao ar livre', TO_DATE('2023-07-28 19:30', 'YYYY-MM-DD HH24:MI'), TO_DATE('2023-07-28 22:00', 'YYYY-MM-DD HH24:MI'));
 
 -- povoamento tabela "Show"
 INSERT INTO Show (atracao, palco, horario, id_tecn) VALUES ('Banda Rockstar', 1, '2023-07-20 18:00-20:00', '94806948879');

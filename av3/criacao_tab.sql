@@ -154,8 +154,8 @@ CREATE TABLE Contatos (
 
 CREATE TABLE Cronograma (
     atracao VARCHAR2(30),
-    data_hora_inicio VARCHAR2(20), -- <DD/MM HH:mm> (dps mudar para TIMESTAMP)
-    data_hora_termino VARCHAR2(20),
+    data_hora_inicio DATE, -- <DD/MM HH:mm> (dps mudar para TIMESTAMP)
+    data_hora_termino DATE,
     CONSTRAINT cronograma_pkey PRIMARY KEY (atracao),
     CONSTRAINT cronograma_fkey FOREIGN KEY (atracao) REFERENCES Atracao(nome)
 );
