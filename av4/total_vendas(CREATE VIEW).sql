@@ -73,6 +73,12 @@ INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('70292933479', 
 INSERT INTO Compra (id_visitant, num_ingresso, vendedor) VALUES ('70292933479', 20, '12345678900');
 /
 
+/*
+       num_vendas É UMA VIEW DE TRES COLUNAS
+       (FUNCIONARIO | INGRESSOS VENDIDOS | TOTAL VENDAS)
+       DE ONDE É POSSIVEL ADQUIRIR O LUCRO GERADO POR CADA VENDEDOR
+*/
+       
 -- DECLARACAO DA VIEW
 CREATE OR REPLACE VIEW num_vendas AS
 SELECT V.id_func,
