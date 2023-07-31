@@ -1,4 +1,6 @@
 -- LOOP, CASE WHEN, ELSIF e CURSOR
+-- Coleta por uso de um cursor as informações da tabela Show e compara pelo palco e se um determinado tecnico está trabalhando no palco, em seguida, mostra informação sobre a atracao e o horario reservado no palco
+
 DECLARE 
     v_atracao show.atracao%TYPE;
     v_palco show.palco%TYPE;

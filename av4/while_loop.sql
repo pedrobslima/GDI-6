@@ -1,4 +1,5 @@
 -- WHILE LOOP
+-- coleta dados dos primerios 10 ingressos e exibe eles
 DECLARE
     v_counter NUMBER := 1;
     v_total_ingressos NUMBER := 10;

@@ -1,4 +1,5 @@
 -- Exemplo de criação da procedure
+-- Dado um nome de atracao, busca se ela existe na base de dados 
 CREATE OR REPLACE PROCEDURE MostrarAtracaoPorShow(atracaoP IN VARCHAR2) IS
 BEGIN
     FOR atr IN (SELECT atracao FROM Show WHERE atracao = atracaoP) LOOP

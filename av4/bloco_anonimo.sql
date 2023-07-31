@@ -1,4 +1,5 @@
 -- BLOCO ANÔNIMO e %ROWTYPE
+-- Insere novos valores em uma nova linha da tabela de Atracao
 DECLARE
     v_atracao Atracao%ROWTYPE;
 	
