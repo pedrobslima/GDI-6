@@ -1,26 +1,42 @@
 CREATE OR REPLACE TYPE tp_endereco AS OBJECT(
-    cidade varchar(20),
-    rua varchar(20),
-    numero number,
-    estado varchar(10),
-    pais varchar(10),
- 	-- falta complemento que eh multivalorado 
+    cep VARCHAR2(9), 
+    rua VARCHAR2(30), 
+    cidade VARCHAR2(30), 
+    pais VARCHAR2(30), 
+    estado VARCHAR2(20)
+ 	
 );
+
 CREATE OR REPLACE TYPE tp_telefone as object (
-    numero varchar(12)
+    cpf CHAR(11),
+    num_tel VARCHAR(13)
 );
 
 CREATE OR REPLACE TYPE tp_pessoa as object(
-    cpf varchar(12),
-    nome varchar(12),
-    telefone ARRAY REF tp_telefone -- seria um array? 
+    cpf CHAR(11),
+    nome VARCHAR2(40),
+    cep VARCHAR2(9),
+    numero VARCHAR(5),
+    comp VARCHAR(5),
+
+    telefone tp_telefone,  
     endereco REF tp_endereco
+
 )NOT FINAL NOT INSTANTIABLE;
 
+CREATE TABLE tb_endereco of tp_endereco(
+    CONSTRAINT tb_endereco_pkey PRIMARY KEY(cep)
+);
 
-CREATE TABLE tp_funcionario UNDER tp_pessoa(
+CREATE TABLE tb_pessoa OF tp_pessoa(
+    CONSTRAINT tb_pessoa_pkey PRIMARY KEY (cpf),
+    endereco WITH ROWID REFERENCES tb_endereco
+);
+
+
+CREATE OR REPLACE TYPE tp_funcionario UNDER tp_pessoa(
     turno varchar(6),
-    salario float
+    salario number
     -- criar uma funcao exibir dados de um funcionario
 
-)NOT FINAL;
+);
