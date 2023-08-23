@@ -70,8 +70,8 @@ END;
 ---------------------------------------------------------------------------------^
 
 CREATE OR REPLACE TYPE tp_funcionario UNDER tp_pessoa(
-    turno varchar(6),
-    salario number
+    turno VARCHAR2(6),
+    salario NUMBER
     -- criar uma funcao exibir dados de um funcionario
 )NOT FINAL NOT INSTANTIABLE;
 /
@@ -244,6 +244,11 @@ CREATE TABLE tb_endereco of tp_endereco(
 CREATE TABLE tb_pessoa OF tp_pessoa(
     cpf PRIMARY KEY,
     endereco WITH ROWID REFERENCES tb_endereco
+);
+/
+
+CREATE TABLE tb_funcionario OF tp_funcionario(
+    cpf PRIMARY KEY
 );
 /
 /*
