@@ -11,9 +11,11 @@ CREATE OR REPLACE TYPE tp_endereco AS OBJECT(
 /
 
 CREATE OR REPLACE TYPE tp_telefone AS OBJECT(
-    cpf CHAR(11),
     num_tel VARCHAR(13)
 );
+/
+
+CREATE TYPE varray_telefone (3) OF tp_telefone;
 /
 
 CREATE OR REPLACE TYPE tp_pessoa AS OBJECT(
@@ -23,7 +25,7 @@ CREATE OR REPLACE TYPE tp_pessoa AS OBJECT(
     numero VARCHAR(5),
     comp VARCHAR(5),
 
-    telefone REF tp_telefone,  
+    telefone varray_telefone,  
     endereco REF tp_endereco,
 
     MEMBER PROCEDURE exibirDetalhesPessoa,
@@ -75,8 +77,8 @@ END;
 ---------------------------------------------------------------------------------^
 
 CREATE OR REPLACE TYPE tp_funcionario UNDER tp_pessoa(
-    turno varchar(6),
-    salario number
+    turno VARCHAR2(6),
+    salario NUMBER
     -- criar uma funcao exibir dados de um funcionario
 )NOT FINAL NOT INSTANTIABLE;
 /
@@ -242,12 +244,23 @@ CREATE OR REPLACE TYPE tp_garantir_acesso AS OBJECT(
 -- TABELAS:
 
 CREATE TABLE tb_endereco of tp_endereco(
-    CONSTRAINT tb_endereco_pkey PRIMARY KEY(cep)
+    cep PRIMARY KEY
 );
 /
 
 CREATE TABLE tb_pessoa OF tp_pessoa(
-    CONSTRAINT tb_pessoa_pkey PRIMARY KEY (cpf),
+    cpf PRIMARY KEY,,
     endereco WITH ROWID REFERENCES tb_endereco
 );
 /
+	
+CREATE TABLE tb_funcionario OF tp_funcionario(
+    cpf PRIMARY KEY
+);
+/
+/*
+CREATE TABLE tb_visitante OF tp_visitante(
+    cpf PRIMARY KEY
+);
+/
+*/
