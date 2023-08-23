@@ -11,11 +11,9 @@ CREATE OR REPLACE TYPE tp_endereco AS OBJECT(
 /
 
 CREATE OR REPLACE TYPE tp_telefone AS OBJECT(
+    cpf CHAR(11),
     num_tel VARCHAR(13)
 );
-/
-
-CREATE TYPE varray_telefone (3) OF tp_telefone;
 /
 
 CREATE OR REPLACE TYPE tp_pessoa AS OBJECT(
@@ -25,38 +23,45 @@ CREATE OR REPLACE TYPE tp_pessoa AS OBJECT(
     numero VARCHAR(5),
     comp VARCHAR(5),
 
-    telefone varray_telefone,  
+    telefone REF tp_telefone,  
     endereco REF tp_endereco,
 
     MEMBER PROCEDURE exibirDetalhesPessoa,
-    MEMBER FUNCTION get_cpf RETURN CHAR
+    MEMBER FUNCTION get_cpf RETURN CHAR,
+    FINAL MEMBER PROCEDURE exibirNomeECpf
 
 )NOT FINAL NOT INSTANTIABLE;
 /
 ---------------------------------------------------------------------------------v
 CREATE OR REPLACE TYPE BODY tp_pessoa AS
 
-   MEMBER PROCEDURE exibirDetalhesPessoa IS
-    
-    BEGIN
-    DBMS_OUTPUT.PUT_LINE('Detalhes de Pessoa')
-    DBMS_OUTPUT.PUT_LINE(SELF.nome)
-    DBMS_OUTPUT.PUT_LINE(SELF.cpf)
-    DBMS_OUTPUT.PUT_LINE(SELF.cep)
-    DBMS_OUTPUT.PUT_LINE(SELF.numero)
-    DBMS_OUTPUT.PUT_LINE(SELF.comp)
-    
-    -- Obtém o objeto de endereço a partir da REF usando uma consulta SQL
-    SELECT DEREF(SELF.endereco) INTO endereco_obj FROM DUAL;
-    
-    DBMS_OUTPUT.PUT_LINE('Detalhes do Endereço:');
-    DBMS_OUTPUT.PUT_LINE('CEP: ' || endereco_obj.cep);
-    DBMS_OUTPUT.PUT_LINE('Rua: ' || endereco_obj.rua);
-    DBMS_OUTPUT.PUT_LINE('Cidade: ' || endereco_obj.cidade);
-    DBMS_OUTPUT.PUT_LINE('País: ' || endereco_obj.pais);
-    DBMS_OUTPUT.PUT_LINE('Estado: ' || endereco_obj.estado);
-   	END;
+	MEMBER PROCEDURE exibirDetalhesPessoa IS
+	
+	BEGIN
+	DBMS_OUTPUT.PUT_LINE('Detalhes de Pessoa')
+	DBMS_OUTPUT.PUT_LINE(SELF.nome)
+	DBMS_OUTPUT.PUT_LINE(SELF.cpf)
+	DBMS_OUTPUT.PUT_LINE(SELF.cep)
+	DBMS_OUTPUT.PUT_LINE(SELF.numero)
+	DBMS_OUTPUT.PUT_LINE(SELF.comp)
+	
+	-- Obtém o objeto de endereço a partir da REF usando uma consulta SQL
+	SELECT DEREF(SELF.endereco) INTO endereco_obj FROM DUAL;
+	
+	DBMS_OUTPUT.PUT_LINE('Detalhes do Endereço:');
+	DBMS_OUTPUT.PUT_LINE('CEP: ' || endereco_obj.cep);
+	DBMS_OUTPUT.PUT_LINE('Rua: ' || endereco_obj.rua);
+	DBMS_OUTPUT.PUT_LINE('Cidade: ' || endereco_obj.cidade);
+	DBMS_OUTPUT.PUT_LINE('País: ' || endereco_obj.pais);
+	DBMS_OUTPUT.PUT_LINE('Estado: ' || endereco_obj.estado);
+	END;
 
+	FINAL MEMBER PROCEDURE exibirNomeECpf IS     
+		
+	BEGIN         
+	DBMS_OUTPUT.PUT_LINE('Nome: ' || SELF.nome)         
+	DBMS_OUTPUT.PUT_LINE('CPF: ' || SELF.cpf)         
+	END; 
 END;
 /
 CREATE OR REPLACE TYPE BODY tp_pessoa AS
@@ -70,8 +75,8 @@ END;
 ---------------------------------------------------------------------------------^
 
 CREATE OR REPLACE TYPE tp_funcionario UNDER tp_pessoa(
-    turno VARCHAR2(6),
-    salario NUMBER
+    turno varchar(6),
+    salario number
     -- criar uma funcao exibir dados de um funcionario
 )NOT FINAL NOT INSTANTIABLE;
 /
@@ -237,23 +242,12 @@ CREATE OR REPLACE TYPE tp_garantir_acesso AS OBJECT(
 -- TABELAS:
 
 CREATE TABLE tb_endereco of tp_endereco(
-    cep PRIMARY KEY
+    CONSTRAINT tb_endereco_pkey PRIMARY KEY(cep)
 );
 /
 
 CREATE TABLE tb_pessoa OF tp_pessoa(
-    cpf PRIMARY KEY,
+    CONSTRAINT tb_pessoa_pkey PRIMARY KEY (cpf),
     endereco WITH ROWID REFERENCES tb_endereco
 );
 /
-
-CREATE TABLE tb_funcionario OF tp_funcionario(
-    cpf PRIMARY KEY
-);
-/
-/*
-CREATE TABLE tb_visitante OF tp_visitante(
-    cpf PRIMARY KEY
-);
-/
-*/
