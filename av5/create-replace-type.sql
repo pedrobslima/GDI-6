@@ -10,23 +10,16 @@ CREATE OR REPLACE TYPE tp_endereco AS OBJECT(
 );
 /
 
-CREATE OR REPLACE TYPE tp_telefone AS OBJECT(
-    num_tel VARCHAR(13)
-);
-/
-
-CREATE TYPE varray_telefone (3) OF tp_telefone;
+CREATE TYPE varray_telefone AS VARRAY (3) OF VARCHAR(13); 
 /
 
 CREATE OR REPLACE TYPE tp_pessoa AS OBJECT(
     cpf CHAR(11),
     nome VARCHAR2(40),
-    cep VARCHAR2(9),
+    endereco REF tp_endereco,
     numero VARCHAR(5),
     comp VARCHAR(5),
-
     telefone varray_telefone,  
-    endereco REF tp_endereco,
 
     MEMBER PROCEDURE exibirDetalhesPessoa,
     MEMBER FUNCTION get_cpf RETURN CHAR,
@@ -204,27 +197,27 @@ CREATE OR REPLACE TYPE tp_disponibiliza AS OBJECT(
 );
 /
 
-CREATE OR REPLACE TYPE tp_contatos AS OBJECT(
-    atracao VARCHAR2(30),
-    contatos VARCHAR2(50)
-); 
+CREATE TYPE varray_contatos AS VARRAY (5) OF VARCHAR2(50);
+/
+
+CREATE OR REPLACE TYPE tp_cronograma AS OBJECT(
+    data_hora_inicio DATE, -- <DD/MM HH:mm> (dps mudar para TIMESTAMP)
+    data_hora_termino DATE
+);
+/
+
+CREATE TYPE tp_nt_cronograma AS TABLE OF tp_cronograma;
 /
 
 CREATE OR REPLACE TYPE tp_atracao AS OBJECT(
     nome VARCHAR2(30),
     cache NUMBER,
-    contatos tp_contatos
+    contatos varray_contatos,
+    cronograma tp_nt_cronograma
 );
 /
 
 ALTER TYPE tp_atracao ADD ATTRIBUTE (colaborante REF tp_atracao);
-/
-
-CREATE OR REPLACE TYPE tp_cronograma AS OBJECT(
-    atracao REF tp_atracao,
-    data_hora_inicio DATE, -- <DD/MM HH:mm> (dps mudar para TIMESTAMP)
-    data_hora_termino DATE
-);
 /
 
 CREATE OR REPLACE TYPE tp_show AS OBJECT(
@@ -249,7 +242,7 @@ CREATE TABLE tb_endereco of tp_endereco(
 /
 
 CREATE TABLE tb_pessoa OF tp_pessoa(
-    cpf PRIMARY KEY,,
+    cpf PRIMARY KEY,
     endereco WITH ROWID REFERENCES tb_endereco
 );
 /
@@ -258,9 +251,67 @@ CREATE TABLE tb_funcionario OF tp_funcionario(
     cpf PRIMARY KEY
 );
 /
-/*
+
 CREATE TABLE tb_visitante OF tp_visitante(
     cpf PRIMARY KEY
 );
 /
-*/
+
+CREATE TABLE tb_atracao OF tp_atracao(
+    nome PRIMARY KEY
+) NESTED TABLE cronograma STORE AS tb_nt_cronograma;
+/
+
+INSERT INTO tb_endereco VALUES (
+    tp_endereco(
+        '52130090',
+        'Av. dos Bobos', 
+        'Fortaleza',
+        'Brasil',
+        'Ceara'
+    )
+);
+/
+
+INSERT INTO tb_visitante VALUES (
+    tp_visitante(
+        '999999999',
+        'Claudio',
+        (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '52130090'),
+        '300',
+        '202',
+        varray_telefone('83985478965', '83977489654', '83966534789')
+    )
+);
+/
+
+--SELECT V.cpf, V.nome, V.endereco.cep AS cep, V.endereco.cidade AS cidade, V.numero, V.comp, T.* FROM tb_visitante V, TABLE (V.telefone) T;
+
+INSERT INTO tb_atracao VALUES(
+    tp_atracao(
+        'Megadeth',
+        20000,
+        varray_contatos(
+            '(+12)39867398',
+            'megadeth@gmail.com'
+        ),
+        tp_nt_cronograma(
+            tp_cronograma(
+                TO_DATE('2023-07-20 18:00', 'YYYY-MM-DD HH24:MI'), 
+                TO_DATE('2023-07-20 20:00', 'YYYY-MM-DD HH24:MI')
+                ),
+            tp_cronograma(
+                TO_DATE('2023-07-21 18:00', 'YYYY-MM-DD HH24:MI'), 
+                TO_DATE('2023-07-21 20:00', 'YYYY-MM-DD HH24:MI')
+                ),
+            tp_cronograma(
+                TO_DATE('2023-07-21 21:00', 'YYYY-MM-DD HH24:MI'), 
+                TO_DATE('2023-07-21 22:00', 'YYYY-MM-DD HH24:MI')
+                )
+        ),
+        NULL
+    )
+);
+/
+
+--SELECT A.nome, A.cache, C.* FROM tb_atracao A, TABLE (A.cronograma) C
