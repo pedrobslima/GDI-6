@@ -219,15 +219,28 @@ CREATE OR REPLACE TYPE tp_dia_preco AS OBJECT(
 /
 
 CREATE OR REPLACE TYPE tp_ingresso AS OBJECT(
-    id_comprad REF tp_visitante,
+    id_comprad tp_visitante,
     num_ingresso INTEGER,
     dia_evento REF tp_dia_preco
 );
 /
-
+/*
 CREATE OR REPLACE TYPE tp_compra AS OBJECT(
     id_visitant REF tp_ingresso,
     num_ingresso REF tp_ingresso,
+    vendedor REF tp_vendedor
+);
+/
+
+CREATE OR REPLACE TYPE tp_compra AS OBJECT(
+    id_visitant tp_ingresso.id_comprad,
+    num_ingresso tp_ingresso.num_ingresso,
+    vendedor REF tp_vendedor
+);
+/
+*/
+CREATE OR REPLACE TYPE tp_compra AS OBJECT(
+    ingresso tp_ingresso,
     vendedor REF tp_vendedor
 );
 /
@@ -246,8 +259,8 @@ CREATE OR REPLACE TYPE tp_equipamento AS OBJECT(
 /
 
 CREATE OR REPLACE TYPE tp_encarrega AS OBJECT(
-    id_maut REF tp_manutencao,
-    numserie REF tp_equipamento
+    manutencao tp_manutencao,
+    numserie tp_equipamento
 );
 /
 
@@ -258,8 +271,8 @@ CREATE OR REPLACE TYPE tp_palco AS OBJECT(
 /
 
 CREATE OR REPLACE TYPE tp_disponibiliza AS OBJECT(
-    palco REF tp_palco,
-    num_serie REF tp_equipamento
+    palco tp_palco,
+    num_serie tp_equipamento
 );
 /
 
@@ -287,16 +300,16 @@ ALTER TYPE tp_atracao ADD ATTRIBUTE (colaborante REF tp_atracao);
 /
 
 CREATE OR REPLACE TYPE tp_show AS OBJECT(
-    atracao REF tp_atracao,
-    placo REF tp_palco,
+    atracao tp_atracao,
+    palco tp_palco,
     horario VARCHAR2(25),
     id_tecn REF tp_tecnico
 );
 /
 
 CREATE OR REPLACE TYPE tp_garantir_acesso AS OBJECT(
-    show tp_show,
-    ingresso tp_ingresso
+    show REF tp_show,
+    ingresso REF tp_ingresso
 );
 /
 
@@ -312,8 +325,23 @@ CREATE TABLE tb_pessoa OF tp_pessoa(
     endereco WITH ROWID REFERENCES tb_endereco
 );
 /
-	
+
 CREATE TABLE tb_funcionario OF tp_funcionario(
+    cpf PRIMARY KEY
+);
+/
+
+CREATE TABLE tb_manutencao OF tp_manutencao(
+    cpf PRIMARY KEY
+);
+/
+
+CREATE TABLE tb_tecnico OF tp_tecnico(
+    cpf PRIMARY KEY
+);
+/
+
+CREATE TABLE tb_vendedor OF tp_vendedor(
     cpf PRIMARY KEY
 );
 /
@@ -323,10 +351,71 @@ CREATE TABLE tb_visitante OF tp_visitante(
 );
 /
 
+CREATE TABLE tb_dia_preco OF tp_dia_preco(
+    dia_evento PRIMARY KEY,
+    preco NOT NULL
+);
+/
+
+CREATE TABLE tb_ingresso OF tp_ingresso(
+    --CONSTRAINT ingresso_pkey PRIMARY KEY (id_comprad, num_ingresso),
+    --id_comprad PRIMARY KEY, 
+    --num_ingresso PRIMARY KEY,
+    id_comprad SCOPE IS tb_visitante
+);
+/
+
+CREATE TABLE tb_compra OF tp_compra(
+    ingresso PRIMARY KEY,
+    --id_visitant SCOPE IS tb_visitante,
+    vendedor SCOPE IS tb_vendedor
+);
+/
+
+CREATE TABLE tb_nome_preco OF tp_nome_preco(
+    nome PRIMARY KEY,
+    preco NOT NULL
+);
+/
+
+CREATE TABLE tb_equipamento OF tp_equipamento(
+    num_serie PRIMARY KEY
+);
+/
+
+CREATE TABLE tb_encarrega OF tp_encarrega(
+    --CONSTRAINT encarrega_pkey PRIMARY KEY (manutencao, num_serie),
+    manutencao SCOPE IS tb_manutencao
+);
+/
+
+CREATE TABLE tb_palco OF tp_palco(
+    numero PRIMARY KEY
+);
+/
+
+CREATE TABLE tb_disponibiliza OF tp_disponibiliza(
+    --CONSTRAINT disponib_pkey PRIMARY KEY (palco, num_serie)
+);
+/
+
 CREATE TABLE tb_atracao OF tp_atracao(
     nome PRIMARY KEY
 ) NESTED TABLE cronograma STORE AS tb_nt_cronograma;
 /
+
+CREATE TABLE tb_show OF tp_show(
+    --CONSTRAINT show_pkey PRIMARY KEY (atracao, palco, horario),
+    id_tecn SCOPE IS tp_tecnico
+);
+/
+/*
+CREATE TABLE tb_garantir_acesso OF tp_garantir_acesso(
+    
+);
+/
+
+-- INSERÇÕES:
 
 INSERT INTO tb_endereco VALUES (
     tp_endereco(
