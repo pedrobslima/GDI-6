@@ -1,3 +1,28 @@
+-- DROP TYPES:
+    DROP TYPE tp_garantir_acesso;
+    DROP TYPE tp_show;
+    DROP TYPE tp_cronograma;
+    -- NAO SEI SE É NECESSARIO, MAS colaborante É DO TIPO tp_atracao 
+    ALTER TYPE tp_atracao MODIFY ATTRIBUTE (colaborante);
+    DROP TYPE tp_atracao;
+    DROP TYPE tp_contatos;
+    DROP TYPE tp_disponibiliza;
+    DROP TYPE tp_palco;
+    DROP TYPE tp_encarrega;
+    DROP TYPE tp_equipamento;
+    DROP TYPE tp_nome_preco;
+    DROP TYPE tp_compra;
+    DROP TYPE tp_ingresso;
+    DROP TYPE tp_dia_preco;
+    DROP TYPE tp_visitante;
+    DROP TYPE tp_vendedor;
+    DROP TYPE tp_tecnico;
+    DROP TYPE tp_manutencao;
+    DROP TYPE tp_funcionario;
+    DROP TYPE tp_pessoa;
+    DROP TYPE tp_endereco;
+    DROP TYPE tp_telefone;
+
 -- TIPOS:
 
 CREATE OR REPLACE TYPE tp_endereco AS OBJECT(
@@ -61,7 +86,12 @@ CREATE OR REPLACE TYPE tp_pessoa AS OBJECT(
     MEMBER FUNCTION get_cpf RETURN CHAR,
  	MEMBER FUNCTION get_telefones (SELF tp_pessoa) RETURN VARCHAR2
 
-)NOT FINAL;
+)NOT FINAL NOT INSTANTIABLE;
+/
+
+CREATE OR REPLACE TYPE tp_visitante UNDER tp_pessoa( );
+/
+
 / */
 
 
