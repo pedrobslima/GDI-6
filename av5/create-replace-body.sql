@@ -2,17 +2,19 @@ CREATE OR REPLACE TYPE BODY tp_endereco AS
     MEMBER FUNCTION exibir_detalhes RETURN VARCHAR2 IS
         result VARCHAR2(100);
     BEGIN
-        result := cep || ' (';
-        result := result || numero || ', ';
+        --result := cep || ' (';
+        --result := result || numero || ', ';
+        result := numero || ', ';
         result := result ||  rua   || ', ';
         result := result || cidade || ', ';
         result := result || estado || ', ';
         result := result ||  pais  || ', ';
-        result := result ||  comp  || ')';
+        result := result ||  comp;
+        --result := result ||  comp  || ')';
         RETURN result;
     END exibir_detalhes;
 END;
-/
+/ 
 
 CREATE OR REPLACE TYPE BODY tp_pessoa AS
     MEMBER FUNCTION exibir_detalhes RETURN VARCHAR2 IS
