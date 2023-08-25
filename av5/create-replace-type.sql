@@ -1,4 +1,5 @@
 -- DROP TYPES:
+/*
     DROP TYPE tp_garantir_acesso;
     DROP TYPE tp_show;
     DROP TYPE tp_cronograma;
@@ -22,7 +23,7 @@
     DROP TYPE tp_pessoa;
     DROP TYPE tp_endereco;
     DROP TYPE tp_telefone;
-
+*/
 -- TIPOS:
 
 CREATE OR REPLACE TYPE tp_endereco AS OBJECT(
@@ -105,35 +106,22 @@ CREATE OR REPLACE TYPE tp_funcionario UNDER tp_pessoa(
 )NOT FINAL NOT INSTANTIABLE;
 /
 ---------------------------------------------------------------------------------v
-CREATE OR REPLACE TYPE BODY tp_funcionario AS
+CREATE OR REPLACE TYPE BODY tp_pessoa AS
+    -- Implementação da member function que retorna o CPF
+    MEMBER FUNCTION get_cpf RETURN CHAR IS
+    BEGIN
+        RETURN self.cpf;
+    END;
 
-   OVERRIDING MEMBER PROCEDURE exibirDetalhesPessoa IS
-    
-   BEGIN
-    DBMS_OUTPUT.PUT_LINE('Detalhes de Funcionario')
-    DBMS_OUTPUT.PUT_LINE(SELF.nome)
-    DBMS_OUTPUT.PUT_LINE(SELF.cpf)
-    DBMS_OUTPUT.PUT_LINE(SELF.cep)
-    DBMS_OUTPUT.PUT_LINE(SELF.numero)
-    DBMS_OUTPUT.PUT_LINE(SELF.comp)
-
-    -- Especificacoes de Funcioanrio
-
-    DBMS_OUTPUT.PUT_LINE(SELF.salario)
-    DBMS_OUTPUT.PUT_LINE(SELF.turno)
-
-      -- Obtém o objeto de endereço a partir da REF usando uma consulta SQL
-      SELECT DEREF(SELF.endereco) INTO endereco_obj FROM DUAL;
-      
-      DBMS_OUTPUT.PUT_LINE('Detalhes do Endereço:');
-      DBMS_OUTPUT.PUT_LINE('CEP: ' || endereco_obj.cep);
-      DBMS_OUTPUT.PUT_LINE('Rua: ' || endereco_obj.rua);
-      DBMS_OUTPUT.PUT_LINE('Cidade: ' || endereco_obj.cidade);
-      DBMS_OUTPUT.PUT_LINE('País: ' || endereco_obj.pais);
-      DBMS_OUTPUT.PUT_LINE('Estado: ' || endereco_obj.estado);
-      
-   END;
-
+    -- Implementação do procedimento que exibe detalhes da pessoa
+    MEMBER PROCEDURE exibirDetalhesPessoa IS
+    BEGIN
+        DBMS_OUTPUT.PUT_LINE('CPF: ' || self.cpf);
+        DBMS_OUTPUT.PUT_LINE('Nome: ' || self.nome);
+        DBMS_OUTPUT.PUT_LINE('CEP: ' || self.cep);
+        DBMS_OUTPUT.PUT_LINE('Número: ' || self.numero);
+        DBMS_OUTPUT.PUT_LINE('Complemento: ' || self.comp);
+    END;
 END;
 /
 ---------------------------------------------------------------------------------^
@@ -146,34 +134,41 @@ CREATE OR REPLACE TYPE tp_tecnico UNDER tp_funcionario();
 CREATE OR REPLACE TYPE tp_vendedor UNDER tp_funcionario();
 /
 
-CREATE OR REPLACE TYPE tp_visitante UNDER tp_pessoa();
+CREATE OR REPLACE TYPE tp_visitante UNDER tp_pessoa (
+    CONSTRUCTOR FUNCTION tp_visitante (
+        v_cpf CHAR,
+        v_nome VARCHAR2,
+        v_cep VARCHAR2,
+        v_numero VARCHAR,
+        v_comp VARCHAR,
+        v_telefone varray_telefone,
+        v_endereco REF tp_endereco
+    ) RETURN SELF AS RESULT
+);
 /
 
-/*
-CONSTRUCTOR FUNCTION tp_visitante (
-    cpf CHAR,
-    nome VARCHAR2,
-    cep VARCHAR2,
-    numero VARCHAR,
-    comp VARCHAR,
-    telefone REF tp_telefone,
-    endereco REF tp_endereco
-
+CREATE OR REPLACE TYPE BODY tp_visitante AS
+    CONSTRUCTOR FUNCTION tp_visitante (
+        v_cpf CHAR,
+        v_nome VARCHAR2,
+        v_cep VARCHAR2,
+        v_numero VARCHAR,
+        v_comp VARCHAR,
+        v_telefone varray_telefone,
+        v_endereco REF tp_endereco
     ) RETURN SELF AS RESULT IS
-    
-    BEGIN 
-
-	SELF.cpf := cpf;
-	SELF.nome := nome;
-	SELF.cep := cep;
-	SELF.numero := numero;
-	SELF.comp := comp;
-	SELF.telefone := telefone;
-	SELF.endereco := endereco;
-	RETURN;
+    BEGIN
+        SELF.cpf := v_cpf;
+        SELF.nome := v_nome;
+        SELF.cep := v_cep;
+        SELF.numero := v_numero;
+        SELF.comp := v_comp;
+        SELF.telefone := v_telefone;
+        SELF.endereco := v_endereco;
+        RETURN;
+    END;
 END;
 /
-*/
 
 CREATE OR REPLACE TYPE tp_dia_preco AS OBJECT(
     dia_evento DATE,
