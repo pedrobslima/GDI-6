@@ -33,16 +33,3 @@ INSERT INTO tabela_tecnicos (funcionario) VALUES (tp_tecnico('88075975357', 'Sol
 INSERT INTO tabela_tecnicos (funcionario) VALUES (tp_tecnico('28549655454', 'Paula', tp_telefone('3731-6577', '5731-7174'), tp_endereco('11221-343', 'Rua Asfaltada', 'Abreu e Lima', 'Brasil', 'Pernambuco', '88', 'casa'), 'INT', 3500));
 INSERT INTO tabela_tecnicos (funcionario) VALUES (tp_tecnico('63556585358', 'Rafaela', tp_telefone('8680-6146'), tp_endereco('43773-747', 'Av Peixe Mansinho', 'Casa Caiada', 'Brasil', 'Pernambuco', '99', 'casa'), 'NOI', 3100));
 
-/*SELECT v.visitante.cpf AS CPF,
-       v.visitante.nome AS NOME,
-       v.visitante.endereco.cep AS CEP,
-       v.visitante.endereco.exibir_detalhes() AS ENDERECO,
-       v.visitante.get_telefones() AS TELEFONES
-FROM tabela_visitantes v;*/
-
-/*SELECT t.funcionario.cpf AS CPF,
-       t.funcionario.nome AS NOME,
-       t.funcionario.endereco.cep AS CEP,
-       t.funcionario.endereco.exibir_detalhes() AS ENDERECO,
-       t.funcionario.get_telefones() AS TELEFONES
-FROM tabela_tecnicos t;*/
