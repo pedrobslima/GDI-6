@@ -27,6 +27,42 @@ CREATE OR REPLACE TYPE tp_pessoa AS OBJECT(
 
 )NOT FINAL NOT INSTANTIABLE;
 /
+
+
+/*   ERBERT - Fiz umas alteracoes que não sei se são interessantes pra concepção atual, por isso deixei comentado
+
+CREATE OR REPLACE TYPE tp_endereco AS OBJECT(
+    cep VARCHAR2(9), 
+    rua VARCHAR2(30), 
+    cidade VARCHAR2(30), 
+    pais VARCHAR2(30), 
+    estado VARCHAR2(20),
+    numero VARCHAR(5),
+    comp VARCHAR(5),
+ 	MEMBER FUNCTION exibir_detalhes ( SELF tp_endereco) RETURN VARCHAR2
+);
+/
+
+CREATE OR REPLACE TYPE tp_telefone AS VARRAY(3) OF VARCHAR2(12);
+/
+
+CREATE OR REPLACE TYPE tp_pessoa AS OBJECT(
+    cpf CHAR(11),
+    nome VARCHAR2(40),
+    
+    telefone tp_telefone,  
+    endereco tp_endereco,
+
+ 	MEMBER FUNCTION exibir_detalhes (SELF tp_pessoa) RETURN VARCHAR2,
+    MEMBER FUNCTION get_cpf RETURN CHAR,
+ 	MEMBER FUNCTION get_telefones (SELF tp_pessoa) RETURN VARCHAR2
+
+)NOT FINAL;
+/ */
+
+
+
+
 ---------------------------------------------------------------------------------v
 CREATE OR REPLACE TYPE BODY tp_pessoa AS
 
