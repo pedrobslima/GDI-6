@@ -217,7 +217,7 @@ CREATE OR REPLACE TYPE tp_equipamento AS OBJECT(
 /
 
 CREATE OR REPLACE TYPE tp_encarrega AS OBJECT(
-    manutencao tp_manutencao,
+    manutencao REF tp_manutencao,
     numserie tp_equipamento
 );
 /
@@ -317,14 +317,13 @@ CREATE TABLE tb_dia_preco OF tp_dia_preco(
 
 CREATE TABLE tb_ingresso OF tp_ingresso(
     --CONSTRAINT ingresso_pkey PRIMARY KEY (id_comprad, num_ingresso),
-    --id_comprad PRIMARY KEY, 
-    --num_ingresso PRIMARY KEY,
-    id_comprad SCOPE IS tb_visitante
+    (id_comprad, num_ingresso) PRIMARY KEY
+    --id_comprad SCOPE IS tb_visitante
 );
 /
 
 CREATE TABLE tb_compra OF tp_compra(
-    ingresso PRIMARY KEY,
+    (ingresso.id_comprador, ingresso.num_ingresso) PRIMARY KEY,
     --id_visitant SCOPE IS tb_visitante,
     vendedor SCOPE IS tb_vendedor
 );
