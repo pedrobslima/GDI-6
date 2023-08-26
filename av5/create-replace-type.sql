@@ -55,8 +55,6 @@ CREATE OR REPLACE TYPE tp_pessoa AS OBJECT(
 )NOT FINAL NOT INSTANTIABLE;
 /
 
-
-
 ---------------------------------------------------------------------------------v
 CREATE OR REPLACE TYPE BODY tp_pessoa AS 
     -- Implementação da member function que retorna o CPF 
@@ -342,9 +340,10 @@ CREATE TABLE tb_show OF tp_show(
     id_tecn SCOPE IS tb_tecnico 
 );
 /
-/*
+
 CREATE TABLE tb_garantir_acesso OF tp_garantir_acesso(
-    
+    show NOT NULL,
+    ingresso NOT NULL
 );
 /
 
