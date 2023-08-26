@@ -68,7 +68,6 @@ INSERT INTO tb_ingresso (id_comprad, num_ingresso, dia_evento) VALUES
     (tp_visitante('44442424422', 'Felipe', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '41330089'), '38', 'casa', varray_telefone('9989-4844')),
     9757,
     (SELECT REF(DP) FROM tb_dia_preco DP WHERE TRUNC(DP.dia_evento) = TRUNC(SYSDATE + 1)));
-/
 
 -- POVOANDO NOME_PRECO
 INSERT INTO tb_nome_preco VALUES (tp_nome_preco('guitarra aceim preta', 500));
@@ -234,36 +233,32 @@ INSERT INTO tb_show VALUES (
 -- 
 INSERT INTO tb_compra VALUES (
     tp_ingresso(
-        tp_visitante(
-            '12345678910', 
-            'Fulano', 
-            (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '67130090'), '50a', 'casa', 
-            varray_telefone('4002-8922')),
-        7946,
-        (SELECT REF(DP) FROM tb_dia_preco DP WHERE TRUNC(DP.dia_evento) = TRUNC(SYSDATE + 0))),
+        tp_visitante('33747344646', 'Andre', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '52130092'), '157', 'casa', varray_telefone('2245-5454', '2143-6767')),
+        5752,
+        (SELECT REF(DP) FROM tb_dia_preco DP WHERE TRUNC(DP.dia_evento) = TRUNC(SYSDATE + 1))),
     (SELECT REF(V) FROM tb_vendedor V WHERE V.cpf = '90970242427')
 );
-/*
+
 INSERT INTO tb_compra VALUES(
-    tp_visitante('12345678910', 'Fulano', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '67130090'), '50a', 'casa', varray_telefone('4002-8922')),
-    7946,
-    (SELECT REF(DP) FROM tb_dia_preco DP WHERE TRUNC(DP.dia_evento) = TRUNC(SYSDATE + 0)),
+    tp_ingresso(
+        tp_visitante('12345678910', 'Fulano', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '67130090'), '50a', 'casa', varray_telefone('4002-8922')),
+        7946,
+        (SELECT REF(DP) FROM tb_dia_preco DP WHERE TRUNC(DP.dia_evento) = TRUNC(SYSDATE + 0))),
     (SELECT REF(V) FROM tb_vendedor V WHERE V.cpf = '13469737675')
 );
 
-
 INSERT INTO tb_compra VALUES(
-    (SELECT REF(I) FROM tb_ingresso I WHERE I.num_ingresso = '5752'),
-    (SELECT REF(V) FROM tb_vendedor V WHERE V.cpf = '89954646461')
-);
-
-
-INSERT INTO tb_compra VALUES(
-    (SELECT REF(I) FROM tb_ingresso I WHERE I.num_ingresso = '8727'),
+    tp_ingresso(
+        tp_visitante('86468464866', 'Carlos', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '52130090'), '20', '101', varray_telefone('3378-2425')),
+        8727,
+        (SELECT REF(DP) FROM tb_dia_preco DP WHERE TRUNC(DP.dia_evento) = TRUNC(SYSDATE + 2))),
     (SELECT REF(V) FROM tb_vendedor V WHERE V.cpf = '90970242427')
 );
 
 INSERT INTO tb_compra VALUES(
-    (SELECT REF(I) FROM tb_ingresso I WHERE I.num_ingresso = '9757'),
+    tp_ingresso(
+        tp_visitante('44442424422', 'Felipe', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '41330089'), '38', 'casa', varray_telefone('9989-4844')),
+        9757,
+        (SELECT REF(DP) FROM tb_dia_preco DP WHERE TRUNC(DP.dia_evento) = TRUNC(SYSDATE + 1))),
     (SELECT REF(V) FROM tb_vendedor V WHERE V.cpf = '89954646461')
 );
