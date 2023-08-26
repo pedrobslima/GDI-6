@@ -58,45 +58,37 @@ CREATE OR REPLACE TYPE tp_pessoa AS OBJECT(
 
 
 ---------------------------------------------------------------------------------v
-CREATE OR REPLACE TYPE BODY tp_pessoa AS
-
-	MEMBER PROCEDURE exibirDetalhesPessoa IS
-	
-	BEGIN
-	DBMS_OUTPUT.PUT_LINE('Detalhes de Pessoa')
-	DBMS_OUTPUT.PUT_LINE(SELF.nome)
-	DBMS_OUTPUT.PUT_LINE(SELF.cpf)
-	DBMS_OUTPUT.PUT_LINE(SELF.cep)
-	DBMS_OUTPUT.PUT_LINE(SELF.numero)
-	DBMS_OUTPUT.PUT_LINE(SELF.comp)
-	
-	-- Obtém o objeto de endereço a partir da REF usando uma consulta SQL
-	SELECT DEREF(SELF.endereco) INTO endereco_obj FROM DUAL;
-	
-	DBMS_OUTPUT.PUT_LINE('Detalhes do Endereço:');
-	DBMS_OUTPUT.PUT_LINE('CEP: ' || endereco_obj.cep);
-	DBMS_OUTPUT.PUT_LINE('Rua: ' || endereco_obj.rua);
-	DBMS_OUTPUT.PUT_LINE('Cidade: ' || endereco_obj.cidade);
-	DBMS_OUTPUT.PUT_LINE('País: ' || endereco_obj.pais);
-	DBMS_OUTPUT.PUT_LINE('Estado: ' || endereco_obj.estado);
-	END;
-
-	FINAL MEMBER PROCEDURE exibirNomeECpf IS     
-		
-	BEGIN         
-	DBMS_OUTPUT.PUT_LINE('Nome: ' || SELF.nome)         
-	DBMS_OUTPUT.PUT_LINE('CPF: ' || SELF.cpf)         
-	END; 
-END;
-/
-CREATE OR REPLACE TYPE BODY tp_pessoa AS
-    -- Implemente a member function que retorna o CPF
-    MEMBER FUNCTION get_cpf RETURN CHAR IS
-    BEGIN
-    	RETURN self.cpf;
+CREATE OR REPLACE TYPE BODY tp_pessoa AS 
+    -- Implementação da member function que retorna o CPF 
+    MEMBER FUNCTION get_cpf RETURN CHAR IS 
+    BEGIN 
+        RETURN self.cpf; 
+    END; 
+ 
+    -- Implementação do procedimento que exibe detalhes da pessoa 
+    MEMBER PROCEDURE exibirDetalhesPessoa IS
+        endereco_obj tp_endereco;
+    BEGIN 
+        DBMS_OUTPUT.PUT_LINE('CPF: ' || self.cpf); 
+        DBMS_OUTPUT.PUT_LINE('Nome: ' || self.nome); 
+        
+        -- Correção: Use SELF.endereco para acessar a referência de endereço
+        SELECT DEREF(SELF.endereco) INTO endereco_obj FROM DUAL;
+        
+        DBMS_OUTPUT.PUT_LINE('CEP: ' || endereco_obj.cep); 
+        DBMS_OUTPUT.PUT_LINE('Número: ' || self.numero); 
+        DBMS_OUTPUT.PUT_LINE('Complemento: ' || self.comp); 
     END;
-END;
-/ 
+    
+    FINAL MEMBER PROCEDURE exibirNomeECpf IS 
+    BEGIN 
+        DBMS_OUTPUT.PUT_LINE('CPF: ' || self.cpf); 
+        DBMS_OUTPUT.PUT_LINE('Nome: ' || self.nome); 
+    END; 
+    
+END; 
+/
+
 ---------------------------------------------------------------------------------^
 
 CREATE OR REPLACE TYPE tp_funcionario UNDER tp_pessoa(
@@ -203,7 +195,7 @@ CREATE OR REPLACE TYPE tp_equipamento AS OBJECT(
 /
 
 CREATE OR REPLACE TYPE tp_encarrega AS OBJECT(
-    manutencao REF tp_manutencao,
+    manutencao tp_manutencao,
     numserie tp_equipamento
 );
 /
