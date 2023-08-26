@@ -37,3 +37,45 @@ INSERT INTO tabela_tecnicos (funcionario) VALUES (tp_tecnico('88075975357', 'Sol
 INSERT INTO tabela_tecnicos (funcionario) VALUES (tp_tecnico('28549655454', 'Paula', tp_telefone('3731-6577', '5731-7174'), tp_endereco('11221-343', 'Rua Asfaltada', 'Abreu e Lima', 'Brasil', 'Pernambuco', '88', 'casa'), 'INT', 3500));
 INSERT INTO tabela_tecnicos (funcionario) VALUES (tp_tecnico('63556585358', 'Rafaela', tp_telefone('8680-6146'), tp_endereco('43773-747', 'Av Peixe Mansinho', 'Casa Caiada', 'Brasil', 'Pernambuco', '99', 'casa'), 'NOI', 3100));
 
+-------------------------- INGRESSOS E DIA-PRECO  --------------------------
+CREATE TABLE tb_dia_preco OF tp_dia_preco;
+INSERT INTO tb_dia_preco VALUES (tp_dia_preco(SYSDATE, 100.00));
+INSERT INTO tb_dia_preco VALUES (tp_dia_preco(SYSDATE + 1, 150.00));
+INSERT INTO tb_dia_preco VALUES (tp_dia_preco(SYSDATE + 2, 80.00));
+INSERT INTO tb_dia_preco VALUES (tp_dia_preco(SYSDATE + 3, 120.00));
+INSERT INTO tb_dia_preco VALUES (tp_dia_preco(SYSDATE + 4, 90.00));
+
+
+
+CREATE TABLE tb_ingresso OF tp_ingresso;
+DECLARE
+    v_id_comprad REF tp_visitante;
+    v_dia_preco REF tp_dia_preco;
+    v_data DATE;
+BEGIN
+    v_data := TRUNC(SYSDATE);
+    SELECT REF(T) INTO v_dia_preco FROM tb_dia_preco T WHERE TRUNC(T.dia_evento) = v_data;
+    SELECT REF(V) INTO v_id_comprad FROM tb_visitante V WHERE V.cpf = '70545678777';
+    INSERT INTO tb_ingresso (id_comprad, num_ingresso, dia_evento) VALUES (v_id_comprad, 4964, v_dia_preco);
+    
+    v_data := TRUNC(SYSDATE + 1);
+    SELECT REF(T) INTO v_dia_preco FROM tb_dia_preco T WHERE TRUNC(T.dia_evento) = v_data;
+    SELECT REF(V) INTO v_id_comprad FROM tb_visitante V WHERE V.cpf = '23456744899';
+    INSERT INTO tb_ingresso (id_comprad, num_ingresso, dia_evento) VALUES (v_id_comprad, 5597, v_dia_preco);
+    
+    v_data := TRUNC(SYSDATE + 2);
+    SELECT REF(T) INTO v_dia_preco FROM tb_dia_preco T WHERE TRUNC(T.dia_evento) = v_data;
+    SELECT REF(V) INTO v_id_comprad FROM tb_visitante V WHERE V.cpf = '45912764897';
+    INSERT INTO tb_ingresso (id_comprad, num_ingresso, dia_evento) VALUES (v_id_comprad, 3124, v_dia_preco);
+    
+    v_data := TRUNC(SYSDATE + 3);
+    SELECT REF(T) INTO v_dia_preco FROM tb_dia_preco T WHERE TRUNC(T.dia_evento) = v_data;
+    SELECT REF(V) INTO v_id_comprad FROM tb_visitante V WHERE V.cpf = '75912764890';
+    INSERT INTO tb_ingresso (id_comprad, num_ingresso, dia_evento) VALUES (v_id_comprad, 7558, v_dia_preco);
+
+    v_data := TRUNC(SYSDATE + 2);
+    SELECT REF(T) INTO v_dia_preco FROM tb_dia_preco T WHERE TRUNC(T.dia_evento) = v_data;
+    SELECT REF(V) INTO v_id_comprad FROM tb_visitante V WHERE V.cpf = '70545678777';
+    INSERT INTO tb_ingresso (id_comprad, num_ingresso, dia_evento) VALUES (v_id_comprad, 1604, v_dia_preco);
+END;
+/
