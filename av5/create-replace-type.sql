@@ -26,7 +26,7 @@
 */
 -- TIPOS:
 
-CREATE OR REPLACE TYPE tp_endereco AS OBJECT(
+CREATE OR REPLACE TYPE tp_endereco AS OBJECT( --OK
     cep VARCHAR2(9), 
     rua VARCHAR2(30), 
     cidade VARCHAR2(30), 
@@ -90,7 +90,7 @@ END;
 ---------------------------------------------------------------------------------^
 
 CREATE OR REPLACE TYPE tp_funcionario UNDER tp_pessoa(
-    turno VARCHAR2(6),
+    turno VARCHAR2(8),
     salario NUMBER
     -- criar uma funcao exibir dados de um funcionario
 )NOT FINAL NOT INSTANTIABLE;
@@ -108,36 +108,17 @@ CREATE OR REPLACE TYPE BODY tp_funcionario AS -- PARA CRIAR LISTA DE SALARIOS OR
   END;
 END;
 /
----------------------------------------------------------------------------------v
-CREATE OR REPLACE TYPE BODY tp_pessoa AS
-    -- Implementação da member function que retorna o CPF
-    MEMBER FUNCTION get_cpf RETURN CHAR IS
-    BEGIN
-        RETURN self.cpf;
-    END;
-
-    -- Implementação do procedimento que exibe detalhes da pessoa
-    MEMBER PROCEDURE exibirDetalhesPessoa IS
-    BEGIN
-        DBMS_OUTPUT.PUT_LINE('CPF: ' || self.cpf);
-        DBMS_OUTPUT.PUT_LINE('Nome: ' || self.nome);
-        DBMS_OUTPUT.PUT_LINE('CEP: ' || self.cep);
-        DBMS_OUTPUT.PUT_LINE('Número: ' || self.numero);
-        DBMS_OUTPUT.PUT_LINE('Complemento: ' || self.comp);
-    END;
-END;
-/
 ---------------------------------------------------------------------------------^
-CREATE OR REPLACE TYPE tp_manutencao UNDER tp_funcionario();
+CREATE OR REPLACE TYPE tp_manutencao UNDER tp_funcionario(); --OK
 /
 
-CREATE OR REPLACE TYPE tp_tecnico UNDER tp_funcionario();
+CREATE OR REPLACE TYPE tp_tecnico UNDER tp_funcionario(); --OK
 /
 
-CREATE OR REPLACE TYPE tp_vendedor UNDER tp_funcionario();
+CREATE OR REPLACE TYPE tp_vendedor UNDER tp_funcionario(); --OK
 /
 
-CREATE OR REPLACE TYPE tp_visitante UNDER tp_pessoa (
+CREATE OR REPLACE TYPE tp_visitante UNDER tp_pessoa ( --OK
     CONSTRUCTOR FUNCTION tp_visitante (
         v_cpf CHAR,
         v_nome VARCHAR2,
@@ -173,9 +154,10 @@ CREATE OR REPLACE TYPE BODY tp_visitante AS
 END;
 /
 
-CREATE OR REPLACE TYPE tp_dia_preco AS OBJECT(
+CREATE OR REPLACE TYPE tp_dia_preco AS OBJECT( --OK
     dia_evento DATE,
-    preco NUMBER
+    preco NUMBER,
+    MAP MEMBER FUNCTION venda_total RETURN INTEGER 
 );
 /
 
@@ -186,19 +168,37 @@ CREATE OR REPLACE TYPE tp_ingresso AS OBJECT(
 );
 /
 
-CREATE OR REPLACE TYPE tp_compra AS OBJECT(
+CREATE TABLE tb_ingresso OF tp_ingresso(
+    PRIMARY KEY(id_comprad.cpf, num_ingresso)
+);
+/
+
+CREATE OR REPLACE TYPE BODY tp_dia_preco AS 
+    MAP MEMBER FUNCTION venda_total RETURN INTEGER IS
+        total_ingressos INTEGER := 0;
+    BEGIN        
+        SELECT COUNT(*) INTO total_ingressos
+        FROM tb_ingresso i
+        WHERE i.dia_evento.dia_evento = SELF.dia_evento;
+        
+        RETURN total_ingressos * SELF.preco;
+    END;
+END;
+/
+
+CREATE OR REPLACE TYPE tp_compra AS OBJECT( 
     ingresso tp_ingresso,
     vendedor REF tp_vendedor
 );
 /
 
-CREATE OR REPLACE TYPE tp_nome_preco AS OBJECT(
+CREATE OR REPLACE TYPE tp_nome_preco AS OBJECT( --OK
     nome VARCHAR2(30),
     preco NUMBER
 );
 /
 
-CREATE OR REPLACE TYPE tp_equipamento AS OBJECT(
+CREATE OR REPLACE TYPE tp_equipamento AS OBJECT( --OK
     num_serie VARCHAR(30),
     nome REF tp_nome_preco,
     tipo VARCHAR2(20)
@@ -211,13 +211,13 @@ CREATE OR REPLACE TYPE tp_encarrega AS OBJECT(
 );
 /
 
-CREATE OR REPLACE TYPE tp_palco AS OBJECT(
+CREATE OR REPLACE TYPE tp_palco AS OBJECT( --OK
     numero NUMBER,
     tamanho VARCHAR2(9)
 );
 /
 
-CREATE OR REPLACE TYPE tp_disponibiliza AS OBJECT(
+CREATE OR REPLACE TYPE tp_disponibiliza AS OBJECT( --OK
     palco tp_palco,
     equipamento tp_equipamento
 );
@@ -235,7 +235,7 @@ CREATE OR REPLACE TYPE tp_cronograma AS OBJECT(
 CREATE TYPE tp_nt_cronograma AS TABLE OF tp_cronograma;
 /
 
-CREATE OR REPLACE TYPE tp_atracao AS OBJECT(
+CREATE OR REPLACE TYPE tp_atracao AS OBJECT( --OK
     nome VARCHAR2(30),
     cache NUMBER,
     contatos varray_contatos,
@@ -304,10 +304,6 @@ CREATE TABLE tb_dia_preco OF tp_dia_preco(
 );
 /
 
-CREATE TABLE tb_ingresso OF tp_ingresso(
-    PRIMARY KEY(id_comprad.cpf, num_ingresso)
-);
-/
 
 CREATE TABLE tb_compra OF tp_compra(
     PRIMARY KEY(ingresso.id_comprad.cpf, ingresso.num_ingresso),
