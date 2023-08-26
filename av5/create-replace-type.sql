@@ -46,44 +46,47 @@ CREATE OR REPLACE TYPE tp_pessoa AS OBJECT(
     numero VARCHAR(5),
     comp VARCHAR(5),
     telefone varray_telefone,  
-
-    MEMBER PROCEDURE exibirDetalhesPessoa,
+	CONSTRUCTOR FUNCTION tp_pessoa(SELF IN OUT tp_pessoa, cpf CHAR, nome VARCHAR2, endereco REF tp_endereco, numero VARCHAR, comp VARCHAR, telefone varray_telefone) RETURN SELF AS RESULT,
     MEMBER FUNCTION get_cpf RETURN CHAR,
- 	--MEMBER FUNCTION get_telefones RETURN VARCHAR2,
-    FINAL MEMBER PROCEDURE exibirNomeECpf,
-    ORDER MEMBER FUNCTION has_higher_salary (p tp_pessoa) RETURN INTEGER
+    MEMBER PROCEDURE exibirDetalhesPessoa,
+    FINAL MEMBER PROCEDURE exibirNomeECpf
+    --ORDER MEMBER FUNCTION has_higher_salary (p tp_pessoa) RETURN INTEGER
 
 )NOT FINAL NOT INSTANTIABLE;
 /
----------------------------------------------------------------------------------v
 CREATE OR REPLACE TYPE BODY tp_pessoa AS 
-    -- Implementação da member function que retorna o CPF 
-    MEMBER FUNCTION get_cpf RETURN CHAR IS 
+    CONSTRUCTOR FUNCTION tp_pessoa(SELF IN OUT tp_pessoa, cpf CHAR, nome VARCHAR2, endereco REF tp_endereco, numero VARCHAR, comp VARCHAR, telefone varray_telefone) RETURN SELF AS RESULT IS
+    BEGIN
+    	SELF.cpf := cpf;
+		SELF.nome := nome;
+		SELF.endereco := endereco;
+		SELF.numero := numero;
+		SELF.comp := comp;
+		SELF.telefone := telefone;
+		RETURN;
+	END;
+    MEMBER FUNCTION get_cpf RETURN CHAR IS
     BEGIN 
-        RETURN self.cpf; 
+        RETURN SELF.cpf; 
     END; 
- 
-    -- Implementação do procedimento que exibe detalhes da pessoa 
-    MEMBER PROCEDURE exibirDetalhesPessoa IS
+	MEMBER PROCEDURE exibirDetalhesPessoa IS
         endereco_obj tp_endereco;
     BEGIN 
-        DBMS_OUTPUT.PUT_LINE('CPF: ' || self.cpf); 
-        DBMS_OUTPUT.PUT_LINE('Nome: ' || self.nome); 
+        DBMS_OUTPUT.PUT_LINE('CPF: ' || SELF.cpf); 
+        DBMS_OUTPUT.PUT_LINE('Nome: ' || SELF.nome); 
         
         -- Correção: Use SELF.endereco para acessar a referência de endereço
         SELECT DEREF(SELF.endereco) INTO endereco_obj FROM DUAL;
         
         DBMS_OUTPUT.PUT_LINE('CEP: ' || endereco_obj.cep); 
-        DBMS_OUTPUT.PUT_LINE('Número: ' || self.numero); 
-        DBMS_OUTPUT.PUT_LINE('Complemento: ' || self.comp); 
+        DBMS_OUTPUT.PUT_LINE('Número: ' || SELF.numero); 
+        DBMS_OUTPUT.PUT_LINE('Complemento: ' || SELF.comp); 
     END;
-    
-    FINAL MEMBER PROCEDURE exibirNomeECpf IS 
+	FINAL MEMBER PROCEDURE exibirNomeECpf IS 
     BEGIN 
-        DBMS_OUTPUT.PUT_LINE('CPF: ' || self.cpf); 
-        DBMS_OUTPUT.PUT_LINE('Nome: ' || self.nome); 
-    END; 
-    
+        DBMS_OUTPUT.PUT_LINE('CPF: ' || SELF.cpf); 
+        DBMS_OUTPUT.PUT_LINE('Nome: ' || SELF.nome); 
+    END;
 END; 
 /
 
@@ -118,40 +121,7 @@ CREATE OR REPLACE TYPE tp_tecnico UNDER tp_funcionario(); --OK
 CREATE OR REPLACE TYPE tp_vendedor UNDER tp_funcionario(); --OK
 /
 
-CREATE OR REPLACE TYPE tp_visitante UNDER tp_pessoa ( --OK
-    CONSTRUCTOR FUNCTION tp_visitante (
-        v_cpf CHAR,
-        v_nome VARCHAR2,
-        v_cep VARCHAR2,
-        v_numero VARCHAR,
-        v_comp VARCHAR,
-        v_telefone varray_telefone,
-        v_endereco REF tp_endereco
-    ) RETURN SELF AS RESULT
-);
-/
-
-CREATE OR REPLACE TYPE BODY tp_visitante AS
-    CONSTRUCTOR FUNCTION tp_visitante (
-        v_cpf CHAR,
-        v_nome VARCHAR2,
-        v_cep VARCHAR2,
-        v_numero VARCHAR,
-        v_comp VARCHAR,
-        v_telefone varray_telefone,
-        v_endereco REF tp_endereco
-    ) RETURN SELF AS RESULT IS
-    BEGIN
-        SELF.cpf := v_cpf;
-        SELF.nome := v_nome;
-        SELF.cep := v_cep;
-        SELF.numero := v_numero;
-        SELF.comp := v_comp;
-        SELF.telefone := v_telefone;
-        SELF.endereco := v_endereco;
-        RETURN;
-    END;
-END;
+CREATE OR REPLACE TYPE tp_visitante UNDER tp_pessoa (); --OK
 /
 
 CREATE OR REPLACE TYPE tp_dia_preco AS OBJECT( --OK

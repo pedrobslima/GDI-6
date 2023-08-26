@@ -50,25 +50,22 @@ INSERT INTO tb_dia_preco VALUES (tp_dia_preco(SYSDATE + 4, 90));
 
 
 INSERT INTO tb_ingresso (id_comprad, num_ingresso, dia_evento) VALUES
-    ((SELECT * FROM tb_visitante V WHERE V.get_cpf() = '12345678910'),
+    (tp_visitante('12345678910', 'Fulano', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '67130090'), '50a', 'casa', varray_telefone('4002-8922')),
     7946,
     (SELECT REF(DP) FROM tb_dia_preco DP WHERE TRUNC(DP.dia_evento) = TRUNC(SYSDATE + 0)));
-/
 
 INSERT INTO tb_ingresso (id_comprad, num_ingresso, dia_evento) VALUES
-    ((SELECT * FROM tb_visitante V WHERE V.get_cpf() = '33747344646'),
+    (tp_visitante('33747344646', 'Andre', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '52130092'), '157', 'casa', varray_telefone('2245-5454', '2143-6767')),
     5752,
     (SELECT REF(DP) FROM tb_dia_preco DP WHERE TRUNC(DP.dia_evento) = TRUNC(SYSDATE + 1)));
-/
 
 INSERT INTO tb_ingresso (id_comprad, num_ingresso, dia_evento) VALUES
-    ((SELECT * FROM tb_visitante V WHERE V.get_cpf() = '86468464866'),
+    (tp_visitante('86468464866', 'Carlos', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '52130090'), '20', '101', varray_telefone('3378-2425')),
     8727,
     (SELECT REF(DP) FROM tb_dia_preco DP WHERE TRUNC(DP.dia_evento) = TRUNC(SYSDATE + 2)));
-/
 
 INSERT INTO tb_ingresso (id_comprad, num_ingresso, dia_evento) VALUES
-    ((SELECT * FROM tb_visitante V WHERE V.get_cpf() = '44442424422'),
+    (tp_visitante('44442424422', 'Felipe', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '41330089'), '38', 'casa', varray_telefone('9989-4844')),
     9757,
     (SELECT REF(DP) FROM tb_dia_preco DP WHERE TRUNC(DP.dia_evento) = TRUNC(SYSDATE + 1)));
 /
@@ -222,5 +219,51 @@ INSERT INTO tb_atracao VALUES(
 ); 
 
 -- SHOWS
+INSERT INTO tb_show VALUES (
+    tp_atracao('Megadeth',20000,
+        varray_contatos('(+12)39867398', 'megadeth@gmail.com'),
+        tp_nt_cronograma(
+            tp_cronograma(TO_DATE('2023-07-20 18:00', 'YYYY-MM-DD HH24:MI'), TO_DATE('2023-07-20 20:00', 'YYYY-MM-DD HH24:MI')),
+            tp_cronograma(TO_DATE('2023-07-21 18:00', 'YYYY-MM-DD HH24:MI'), TO_DATE('2023-07-21 20:00', 'YYYY-MM-DD HH24:MI')),
+            tp_cronograma(TO_DATE('2023-07-21 21:00', 'YYYY-MM-DD HH24:MI'), TO_DATE('2023-07-21 22:00', 'YYYY-MM-DD HH24:MI'))),
+        NULL), 
+    tp_palco(1, '1000'), '2023-07-22 15:00-17:00',
+    (SELECT REF(T) FROM tb_tecnico T WHERE T.cpf = '99796767331')    
+);
 
---INSERT INTO tb_show VALUES (tp_show());
+-- 
+INSERT INTO tb_compra VALUES (
+    tp_ingresso(
+        tp_visitante(
+            '12345678910', 
+            'Fulano', 
+            (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '67130090'), '50a', 'casa', 
+            varray_telefone('4002-8922')),
+        7946,
+        (SELECT REF(DP) FROM tb_dia_preco DP WHERE TRUNC(DP.dia_evento) = TRUNC(SYSDATE + 0))),
+    (SELECT REF(V) FROM tb_vendedor V WHERE V.cpf = '90970242427')
+);
+/*
+INSERT INTO tb_compra VALUES(
+    tp_visitante('12345678910', 'Fulano', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '67130090'), '50a', 'casa', varray_telefone('4002-8922')),
+    7946,
+    (SELECT REF(DP) FROM tb_dia_preco DP WHERE TRUNC(DP.dia_evento) = TRUNC(SYSDATE + 0)),
+    (SELECT REF(V) FROM tb_vendedor V WHERE V.cpf = '13469737675')
+);
+
+
+INSERT INTO tb_compra VALUES(
+    (SELECT REF(I) FROM tb_ingresso I WHERE I.num_ingresso = '5752'),
+    (SELECT REF(V) FROM tb_vendedor V WHERE V.cpf = '89954646461')
+);
+
+
+INSERT INTO tb_compra VALUES(
+    (SELECT REF(I) FROM tb_ingresso I WHERE I.num_ingresso = '8727'),
+    (SELECT REF(V) FROM tb_vendedor V WHERE V.cpf = '90970242427')
+);
+
+INSERT INTO tb_compra VALUES(
+    (SELECT REF(I) FROM tb_ingresso I WHERE I.num_ingresso = '9757'),
+    (SELECT REF(V) FROM tb_vendedor V WHERE V.cpf = '89954646461')
+);
