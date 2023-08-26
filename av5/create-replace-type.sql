@@ -50,11 +50,11 @@ CREATE OR REPLACE TYPE tp_pessoa AS OBJECT(
     MEMBER PROCEDURE exibirDetalhesPessoa,
     MEMBER FUNCTION get_cpf RETURN CHAR,
  	--MEMBER FUNCTION get_telefones RETURN VARCHAR2,
-    FINAL MEMBER PROCEDURE exibirNomeECpf
+    FINAL MEMBER PROCEDURE exibirNomeECpf,
+    ORDER MEMBER FUNCTION has_higher_salary (p tp_pessoa) RETURN INTEGER
 
 )NOT FINAL NOT INSTANTIABLE;
 /
-
 ---------------------------------------------------------------------------------v
 CREATE OR REPLACE TYPE BODY tp_pessoa AS 
     -- Implementação da member function que retorna o CPF 
@@ -94,6 +94,19 @@ CREATE OR REPLACE TYPE tp_funcionario UNDER tp_pessoa(
     salario NUMBER
     -- criar uma funcao exibir dados de um funcionario
 )NOT FINAL NOT INSTANTIABLE;
+/
+CREATE OR REPLACE TYPE BODY tp_funcionario AS -- PARA CRIAR LISTA DE SALARIOS ORDENADOS
+  ORDER MEMBER FUNCTION has_higher_salary (p tp_funcionario) RETURN INTEGER IS 
+  BEGIN 
+    IF salario < p.salario THEN
+      RETURN -1;
+    ELSIF salario > p.salario THEN 
+      RETURN 1;
+    ELSE 
+      RETURN 0;
+    END IF;
+  END;
+END;
 /
 ---------------------------------------------------------------------------------v
 CREATE OR REPLACE TYPE BODY tp_pessoa AS
