@@ -167,7 +167,7 @@ CREATE OR REPLACE TYPE tp_dia_preco AS OBJECT(
 /
 
 CREATE OR REPLACE TYPE tp_ingresso AS OBJECT(
-    id_comprad REF tp_visitante,
+    id_comprad tp_visitante,
     num_ingresso INTEGER,
     dia_evento REF tp_dia_preco
 );
@@ -193,8 +193,8 @@ CREATE OR REPLACE TYPE tp_equipamento AS OBJECT(
 /
 
 CREATE OR REPLACE TYPE tp_encarrega AS OBJECT(
-    manutencao REF tp_manutencao,
-    numserie tp_equipamento
+    manutencao tp_manutencao,
+    equipamento tp_equipamento
 );
 /
 
@@ -206,7 +206,7 @@ CREATE OR REPLACE TYPE tp_palco AS OBJECT(
 
 CREATE OR REPLACE TYPE tp_disponibiliza AS OBJECT(
     palco tp_palco,
-    num_serie tp_equipamento
+    equipamento tp_equipamento
 );
 /
 
@@ -234,7 +234,7 @@ ALTER TYPE tp_atracao ADD ATTRIBUTE (colaborante REF tp_atracao);
 /
 
 CREATE OR REPLACE TYPE tp_show AS OBJECT(
-    atracao REF tp_atracao,
+    atracao tp_atracao,
     palco tp_palco,
     horario VARCHAR2(25),
     id_tecn REF tp_tecnico
@@ -242,8 +242,8 @@ CREATE OR REPLACE TYPE tp_show AS OBJECT(
 /
 
 CREATE OR REPLACE TYPE tp_garantir_acesso AS OBJECT(
-    show REF tp_show,
-    ingresso REF tp_ingresso
+    show tp_show,
+    ingresso tp_ingresso
 );
 /
 
@@ -291,13 +291,13 @@ CREATE TABLE tb_dia_preco OF tp_dia_preco(
 );
 /
 
-CREATE TABLE tb_ingresso OF tp_ingresso(  
-    id_comprad SCOPE IS tb_visitante  
+CREATE TABLE tb_ingresso OF tp_ingresso(
+    PRIMARY KEY(id_comprad.cpf, num_ingresso)
 );
 /
 
-CREATE TABLE tb_compra OF tp_compra(  
-    --id_visitant SCOPE IS tb_visitante,  
+CREATE TABLE tb_compra OF tp_compra(
+    PRIMARY KEY(ingresso.id_comprad.cpf, ingresso.num_ingresso),
     vendedor SCOPE IS tb_vendedor  
 );
 /
@@ -314,8 +314,7 @@ CREATE TABLE tb_equipamento OF tp_equipamento(
 /
 
 CREATE TABLE tb_encarrega OF tp_encarrega(
-    --CONSTRAINT encarrega_pkey PRIMARY KEY (manutencao, num_serie),
-    manutencao SCOPE IS tb_manutencao
+    PRIMARY KEY(manutencao.cpf, equipamento.num_serie)
 );
 /
 
@@ -325,8 +324,7 @@ CREATE TABLE tb_palco OF tp_palco(
 /
 
 CREATE TABLE tb_disponibiliza OF tp_disponibiliza(  
-    --CONSTRAINT disponib_pkey PRIMARY KEY (palco, num_serie) 
-    palco NOT NULL 
+    PRIMARY KEY(palco.numero, equipamento.num_serie)
 );
 /
 
@@ -336,15 +334,14 @@ CREATE TABLE tb_atracao OF tp_atracao(
 /
 
 CREATE TABLE tb_show OF tp_show( 
-    --CONSTRAINT show_pkey PRIMARY KEY (atracao, palco, horario), 
+    PRIMARY KEY(atracao.nome, palco.numero, horario),
     id_tecn SCOPE IS tb_tecnico 
-);
+) NESTED TABLE atracao.cronograma STORE AS tb_nt_atrac_crono;
 /
 
 CREATE TABLE tb_garantir_acesso OF tp_garantir_acesso(
-    show NOT NULL,
-    ingresso NOT NULL
-);
+    PRIMARY KEY(show.atracao.nome, show.palco.numero, show.horario, ingresso.id_comprad.cpf, ingresso.num_ingresso)
+) NESTED TABLE show.atracao.cronograma STORE AS tb_nt_show_crono;
 /
 
 -- INSERÇÕES:
