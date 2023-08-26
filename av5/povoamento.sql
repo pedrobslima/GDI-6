@@ -1,16 +1,20 @@
+-------------------------- TABELA ENDERECO --------------------------
+INSERT INTO tb_endereco VALUES (tp_endereco('52130090', 'Av dos Bobos', 'Fortaleza', 'Brasil', 'Ceará'));
+INSERT INTO tb_endereco VALUES (tp_endereco('52130092', 'Av dos Loucos', 'Fortaleza', 'Brasil', 'Ceará'));
+INSERT INTO tb_endereco VALUES (tp_endereco('41330089', 'Rua Pontar', 'Manaus', 'Brasil', 'Amazonas'));
 
 -------------------------- TABELA VISITANTES --------------------------
-DROP TABLE tabela_visitantes;
-CREATE TABLE tabela_visitantes (visitante tp_visitante);
-
-INSERT INTO tabela_visitantes (visitante) VALUES (tp_visitante('70545678777', 'Valter', tp_telefone('4664-7588'), tp_endereco('55443-584', 'Sao Marcos', 'Recife', 'Brasil', 'Pernambuco', '20', 'casa')));
-INSERT INTO tabela_visitantes (visitante) VALUES (tp_visitante('23456744899', 'Caetano', tp_telefone('1247-8697', '7789-7852', '4456-8879'), tp_endereco('48792-470', 'Rua 2', 'Salvador', 'Brasil', 'Bahia', '26', 'cond')));
-INSERT INTO tabela_visitantes (visitante) VALUES (tp_visitante('45912764897', 'Priscila', tp_telefone('4002-8922', '5778-5859'), tp_endereco('32897-457', 'Santo Silvio', 'São Paulo', 'Brasil', 'São Paulo', '113', 'apto')));
-INSERT INTO tabela_visitantes (visitante) VALUES (tp_visitante('75912764890', 'Valdivia', tp_telefone('7852-8146', '3334-5557'), tp_endereco('57577-834', 'Rua verde', 'Carpina', 'Brasil', 'Pernambuco', '45', 'casa')));
-INSERT INTO tabela_visitantes (visitante) VALUES (tp_visitante('45912764897', 'Angenor', tp_telefone('1414-3222', '2112-3343'), tp_endereco('34252-353', 'Av Vermelha', 'Camaragibe', 'Brasil', 'Pernambuco', '78', 'casa')));
-INSERT INTO tabela_visitantes (visitante) VALUES (tp_visitante('52435665892', 'Pariston', tp_telefone('3779-7411'), tp_endereco('11232-221', 'Rua pinheiro', 'Abreu e Lima', 'Brasil', 'Pernambuco', '87', 'casa')));
-INSERT INTO tabela_visitantes (visitante) VALUES (tp_visitante('89666469555', 'Micon', tp_telefone('2106-8482', '1123-7989', '4564-4899'), tp_endereco('80080-321', 'Av Jackson', 'Salvador', 'Brasil', 'Bahia', '113', 'casa')));
-
+INSERT INTO tb_visitante VALUES (tp_visitante('70545678777', 'Valter', tp_telefone('4664-7588'), tp_endereco('55443-584', 'Sao Marcos', 'Recife', 'Brasil', 'Pernambuco', '20', 'casa')));
+INSERT INTO tb_visitante VALUES (tp_visitante('23456744899', 'Caetano', tp_telefone('1247-8697', '7789-7852', '4456-8879'), tp_endereco('48792-470', 'Rua 2', 'Salvador', 'Brasil', 'Bahia', '26', 'cond')));
+INSERT INTO tb_visitante VALUES (tp_visitante('45912764897', 'Priscila', tp_telefone('4002-8922', '5778-5859'), tp_endereco('32897-457', 'Santo Silvio', 'São Paulo', 'Brasil', 'São Paulo', '113', 'apto')));
+INSERT INTO tb_visitante VALUES (tp_visitante('75912764890', 'Valdivia', tp_telefone('7852-8146', '3334-5557'), tp_endereco('57577-834', 'Rua verde', 'Carpina', 'Brasil', 'Pernambuco', '45', 'casa')));
+INSERT INTO tb_visitante VALUES (tp_visitante('45912764897', 'Angenor', tp_telefone('1414-3222', '2112-3343'), tp_endereco('34252-353', 'Av Vermelha', 'Camaragibe', 'Brasil', 'Pernambuco', '78', 'casa')));
+INSERT INTO tb_visitante VALUES (tp_visitante('52435665892', 'Pariston', tp_telefone('3779-7411'), tp_endereco('11232-221', 'Rua pinheiro', 'Abreu e Lima', 'Brasil', 'Pernambuco', '87', 'casa')));
+INSERT INTO tb_visitante VALUES (tp_visitante('89666469555', 'Micon', tp_telefone('2106-8482', '1123-7989', '4564-4899'), tp_endereco('80080-321', 'Av Jackson', 'Salvador', 'Brasil', 'Bahia', '113', 'casa')));
+INSERT INTO tb_visitante VALUES (tp_visitante('12345678910', 'Fulano', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '52130090'), '50a', 'casa', varray_telefone('4002-8922')));
+INSERT INTO tb_visitante VALUES (tp_visitante('86468464866', 'Carlos', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '52130090'), '20', '101', varray_telefone('3378-2425')));
+INSERT INTO tb_visitante VALUES (tp_visitante('33747344646', 'Andre', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '52130092'), '157', 'casa', varray_telefone('2245-5454', '2143-6767')));
+INSERT INTO tb_visitante VALUES (tp_visitante('44442424422', 'Felipe', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '41330089'), '38', 'casa', varray_telefone('9989-4844')));
 
 -------------------------- TABELAS DE FUNCIONARIOS --------------------------
 DROP TABLE tabela_tecnicos;
