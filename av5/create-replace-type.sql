@@ -195,7 +195,7 @@ CREATE OR REPLACE TYPE tp_equipamento AS OBJECT(
 /
 
 CREATE OR REPLACE TYPE tp_encarrega AS OBJECT(
-    manutencao tp_manutencao,
+    manutencao REF tp_manutencao,
     numserie tp_equipamento
 );
 /
