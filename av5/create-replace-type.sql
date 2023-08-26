@@ -177,26 +177,12 @@ CREATE OR REPLACE TYPE tp_dia_preco AS OBJECT(
 /
 
 CREATE OR REPLACE TYPE tp_ingresso AS OBJECT(
-    id_comprad tp_visitante,
+    id_comprad REF tp_visitante,
     num_ingresso INTEGER,
     dia_evento REF tp_dia_preco
 );
 /
-/*
-CREATE OR REPLACE TYPE tp_compra AS OBJECT(
-    id_visitant REF tp_ingresso,
-    num_ingresso REF tp_ingresso,
-    vendedor REF tp_vendedor
-);
-/
 
-CREATE OR REPLACE TYPE tp_compra AS OBJECT(
-    id_visitant tp_ingresso.id_comprad,
-    num_ingresso tp_ingresso.num_ingresso,
-    vendedor REF tp_vendedor
-);
-/
-*/
 CREATE OR REPLACE TYPE tp_compra AS OBJECT(
     ingresso tp_ingresso,
     vendedor REF tp_vendedor
@@ -258,7 +244,7 @@ ALTER TYPE tp_atracao ADD ATTRIBUTE (colaborante REF tp_atracao);
 /
 
 CREATE OR REPLACE TYPE tp_show AS OBJECT(
-    atracao tp_atracao,
+    atracao REF tp_atracao,
     palco tp_palco,
     horario VARCHAR2(25),
     id_tecn REF tp_tecnico
@@ -315,17 +301,14 @@ CREATE TABLE tb_dia_preco OF tp_dia_preco(
 );
 /
 
-CREATE TABLE tb_ingresso OF tp_ingresso(
-    --CONSTRAINT ingresso_pkey PRIMARY KEY (id_comprad, num_ingresso),
-    (id_comprad, num_ingresso) PRIMARY KEY
-    --id_comprad SCOPE IS tb_visitante
+CREATE TABLE tb_ingresso OF tp_ingresso(  
+    id_comprad SCOPE IS tb_visitante  
 );
 /
 
-CREATE TABLE tb_compra OF tp_compra(
-    (ingresso.id_comprador, ingresso.num_ingresso) PRIMARY KEY,
-    --id_visitant SCOPE IS tb_visitante,
-    vendedor SCOPE IS tb_vendedor
+CREATE TABLE tb_compra OF tp_compra(  
+    --id_visitant SCOPE IS tb_visitante,  
+    vendedor SCOPE IS tb_vendedor  
 );
 /
 
@@ -351,8 +334,9 @@ CREATE TABLE tb_palco OF tp_palco(
 );
 /
 
-CREATE TABLE tb_disponibiliza OF tp_disponibiliza(
-    --CONSTRAINT disponib_pkey PRIMARY KEY (palco, num_serie)
+CREATE TABLE tb_disponibiliza OF tp_disponibiliza(  
+    --CONSTRAINT disponib_pkey PRIMARY KEY (palco, num_serie) 
+    palco NOT NULL 
 );
 /
 
@@ -361,9 +345,9 @@ CREATE TABLE tb_atracao OF tp_atracao(
 ) NESTED TABLE cronograma STORE AS tb_nt_cronograma;
 /
 
-CREATE TABLE tb_show OF tp_show(
-    --CONSTRAINT show_pkey PRIMARY KEY (atracao, palco, horario),
-    id_tecn SCOPE IS tp_tecnico
+CREATE TABLE tb_show OF tp_show( 
+    --CONSTRAINT show_pkey PRIMARY KEY (atracao, palco, horario), 
+    id_tecn SCOPE IS tb_tecnico 
 );
 /
 /*
