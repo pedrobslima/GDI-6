@@ -50,7 +50,6 @@ CREATE OR REPLACE TYPE tp_pessoa AS OBJECT(
     MEMBER FUNCTION get_cpf RETURN CHAR,
     MEMBER PROCEDURE exibirDetalhesPessoa,
     FINAL MEMBER PROCEDURE exibirNomeECpf
-    --ORDER MEMBER FUNCTION has_higher_salary (p tp_pessoa) RETURN INTEGER
 
 )NOT FINAL NOT INSTANTIABLE;
 /
@@ -95,21 +94,7 @@ END;
 CREATE OR REPLACE TYPE tp_funcionario UNDER tp_pessoa(
     turno VARCHAR2(8),
     salario NUMBER
-    -- criar uma funcao exibir dados de um funcionario
 )NOT FINAL NOT INSTANTIABLE;
-/
-CREATE OR REPLACE TYPE BODY tp_funcionario AS -- PARA CRIAR LISTA DE SALARIOS ORDENADOS
-  ORDER MEMBER FUNCTION has_higher_salary (p tp_funcionario) RETURN INTEGER IS 
-  BEGIN 
-    IF salario < p.salario THEN
-      RETURN -1;
-    ELSIF salario > p.salario THEN 
-      RETURN 1;
-    ELSE 
-      RETURN 0;
-    END IF;
-  END;
-END;
 /
 ---------------------------------------------------------------------------------^
 CREATE OR REPLACE TYPE tp_manutencao UNDER tp_funcionario(); --OK
@@ -209,8 +194,40 @@ CREATE OR REPLACE TYPE tp_atracao AS OBJECT( --OK
     nome VARCHAR2(30),
     cache NUMBER,
     contatos varray_contatos,
-    cronograma tp_nt_cronograma
+    cronograma tp_nt_cronograma,
+    CONSTRUCTOR FUNCTION tp_atracao(SELF IN OUT tp_atracao, nome VARCHAR2, cache NUMBER, contatos varray_contatos, cronograma tp_nt_cronograma) RETURN SELF AS RESULT,
+    ORDER MEMBER FUNCTION has_higher_pay (a tp_atracao) RETURN INTEGER--,
+    --MAP MEMBER FUNCTION pay_per_show RETURN REAL
 );
+/
+CREATE OR REPLACE TYPE BODY tp_atracao AS 
+    CONSTRUCTOR FUNCTION tp_atracao(SELF IN OUT tp_atracao, nome VARCHAR2, cache NUMBER, contatos varray_contatos, cronograma tp_nt_cronograma) RETURN SELF AS RESULT IS
+    BEGIN
+    	SELF.nome := nome;
+		SELF.cache := cache;
+		SELF.contatos := contatos;
+		SELF.cronograma := cronograma;
+    END;
+    ORDER MEMBER FUNCTION has_higher_pay (a tp_atracao) RETURN INTEGER IS 
+    BEGIN 
+        IF cache > a.cache THEN
+        RETURN 1;
+        ELSE 
+        RETURN 0;
+        END IF;
+    END has_higher_pay;
+    /*
+	MAP MEMBER FUNCTION pay_per_show RETURN REAL IS
+        num_shows NUMBER;
+    BEGIN
+        SELECT COUNT(*) INTO num_shows FROM TABLE (SELF.cronograma);
+		IF num_shows = 0 THEN
+            num_shows := 1;
+        END IF;
+		RETURN (SELF.cache)/num_shows;
+    END pay_per_show;
+    */
+END;
 /
 
 ALTER TYPE tp_atracao ADD ATTRIBUTE (colaborante REF tp_atracao);
@@ -311,6 +328,8 @@ CREATE TABLE tb_atracao OF tp_atracao(
     nome PRIMARY KEY
 ) NESTED TABLE cronograma STORE AS tb_nt_cronograma;
 /
+
+--SELECT A.pay_per_show() AS Pay_per_Show FROM tb_atracao A WHERE A.nome = 'King Crimson';
 
 CREATE TABLE tb_show OF tp_show( 
     PRIMARY KEY(atracao.nome, palco.numero, horario),
