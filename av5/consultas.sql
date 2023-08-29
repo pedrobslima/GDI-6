@@ -6,6 +6,12 @@ SELECT v.visitante.cpf AS CPF,
        v.visitante.get_telefones() AS TELEFONES
 FROM tabela_visitantes v;*/
 
+-- [TESTAR] - Mostre quantos clientes têm por bairro,  e quantos deles tem o cep igual ao de João Francisco
+SELECT COUNT(*), COUNT(DEREF(tb_visitante.endereco).cep), DEREF(tb_visitante.endereco).bairro, as bairro
+FROM tb_visitante GROUP BY (DEREF(tb_visitante.endereco).bairro)
+HAVING DEREF(tb_visitante.endereco).cep = (SELECT DEREF(tb_visitante.endereco).cep FROM tb_visitante 
+    where REF(tb_visitante).nome = 'João Francisco'));
+
 -------------------------- TABELAS DE FUNCIONARIOS --------------------------
 SELECT t.funcionario.cpf AS CPF,
        t.funcionario.nome AS NOME,
