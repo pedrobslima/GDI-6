@@ -1,17 +1,17 @@
 
     tb_cronograma   (data_hora_inicio DATE, data_hora_termino DATE);
 OK  tb_endereco     (cep, rua, cidade, pais, estado);
-    tb_pessoa       (cpf, nome, endereco REF, numero, comp, telefone varray_telefone); *NOT INSTANTIABLE
-    tb_funcionario  (turno, salario); *NOT INSTANTIABLE
+ ~  tb_pessoa       (cpf, nome, endereco REF, numero, comp, telefone varray_telefone); *NOT INSTANTIABLE
+ ~  tb_funcionario  (turno, salario); *NOT INSTANTIABLE
     tb_manutencao   (_herda_de_funcionario_);
     tb_tecnico      (_herda_de_funcionario_);
-    tb_vendedor     (_herda_de_funcionario_);
+OK  tb_vendedor     (_herda_de_funcionario_);
     tb_visitante    (_herda_de_pessoa_);
 
 
 OK  tb_nome_preco   (nome, preco);
     tb_equipamento  (num_serie, nome REF tp_nome_preco, tipo VARCHAR);
-    tb_palco        (numero, tamanho);
+OK  tb_palco        (numero, tamanho);
 [SEM POVOAMENTO]    tb_encarrega    (manutencao tp_manutencao, equipamento tp_equipamento);
 OK  tb_disponibiliza(palco tp_palco, equipamento tp_equipamento);
 
