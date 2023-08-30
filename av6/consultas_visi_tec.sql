@@ -22,7 +22,7 @@ END;
 SELECT T.cpf, T.nome, DEREF(T.endereco).cep AS cep, DEREF(T.endereco).cidade AS cidade, TF.* FROM tb_tecnico T, TABLE (T.telefone) TF;
 /
 
--- Todos os funcionários q moram em Pernambuco:   vvvvvvvvvvvvv SELECT REF
+-- Todos os funcionários q moram em Pernambuco:   vvvvvvvvvvvvv-SELECT REF
 SELECT nome FROM tb_manutencao WHERE endereco IN (SELECT REF(E) FROM tb_endereco E WHERE E.estado = 'Pernambuco')
 UNION
 SELECT nome FROM tb_vendedor WHERE endereco IN (SELECT REF(E) FROM tb_endereco E WHERE E.estado = 'Pernambuco')

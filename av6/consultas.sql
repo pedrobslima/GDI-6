@@ -1,3 +1,8 @@
+-------------------------- TABELA INGRESSOS/DIA-PREÇO --------------------------
+
+                    --   vvvvvvvvvvvv MAP MEMBER FUNCTION venda_total:
+SELECT DP.dia_evento, DP.venda_total() AS total_de_vendas FROM tb_dia_preco DP
+
 -------------------------- TABELA DE VISITANTES --------------------------
 SELECT v.visitante.cpf AS CPF,
        v.visitante.nome AS NOME,

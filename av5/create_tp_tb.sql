@@ -26,7 +26,7 @@
 */
 -- TIPOS:
 
-CREATE OR REPLACE TYPE tp_endereco AS OBJECT( --OK
+CREATE OR REPLACE TYPE tp_endereco AS OBJECT(
     cep VARCHAR2(9), 
     rua VARCHAR2(30), 
     cidade VARCHAR2(30), 
@@ -64,11 +64,11 @@ CREATE OR REPLACE TYPE BODY tp_pessoa AS
 		SELF.telefone := telefone;
 		RETURN;
 	END;
-    MEMBER FUNCTION get_cpf RETURN CHAR IS
+    MEMBER FUNCTION get_cpf RETURN CHAR IS -- feita
     BEGIN 
         RETURN SELF.cpf; 
     END; 
-	MEMBER PROCEDURE exibirDetalhesPessoa IS
+	MEMBER PROCEDURE exibirDetalhesPessoa IS -- feita
         endereco_obj tp_endereco;
     BEGIN 
         DBMS_OUTPUT.PUT_LINE('CPF: ' || SELF.cpf); 
@@ -81,7 +81,7 @@ CREATE OR REPLACE TYPE BODY tp_pessoa AS
         DBMS_OUTPUT.PUT_LINE('Número: ' || SELF.numero); 
         DBMS_OUTPUT.PUT_LINE('Complemento: ' || SELF.comp); 
     END;
-	FINAL MEMBER PROCEDURE exibirNomeECpf IS 
+	FINAL MEMBER PROCEDURE exibirNomeECpf IS -- FALTA ESSA
     BEGIN 
         DBMS_OUTPUT.PUT_LINE('CPF: ' || SELF.cpf); 
         DBMS_OUTPUT.PUT_LINE('Nome: ' || SELF.nome); 
@@ -97,19 +97,19 @@ CREATE OR REPLACE TYPE tp_funcionario UNDER tp_pessoa(
 )NOT FINAL NOT INSTANTIABLE;
 /
 ---------------------------------------------------------------------------------^
-CREATE OR REPLACE TYPE tp_manutencao UNDER tp_funcionario(); --OK
+CREATE OR REPLACE TYPE tp_manutencao UNDER tp_funcionario();
 /
 
-CREATE OR REPLACE TYPE tp_tecnico UNDER tp_funcionario(); --OK
+CREATE OR REPLACE TYPE tp_tecnico UNDER tp_funcionario();
 /
 
-CREATE OR REPLACE TYPE tp_vendedor UNDER tp_funcionario(); --OK
+CREATE OR REPLACE TYPE tp_vendedor UNDER tp_funcionario();
 /
 
-CREATE OR REPLACE TYPE tp_visitante UNDER tp_pessoa (); --OK
+CREATE OR REPLACE TYPE tp_visitante UNDER tp_pessoa ();
 /
 
-CREATE OR REPLACE TYPE tp_dia_preco AS OBJECT( --OK
+CREATE OR REPLACE TYPE tp_dia_preco AS OBJECT( 
     dia_evento DATE,
     preco NUMBER,
     MAP MEMBER FUNCTION venda_total RETURN INTEGER 
@@ -129,7 +129,7 @@ CREATE TABLE tb_ingresso OF tp_ingresso(
 /
 
 CREATE OR REPLACE TYPE BODY tp_dia_preco AS 
-    MAP MEMBER FUNCTION venda_total RETURN INTEGER IS
+    MAP MEMBER FUNCTION venda_total RETURN INTEGER IS -- feita
         total_ingressos INTEGER := 0;
     BEGIN        
         SELECT COUNT(*) INTO total_ingressos
@@ -147,13 +147,13 @@ CREATE OR REPLACE TYPE tp_compra AS OBJECT(
 );
 /
 
-CREATE OR REPLACE TYPE tp_nome_preco AS OBJECT( --OK
+CREATE OR REPLACE TYPE tp_nome_preco AS OBJECT(
     nome VARCHAR2(30),
     preco NUMBER
 );
 /
 
-CREATE OR REPLACE TYPE tp_equipamento AS OBJECT( --OK
+CREATE OR REPLACE TYPE tp_equipamento AS OBJECT(
     num_serie VARCHAR(30),
     nome REF tp_nome_preco,
     tipo VARCHAR2(20)
@@ -166,13 +166,13 @@ CREATE OR REPLACE TYPE tp_encarrega AS OBJECT(
 );
 /
 
-CREATE OR REPLACE TYPE tp_palco AS OBJECT( --OK
+CREATE OR REPLACE TYPE tp_palco AS OBJECT(
     numero NUMBER,
     tamanho VARCHAR2(9)
 );
 /
 
-CREATE OR REPLACE TYPE tp_disponibiliza AS OBJECT( --OK
+CREATE OR REPLACE TYPE tp_disponibiliza AS OBJECT(
     palco tp_palco,
     equipamento tp_equipamento
 );
@@ -190,7 +190,7 @@ CREATE OR REPLACE TYPE tp_cronograma AS OBJECT(
 CREATE TYPE tp_nt_cronograma AS TABLE OF tp_cronograma;
 /
 
-CREATE OR REPLACE TYPE tp_atracao AS OBJECT( --OK
+CREATE OR REPLACE TYPE tp_atracao AS OBJECT(
     nome VARCHAR2(30),
     cache NUMBER,
     contatos varray_contatos,
@@ -208,7 +208,7 @@ CREATE OR REPLACE TYPE BODY tp_atracao AS
 		SELF.contatos := contatos;
 		SELF.cronograma := cronograma;
     END;
-    ORDER MEMBER FUNCTION has_higher_pay (a tp_atracao) RETURN INTEGER IS 
+    ORDER MEMBER FUNCTION has_higher_pay (a tp_atracao) RETURN INTEGER IS -- feita
     BEGIN 
         IF cache > a.cache THEN
         RETURN 1;
