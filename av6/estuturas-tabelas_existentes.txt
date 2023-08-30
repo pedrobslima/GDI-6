@@ -23,7 +23,7 @@ OK  tb_compra       (ingresso tp_ingresso, vendedor REF);
     __              tp_cronograma   (data_hora_inicio DATE, data_hora_termino DATE);
     __              tp_nt_cronograma AS TABLE OF tp_cronograma;
     __              varray_contatos AS VARRAY(5) OF VARCHAR2(50);
-    tb_atracao      (nome, cache, contatos varray_contatos, cronograma tp_nt_cronograma);
+OK  tb_atracao      (nome, cache, contatos varray_contatos, cronograma tp_nt_cronograma);
 
     tb_show             (atracao tp_atracao, palco tp_palcom horario, id_tecn REF tp_tecnico);
 OK  tb_garantir_acesso  (show tp_show, ingresso tp_ingresso);
