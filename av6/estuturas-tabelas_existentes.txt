@@ -12,7 +12,7 @@ OK  tb_endereco     (cep, rua, cidade, pais, estado);
     tb_nome_preco   (nome, preco);
     tb_equipamento  (num_serie, nome REF tp_nome_preco, tipo VARCHAR);
     tb_palco        (numero, tamanho);
-    tb_encarrega    (manutencao tp_manutencao, equipamento tp_equipamento);
+[SEM POVOAMENTO]    tb_encarrega    (manutencao tp_manutencao, equipamento tp_equipamento);
 OK  tb_disponibiliza(palco tp_palco, equipamento tp_equipamento);
 
 
