@@ -1,5 +1,4 @@
 
-    tb_cronograma   (data_hora_inicio DATE, data_hora_termino DATE);
 OK  tb_endereco     (cep, rua, cidade, pais, estado);
  ~  tb_pessoa       (cpf, nome, endereco REF, numero, comp, telefone varray_telefone); *NOT INSTANTIABLE
  ~  tb_funcionario  (turno, salario); *NOT INSTANTIABLE
@@ -21,6 +20,7 @@ OK  tb_ingresso     (id_comprad tp_visitante, num_ingresso INTEGER, dia_evento R
 OK  tb_compra       (ingresso tp_ingresso, vendedor REF);
 
 
+    __              tp_cronograma   (data_hora_inicio DATE, data_hora_termino DATE);
     __              tp_nt_cronograma AS TABLE OF tp_cronograma;
     __              varray_contatos AS VARRAY(5) OF VARCHAR2(50);
     tb_atracao      (nome, cache, contatos varray_contatos, cronograma tp_nt_cronograma);
