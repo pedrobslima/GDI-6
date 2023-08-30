@@ -18,7 +18,7 @@ OK  tb_endereco     (cep, rua, cidade, pais, estado);
 
 OK  tb_dia_preco    (dia_evento DATE, preco);
 OK  tb_ingresso     (id_comprad tp_visitante, num_ingresso INTEGER, dia_evento REF tp_dia_preco);
-    tb_compra       (ingresso tp_ingresso, vendedor REF);
+OK  tb_compra       (ingresso tp_ingresso, vendedor REF);
 
 
     __              tp_nt_cronograma AS TABLE OF tp_cronograma;
