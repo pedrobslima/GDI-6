@@ -26,4 +26,4 @@ OK  tb_compra       (ingresso tp_ingresso, vendedor REF);
     tb_atracao      (nome, cache, contatos varray_contatos, cronograma tp_nt_cronograma);
 
     tb_show             (atracao tp_atracao, palco tp_palcom horario, id_tecn REF tp_tecnico);
-    tb_garantir_acesso  (show tp_show, ingresso tp_ingresso);
+OK  tb_garantir_acesso  (show tp_show, ingresso tp_ingresso);
