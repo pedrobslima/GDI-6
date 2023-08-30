@@ -16,6 +16,15 @@ BEGIN
 	CLOSE cs;
 END;
 /
+
+	
+-- Mostre quantos clientes têm por cep,  e quantos deles tem o cep igual ao de Carlos
+SELECT v.nome, DEREF(v.endereco).cep AS CEP, COUNT(*) AS QTD_CEP FROM tb_visitante v
+GROUP BY v.nome, DEREF(v.endereco).cep
+    HAVING DEREF(v.endereco).cep = (SELECT DEREF(v1.endereco).cep FROM tb_visitante v1
+    where v1.nome = 'Carlos');
+
+
 -------------------------- TABELAS DE FUNCIONARIOS --------------------------
 
                 --    vvvvv-----SELECT DEREF--------vvvvv                               vvvv-Consulta à VARRAY
