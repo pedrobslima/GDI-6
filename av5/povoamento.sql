@@ -2,7 +2,7 @@
 INSERT INTO tb_endereco VALUES (tp_endereco('67130090', 'Av dos Bobos', 'Recife', 'Brasil', 'Pernambuco'));
 INSERT INTO tb_endereco VALUES (tp_endereco('52130092', 'Av dos Loucos', 'Fortaleza', 'Brasil', 'Ceará'));
 INSERT INTO tb_endereco VALUES (tp_endereco('41330089', 'Rua Pontar', 'Manaus', 'Brasil', 'Amazonas'));
-INSERT INTO tb_endereco VALUES (tp_endereco('52130090', 'Av. dos Bobos', 'Fortaleza', 'Brasil', 'Ceara'));
+INSERT INTO tb_endereco VALUES (tp_endereco('52130090', 'Av. dos Bobos', 'Fortaleza', 'Brasil', 'Ceará'));
 INSERT INTO tb_endereco VALUES (tp_endereco('80050010', 'Rua das Flores', 'Curitiba', 'Brasil', 'Paraná'));
 INSERT INTO tb_endereco VALUES (tp_endereco('30310080', 'Av da Liberdade', 'São Paulo', 'Brasil', 'São Paulo'));
 INSERT INTO tb_endereco VALUES (tp_endereco('60115100', 'Rua das Palmeiras', 'Rio de Janeiro', 'Brasil', 'Rio de Janeiro'));
@@ -37,8 +37,8 @@ INSERT INTO tb_manutencao VALUES (tp_manutencao('69825317854', 'Geolio', (SELECT
 
 INSERT INTO tb_tecnico VALUES (tp_tecnico('99796767331', 'Marceline', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '50670300'), '10', 'casa', varray_telefone('4646-9199'), 'INTEGRAL', 2800));
 INSERT INTO tb_tecnico VALUES (tp_tecnico('78258046626', 'Pedro', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '79542768'), '335', 'casa', varray_telefone('3303-0558'), 'NOITE', 2300));
-INSERT INTO tb_tecnico VALUES (tp_tecnico('44455979799', 'Netero', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '52130090'), '77', 'casa', varray_telefone('1134-3646', '7000-7000'),  'DIA', 2100));
-INSERT INTO tb_tecnico VALUES (tp_tecnico('32334242444', 'Vilma', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '40270100'), '32', 'casa', varray_telefone('8797-2777'), 'DIA', 2100));
+INSERT INTO tb_tecnico VALUES (tp_tecnico('44455979799', 'Netero', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '52130090'), '77', 'casa', varray_telefone('1134-3646', '7000-7000'),  'MANHÃ', 2100));
+INSERT INTO tb_tecnico VALUES (tp_tecnico('32334242444', 'Vilma', (SELECT REF(E) FROM tb_endereco E WHERE E.cep = '40270100'), '32', 'casa', varray_telefone('8797-2777'), 'MANHÃ', 2100));
 
 -------------------------- INGRESSOS E MANHÃ-PRECO  --------------------------
 

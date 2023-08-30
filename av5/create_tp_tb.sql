@@ -81,7 +81,7 @@ CREATE OR REPLACE TYPE BODY tp_pessoa AS
         DBMS_OUTPUT.PUT_LINE('Número: ' || SELF.numero); 
         DBMS_OUTPUT.PUT_LINE('Complemento: ' || SELF.comp); 
     END;
-	FINAL MEMBER PROCEDURE exibirNomeECpf IS -- FALTA ESSA
+	FINAL MEMBER PROCEDURE exibirNomeECpf IS -- feita
     BEGIN 
         DBMS_OUTPUT.PUT_LINE('CPF: ' || SELF.cpf); 
         DBMS_OUTPUT.PUT_LINE('Nome: ' || SELF.nome); 
