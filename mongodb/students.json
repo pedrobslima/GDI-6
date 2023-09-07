@@ -1,0 +1,97 @@
+[{
+  "_id": {
+    "$oid": "64f9f2949b3e1ab3904ce3ac"
+  },
+  "name": "João Silva",
+  "learning": {
+    "English": {
+      "progress": 0.8,
+      "current_streak": 365
+    },
+    "Japanese": {
+      "progress": 0.12,
+      "current_streak": 2
+    }
+  },
+  "age": 12,
+  "registration_date": {
+    "$date": "2023-08-14T00:00:00.000Z"
+  },
+  "email": "joao.silva1987@email.com"
+},
+{
+  "_id": {
+    "$oid": "64fa2e6d9b3e1ab3904ce3cb"
+  },
+  "name": "Maria Santos",
+  "learning": {
+    "English": {
+      "progress": 0.23,
+      "current_streak": 31
+    }
+  },
+  "age": 23,
+  "registration_date": {
+    "$date": "2023-08-14T00:00:00.000Z"
+  },
+  "email": "m.santos007@email.com"
+},
+{
+  "_id": {
+    "$oid": "64fa2eb29b3e1ab3904ce3cd"
+  },
+  "name": "Gabriel Costa",
+  "learning": {
+    "Russian": {
+      "progress": 0.51,
+      "current_streak": 72
+    }
+  },
+  "age": 18,
+  "registration_date": {
+    "$date": "2023-08-14T00:00:00.000Z"
+  },
+  "email": "gcosta22@email.com"
+},
+{
+  "_id": {
+    "$oid": "64fa2f229b3e1ab3904ce3d1"
+  },
+  "name": "Sofia Pereira",
+  "learning": {
+    "Japanese": {
+      "progress": 0.18,
+      "current_streak": 12
+    }
+  },
+  "age": 27,
+  "registration_date": {
+    "$date": "2023-08-14T00:00:00.000Z"
+  },
+  "email": "sofia.pereira99@email.com"
+},
+{
+  "_id": {
+    "$oid": "64fa303f9b3e1ab3904ce3d3"
+  },
+  "name": "Leonardo Ramos",
+  "learning": {
+    "Russian": {
+      "progress": 0.78,
+      "current_streak": 542
+    },
+    "Japanese": {
+      "progress": 0.53,
+      "current_streak": 342
+    },
+    "Chinese": {
+      "progress": 0.15,
+      "current_streak": 45
+    }
+  },
+  "age": 31,
+  "registration_date": {
+    "$date": "2023-08-14T00:00:00.000Z"
+  },
+  "email": "leonardoramos2023@email.com"
+}]
