@@ -1,61 +1,46 @@
-# USE
-
-# FIND
-
+# USE ✓
+# FIND ✓
 # SIZE
-
-# AGGREGATE
-
-# MATCH
-
+# AGGREGATE ✓
+# MATCH ✓
 # PROJECT
-
 # GTE
-
-# GROUP
-
+# GROUP ✓
 # SUM
-
-# COUNT (COUNTDOCUMENTS)
-
+# COUNT (COUNTDOCUMENTS) ✓
 # MAX
-
-# AVG
-
-# EXISTS
-
-# SORT
-
-# LIMIT
-
+# AVG ✓
+# EXISTS ✓
+# SORT ✓
+# LIMIT ✓
 # $WHERE
-
 # MAPREDUCE
-
 # FUNCTION
-
 # PRETTY
-
 # ALL
-
 # SET
-
 # TEXT
-
 # SEARCH
-
 # FILTER
-
 # UPDATE (UPDATEONE/UPDATEMANY)
-
 # SAVE (UPDATEONE/INSERTONE)
-
 # RENAMECOLLECTION
-
 # COND
-
 # LOOKUP
-
 # FINDONE
-
 # ADDTOSET
+
+# Seleciona o banco de dados
+use language-school
+
+# Consulta o nome dos estudantes que estão aprendendo Chinês, assim como o seu progresso no idioma e a streak atuais
+db.students.find({"learning.Chinese":{$exists:true}}, {_id:false,"name":true,"learning.Chinese.progress":true, "learning.Chinese.current_streak":true})
+
+# Consulta a idade média dos estudantes de japonês
+db.students.aggregate([{$match:{"learning.Japanese":{$exists: true}}}, {$group:{_id:null, "Average japanese student age":{$avg:"$age"}}}])
+
+# Consulta quantos idiomas da família das línguas eslavas existem no banco de dados
+db.languages.find({"family":"Slavic"}).count()
+
+# Consulta o nome e o progresso atual dos 5 estudantes de inglês mais avançados no idioma ordenados de maneira decrescente
+db.students.find({"learning.English":{$exists:true}}, {_id:false, "name":true, "learning.English.progress":true}).sort({"learning.English.progress":-1}).limit(5)
