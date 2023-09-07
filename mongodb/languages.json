@@ -4,7 +4,7 @@
   },
   "name": "English",
   "family": "Germanic",
-  "writing_system": "Latin",
+  "writing_system": "Latin Script",
   "native_to": [
     "United Kingdom",
     "United States",
@@ -21,7 +21,7 @@
   },
   "name": "Portuguese",
   "family": "Romance",
-  "writing_system": "Latin",
+  "writing_system": "Latin Script",
   "native_to": [
     "Portugal",
     "Brazil",
@@ -50,7 +50,7 @@
   },
   "name": "Polish",
   "family": "Slavic",
-  "writing_system": "Latin",
+  "writing_system": "Latin Script",
   "native_to": "Poland",
   "speakers": 40000000
 },
@@ -60,7 +60,7 @@
   },
   "name": "Russian",
   "family": "Slavic",
-  "writing_system": "Cyrillic",
+  "writing_system": "Cyrillic Script",
   "native_to": "Russia",
   "speakers": 150000000
 },
@@ -77,4 +77,105 @@
   ],
   "native_to": "Japan",
   "speakers": 128000000
+},
+{
+  "_id": {
+    "$oid": "64fa5866c2e95abcfc763c73"
+  },
+  "name": "French",
+  "family": "Romance",
+  "writing_system": "Latin Script",
+  "native_to": [
+    "France",
+    "Belgium",
+    "Switzerland",
+    "Canada",
+    "Democratic Republic of the Congo"
+  ],
+  "speakers": 220000000
+},
+{
+  "_id": {
+    "$oid": "64fa58bdc2e95abcfc763c75"
+  },
+  "name": "German",
+  "family": "Germanic",
+  "writing_system": "Latin Script",
+  "native_to": [
+    "Germany",
+    "Austria",
+    "Switzerland",
+    "Luxembourg",
+    "Belgium",
+    "Liechtenstein"
+  ],
+  "speakers": 120000000
+},
+{
+  "_id": {
+    "$oid": "64fa59e0c2e95abcfc763c77"
+  },
+  "name": "Arabic",
+  "family": "Semitic",
+  "writing_system": "Arabic script",
+  "native_to": [
+    "Algeria",
+    "Saudi Arabia",
+    "Egypt",
+    "Iraq",
+    "Jordan",
+    "Lebanon",
+    "Morocco",
+    "Palestine",
+    "Qatar",
+    "Sudan",
+    "Syria",
+    "Tunisia",
+    "United Arab Emirates",
+    "Yemen",
+    "Kuwait",
+    "Bahrain",
+    "Libya",
+    "Mauritania",
+    "Oman"
+  ],
+  "speakers": 310000000
+},
+{
+  "_id": {
+    "$oid": "64fa5a76c2e95abcfc763c79"
+  },
+  "name": "Spanish",
+  "family": "Romance",
+  "writing_system": "Latin Script",
+  "native_to": [
+    "Spain",
+    "Argentina",
+    "Bolivia",
+    "Chile",
+    "Colombia",
+    "Costa Rica",
+    "Cuba",
+    "Ecuador",
+    "Mexico",
+    "Paraguay",
+    "Peru",
+    "Uruguay",
+    "Puerto Rico",
+    "Venezuela"
+  ],
+  "speakers": 460000000
+},
+{
+  "_id": {
+    "$oid": "64fa5afec2e95abcfc763c7b"
+  },
+  "name": "Nahuatl",
+  "family": "Nahuan",
+  "writing_system": [
+    "Latin script",
+    "Nahuatl script"
+  ],
+  "native_to": "Mexico",
+  "speakers": 1500000
 }]

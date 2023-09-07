@@ -18,11 +18,11 @@
 # FUNCTION
 # PRETTY
 # ALL
-# SET
+# SET ✓ ?
 # TEXT
 # SEARCH
 # FILTER
-# UPDATE (UPDATEONE/UPDATEMANY)
+# UPDATE (UPDATEONE/UPDATEMANY) ✓ ?
 # SAVE (UPDATEONE/INSERTONE)
 # RENAMECOLLECTION
 # COND
@@ -44,3 +44,6 @@ db.languages.find({"family":"Slavic"}).count()
 
 # Consulta o nome e o progresso atual dos 5 estudantes de inglês mais avançados no idioma ordenados de maneira decrescente
 db.students.find({"learning.English":{$exists:true}}, {_id:false, "name":true, "learning.English.progress":true}).sort({"learning.English.progress":-1}).limit(5)
+
+# Update de parâmetro que estava inconsistente (?)
+db.languages.updateMany({writing_system:"Latin"}, {$set: {writing_system:"Latin Script"}})

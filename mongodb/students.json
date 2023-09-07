@@ -94,4 +94,113 @@
     "$date": "2023-08-14T00:00:00.000Z"
   },
   "email": "leonardoramos2023@email.com"
+},
+{
+  "_id": {
+    "$oid": "64fa5df3c2e95abcfc763c7e"
+  },
+  "name": "Ivan Petrov",
+  "learning": {
+    "Nahuatl": {
+      "progress": 0.05,
+      "current_streak": 2
+    },
+    "Italian": {
+      "progress": 0.41,
+      "current_streak": 110
+    }
+  },
+  "age": 30,
+  "registration_date": {
+    "$date": "2023-08-16T00:00:00.000Z"
+  },
+  "email": "ivan.petrov@email.com"
+},
+{
+  "_id": {
+    "$oid": "64fa5e1bc2e95abcfc763c80"
+  },
+  "name": "Anna Müller",
+  "learning": {
+    "Portuguese": {
+      "progress": 0.85,
+      "current_streak": 357
+    },
+    "Arabic": {
+      "progress": 0.24,
+      "current_streak": 140
+    }
+  },
+  "age": 27,
+  "registration_date": {
+    "$date": "2023-08-19T00:00:00.000Z"
+  },
+  "email": "anna.mueller@email.com"
+},
+{
+  "_id": {
+    "$oid": "64fa5e5bc2e95abcfc763c82"
+  },
+  "name": "Katarzyna Nowak",
+  "learning": {
+    "Spanish": {
+      "progress": 0.57,
+      "current_streak": 226
+    },
+    "French": {
+      "progress": 0.32,
+      "current_streak": 151
+    }
+  },
+  "age": 28,
+  "registration_date": {
+    "$date": "2023-08-17T00:00:00.000Z"
+  },
+  "email": "katarzyna.nowak@email.com"
+},
+{
+  "_id": {
+    "$oid": "64fa5e8bc2e95abcfc763c84"
+  },
+  "name": "Elena Rodrigues",
+  "learning": {
+    "Chinese": {
+      "progress": 0.05,
+      "current_streak": 4
+    }
+  },
+  "age": 25,
+  "registration_date": {
+    "$date": "2023-08-15T00:00:00.000Z"
+  },
+  "email": "elena.rodriguez@email.com"
+},
+{
+  "_id": {
+    "$oid": "64fa5f11c2e95abcfc763c86"
+  },
+  "name": "Alberto Marques",
+  "learning": {
+    "Russian": {
+      "progress": 0.8,
+      "current_streak": 432
+    },
+    "Nahuatl": {
+      "progress": 0.75,
+      "current_streak": 327
+    },
+    "Chinese": {
+      "progress": 0.51,
+      "current_streak": 146
+    },
+    "Arabic": {
+      "progress": 0.88,
+      "current_streak": 476
+    }
+  },
+  "age": 41,
+  "registration_date": {
+    "$date": "2023-08-18T00:00:00.000Z"
+  },
+  "email": "albertoMarques1@email.com"
 }]
