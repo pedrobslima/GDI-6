@@ -103,3 +103,23 @@ db.alunos.aggregate([
        }
     }
  ]);
+
+
+# Consulta dos usuarios que acessaram recentemente, ordenados por qntd de acesso
+db.alunos.aggregate([{
+        $match: {
+            // MES E DATA SÃO EXPRESSOS POR INDEX
+            "acesso.ultimo": { $gte: new Date(2023, 8, 9) }
+            //                                YYYY, M, D
+        }
+    },{
+        $group: {
+            _id: "$cpf",
+            nome: { $first: "$nome" },
+            sequenciaAtual: { $sum: "$acesso.sequencia" },
+            ultimoacesso: { $first: "$acesso.ultimo" },
+        }
+    },{
+        $sort: { sequenciaAtual: -1 }
+    }
+]);
