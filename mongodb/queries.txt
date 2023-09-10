@@ -5,7 +5,7 @@
 # MATCH ✓
 # PROJECT ✓
 # GTE
-# GROUP 
+# GROUP ✓
 # SUM
 # COUNT (COUNTDOCUMENTS) 
 # MAX
