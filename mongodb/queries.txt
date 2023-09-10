@@ -80,6 +80,7 @@ db.professores.findOne(
    }
 )
 
+# PROJECT - AVG
 db.alunos.aggregate([{
   $project: {
     _id:0
@@ -91,3 +92,14 @@ db.alunos.aggregate([{
     }
   }
 ]);
+
+# PROJECT - SIZE
+db.alunos.aggregate([
+    {
+        $project: {
+            _id: '$cpf',
+            nome: 1,
+            idiomasEmProgresso: { $size: '$cursos' }
+       }
+    }
+ ]);
