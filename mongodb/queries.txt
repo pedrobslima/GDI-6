@@ -10,7 +10,7 @@
 # COUNT (COUNTDOCUMENTS) ✓
 # MAX
 # AVG ✓
-# EXISTS ✓
+# EXISTS
 # SORT ✓
 # LIMIT ✓
 # $WHERE
@@ -33,8 +33,8 @@
 # Seleciona o banco de dados
 use language-school
 
-# Consulta o nome dos estudantes que estão aprendendo Chinês, assim como o seu progresso no idioma e a streak atuais
-db.students.find({"learning.Chinese":{$exists:true}}, {_id:false,"name":true,"learning.Chinese.progress":true, "learning.Chinese.current_streak":true})
+# Consulta o nome dos estudantes que estão aprendendo Chinês, assim como o seu progresso no idioma e o número da última atividade concluída
+db.alunos.find({"cursos.idioma":"chines"}, {_id:false, "nome":true, "cursos.$":true})
 
 # Consulta a idade média dos estudantes de japonês
 db.students.aggregate([{$match:{"learning.Japanese":{$exists: true}}}, {$group:{_id:null, "Average japanese student age":{$avg:"$age"}}}])
