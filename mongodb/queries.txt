@@ -9,7 +9,7 @@
 # SUM
 # COUNT (COUNTDOCUMENTS) 
 # MAX
-# AVG 
+# AVG ✓
 # EXISTS
 # SORT ✓
 # LIMIT 
@@ -80,3 +80,14 @@ db.professores.findOne(
    }
 )
 
+db.alunos.aggregate([{
+  $project: {
+    _id:0
+    nome: 1,
+    cpf:  1,
+    mediaProgresso: {
+      $avg: "$cursos.progresso"
+      },
+    }
+  }
+]);
