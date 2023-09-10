@@ -41,3 +41,42 @@ db.students.aggregate([{$match:{"learning.Japanese":{$exists: true}}}, {$group:{
 
 # Consulta o nome e o progresso atual dos 5 estudantes de inglês mais avançados no idioma ordenados de maneira decrescente
 db.alunos.aggregate([{$match:{"cursos.idioma":"ingles"}},{$project:{_id:false, nome:true, cursos:{$filter:{input:"$cursos", as: "curso", cond:{$eq:["$$curso.idioma", "ingles"]}}}}}, {$sort:{"cursos.progresso":-1}}])
+
+
+# [EM TESTES]
+
+-> faça uma pesquisa por idioma chines pra saber quantos alunos estão cadastrados
+neste idioma - slide 15 aula 2 
+db.aluno.find({ $text: { $search: "chinês" } })
+
+
+-> Insere mais 2 paises que falam o ingles como lingua nativa 
+
+db.languages.updateOne(
+	{"_id": "64f9f1939b3e1ab3904ce3a7}, 
+	{$addToSet: { native_to: { $each: ["Puerto Rico", "Trinidad"] } }
+
+)
+
+-> Insere mais 2 paises que falam o ingles como lingua nativa se ainda não foram adicionadas 
+
+db.languages.updateOne(
+   { "_id": "64f9f1939b3e1ab3904ce3a7" }, 
+   { $addToSet: { native_to: { $each: ["Puerto Rico", "Trinidad"] } } }
+)
+
+
+-> A primeira condição procura por um professor com o nome "Ana Silva", e a segunda condição procura por um professor que tenha uma data de admissão após 1 de abril de 2021. Em seguida, estamos projetando os campos "nome" e "admissao" para serem incluídos no resultado da consulta.
+db.professores.findOne(
+   {
+     $or: [
+            { nome : 'Ana Silva'},
+            { admissao: { $gt: new Date('2021-04-01') } }
+          ]
+   },
+   {
+     nome: 1,
+     admissao: 1
+   }
+)
+
