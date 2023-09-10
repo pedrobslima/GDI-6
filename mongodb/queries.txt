@@ -1,28 +1,28 @@
 # USE ✓
 # FIND ✓
 # SIZE
-# AGGREGATE ✓
-# MATCH ✓
+# AGGREGATE 
+# MATCH 
 # PROJECT
 # GTE
-# GROUP ✓
+# GROUP 
 # SUM
-# COUNT (COUNTDOCUMENTS) ✓
+# COUNT (COUNTDOCUMENTS) 
 # MAX
-# AVG ✓
-# EXISTS ✓
-# SORT ✓
-# LIMIT ✓
+# AVG 
+# EXISTS
+# SORT 
+# LIMIT 
 # $WHERE
 # MAPREDUCE
 # FUNCTION
 # PRETTY
 # ALL
-# SET ✓ ?
+# SET 
 # TEXT
 # SEARCH
 # FILTER
-# UPDATE (UPDATEONE/UPDATEMANY) ✓ ?
+# UPDATE (UPDATEONE/UPDATEMANY)
 # SAVE (UPDATEONE/INSERTONE)
 # RENAMECOLLECTION
 # COND
@@ -33,17 +33,17 @@
 # Seleciona o banco de dados
 use language-school
 
-# Consulta o nome dos estudantes que estão aprendendo Chinês, assim como o seu progresso no idioma e a streak atuais
-db.students.find({"learning.Chinese":{$exists:true}}, {_id:false,"name":true,"learning.Chinese.progress":true, "learning.Chinese.current_streak":true})
+# Consulta o nome dos estudantes que estão aprendendo Chinês, assim como o seu progresso no idioma e o número da última atividade concluída
+db.alunos.find({"cursos.idioma":"chines"}, {_id:false, "nome":true, "cursos.$":true})
 
-# Consulta a idade média dos estudantes de japonês
+# Consulta a idade média dos estudantes de japonês ##### DESATUALIZADO
 db.students.aggregate([{$match:{"learning.Japanese":{$exists: true}}}, {$group:{_id:null, "Average japanese student age":{$avg:"$age"}}}])
 
-# Consulta quantos idiomas da família das línguas eslavas existem no banco de dados
+# Consulta quantos idiomas da família das línguas eslavas existem no banco de dados ##### DESATUALIZADO
 db.languages.find({"family":"Slavic"}).count()
 
-# Consulta o nome e o progresso atual dos 5 estudantes de inglês mais avançados no idioma ordenados de maneira decrescente
+# Consulta o nome e o progresso atual dos 5 estudantes de inglês mais avançados no idioma ordenados de maneira decrescente ##### DESATUALIZADO
 db.students.find({"learning.English":{$exists:true}}, {_id:false, "name":true, "learning.English.progress":true}).sort({"learning.English.progress":-1}).limit(5)
 
-# Update de parâmetro que estava inconsistente (?)
+# Update de parâmetro que estava inconsistente (?) ##### DESATUALIZADO
 db.languages.updateMany({writing_system:"Latin"}, {$set: {writing_system:"Latin Script"}})
