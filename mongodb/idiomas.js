@@ -264,5 +264,34 @@ db.idiomas.insertMany([
                 qntd_questoes: 8
             }
         ]
+    },
+    {
+        lingua: 'chines',
+        atividades: [
+            {
+                tema: 'Saudações',
+                descricao: 'Aprender a falar chinês',
+                nivel: 'básico',
+                qntd_questoes: 10
+            },
+            {
+                tema: 'Comida',
+                descricao: 'Aprender nomes de comidas em chinês',
+                nivel: 'básico',
+                qntd_questoes: 6
+            },
+            {
+                tema: 'Cinema',
+                descricao: 'Vocabulário relacionado ao cinema em chinês',
+                nivel: 'intermediário',
+                qntd_questoes: 9
+            },
+            {
+                tema: 'Cultura',
+                descricao: 'Fique por dentro da cultura chinesa',
+                nivel: 'intermediário',
+                qntd_questoes: 8
+            }
+        ]
     }
   ]);
