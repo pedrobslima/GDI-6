@@ -14,7 +14,7 @@ db.alunos.find({"cursos.progresso":{$gte:0.5}}, {_id:false, nome:true, "cursos.$
 db.idiomas.updateOne({lingua:"francês"}, {$set:{qtd_alunos:36}});
 
 // 6 - Retorna a quantidade de alunos que tem o curso com mais pessoas matriculadas
-db.idiomas.aggregate([{$group:{_id:null, qtd_max_alunos:{$max:"$qtd_alunos"}}}]).pretty()
+db.idiomas.aggregate([{$group:{_id:null, qtd_max_alunos:{$max:"$qtd_alunos"}}}]).pretty();
 
 // 7 - A consulta cria um índice de texto no campo "descricao" dentro do array "atividades" na coleção "idiomas" e,  em seguida, busca onde pelo menos uma atividade no array "atividades" contenha a palavra "comida" na descrição.
 db.idiomas.createIndex({ "atividades.descricao": "text" });
