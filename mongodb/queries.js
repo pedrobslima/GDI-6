@@ -78,14 +78,20 @@ db.alunos.aggregate([
     }
  ]);
 
-// -> MAPREDUCE:
+/* -> MAPREDUCE: apresenta a sequencia média de alunos de acordo com
+    seu ano de nascimento*/
+
 db.alunos.mapReduce(
     function() { emit(this.aniversario.getFullYear(), this.acesso.sequencia); },
     function(anoAluno, sequenciaAluno) { return Array.avg(sequenciaAluno) },
     {
-        out: "idade_seq",
+        out: "alunos_idade_seq",
         query: {"acesso.sequencia" : {"$gt" : 0}}
-    });
+    }
+);
+
+// -> RENAMECOLLECTION: renomeia a coleção feita pelo mapreduce
+db.alunos_idade_seq.renameCollection( "idade_seq" );
 
 // -> UPDATEMANY: mudar o nome do idioma de "chines" para "chinês"
 
