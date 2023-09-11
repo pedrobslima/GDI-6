@@ -1,5 +1,5 @@
 // Seleciona o banco de dados
-use(cursos_bd);
+use('cursos_bd');
 
 // Consulta o nome dos estudantes que estão aprendendo espanhol, assim como o seu progresso no idioma e o número da última atividade concluída
 db.alunos.find({"cursos.idioma":"espanhol"}, {_id:false, "nome":true, "cursos.$":true});
@@ -198,3 +198,6 @@ db.alunos.aggregate([ {
     e que possuem pelo menos dois cursos atribuídos a si*/
 
 db.alunos.deleteMany({$and: [{"acesso.ultimo": {$lt: new ISODate( "1997-01-01" )}}, {$nor: [{"cursos": {$size: 0}}, {"cursos": {$size: 1}}]}] });
+
+// Procura todos os alunos que estudam, obrigatoriamente, japonês e coreano, e que tenham uma sequência de pelo menos 7 dias
+db.alunos.find({$and: [{"cursos.idioma": {$all: ["japonês", "coreano"]}}, {"acesso.sequencia": {$gte: 7}}]}).pretty();
