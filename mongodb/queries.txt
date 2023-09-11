@@ -45,42 +45,43 @@ db.alunos.aggregate([{$match:{"cursos.idioma":"inglês"}},{$project:{_id:false, 
 # Consulta quantos alunos já concluíram ao menos 50% de algum dos cursos disponíveis
 db.alunos.find({"cursos.progresso":{$gte:0.5}}, {_id:false, nome:true, "cursos.$":true}).count()
 
-# [EM TESTES]
+# -> A consulta cria um índice de texto no campo "descricao" dentro do array "atividades" na coleção "idiomas" e,  em seguida, busca onde pelo menos uma atividade no array "atividades" contenha a palavra "comida" na descrição.
 
--> faça uma pesquisa por idioma chines pra saber quantos alunos estão cadastrados
-neste idioma - slide 15 aula 2 
-db.aluno.find({ $text: { $search: "chinês" } })
+db.idiomas.createIndex({ "atividades.descricao": "text" })
+db.idiomas.find({ $text: { $search: "comida" } })
 
 
--> Insere mais 2 paises que falam o ingles como lingua nativa 
-
-db.languages.updateOne(
-	{"_id": "64f9f1939b3e1ab3904ce3a7}, 
-	{$addToSet: { native_to: { $each: ["Puerto Rico", "Trinidad"] } }
-
+# -> Insere um tema na lista de atividades da lingua ingles 
+db.idiomas.updateOne(
+    { "lingua": "inglês" },
+    {
+        $addToSet: {
+            "atividades": {
+                "tema": "Gírias",
+                "descricao": "Aprender gírias em inglês",
+                "nivel": "básico",
+                "qntd_questoes": 5
+            }
+        }
+    }
 )
 
--> Insere mais 2 paises que falam o ingles como lingua nativa se ainda não foram adicionadas 
 
-db.languages.updateOne(
-   { "_id": "64f9f1939b3e1ab3904ce3a7" }, 
-   { $addToSet: { native_to: { $each: ["Puerto Rico", "Trinidad"] } } }
+#-> A primeira condição procura por uma pessoa com o nome "Ana", e a segunda condição procura por um cpf que uma das Ana cadastradas podem ter. Em seguida, são projetados os campos "nome" e "cpf" para serem incluídos no resultado da consulta. 
+
+db.alunos.findOne(
+    {
+        $and: [
+            { "nome": /^Ana/ },
+            { "cpf": "222333494-55" }
+        ]
+    },
+    {
+        nome: 1,
+        cpf: 1
+    }
 )
 
-
--> A primeira condição procura por um professor com o nome "Ana Silva", e a segunda condição procura por um professor que tenha uma data de admissão após 1 de abril de 2021. Em seguida, estamos projetando os campos "nome" e "admissao" para serem incluídos no resultado da consulta.
-db.professores.findOne(
-   {
-     $or: [
-            { nome : 'Ana Silva'},
-            { admissao: { $gt: new Date('2021-04-01') } }
-          ]
-   },
-   {
-     nome: 1,
-     admissao: 1
-   }
-)
 
 # PROJECT - AVG
 db.alunos.aggregate([{
