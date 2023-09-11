@@ -188,5 +188,5 @@ db.alunos.aggregate([ {
 // [DEL-20] -> Remoção de dados: Removendo usuários que não usam a conta desde 1996 e que possuem pelo menos dois cursos atribuídos a si
 db.alunos.deleteMany({$and: [{"acesso.ultimo": {$lt: new ISODate( "1997-01-01" )}}, {$nor: [{"cursos": {$size: 0}}, {"cursos": {$size: 1}}]}] });
 
-// Procura todos os alunos que estudam, obrigatoriamente, japonês e coreano, e que tenham uma sequência de pelo menos 7 dias
+// [ALL-21] Procura todos os alunos que estudam, obrigatoriamente, japonês e coreano, e que tenham uma sequência de pelo menos 7 dias
 db.alunos.find({$and: [{"cursos.idioma": {$all: ["japonês", "coreano"]}}, {"acesso.sequencia": {$gte: 7}}]}).pretty();
