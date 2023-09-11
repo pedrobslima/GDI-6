@@ -4,9 +4,6 @@ use escola-idiomas
 # Consulta o nome dos estudantes que estão aprendendo espanhol, assim como o seu progresso no idioma e o número da última atividade concluída
 db.alunos.find({"cursos.idioma":"espanhol"}, {_id:false, "nome":true, "cursos.$":true})
 
-# Consulta a idade média dos estudantes de japonês >>>>>>>>>>> DESATUALIZADO <<<<<<<<<<<
-db.students.aggregate([{$match:{"learning.Japanese":{$exists: true}}}, {$group:{_id:null, "Average japanese student age":{$avg:"$age"}}}])
-
 # Consulta o nome e o progresso atual dos 5 estudantes de inglês mais avançados no idioma ordenados de maneira decrescente
 db.alunos.aggregate([{$match:{"cursos.idioma":"inglês"}},{$project:{_id:false, nome:true, cursos:{$filter:{input:"$cursos", as:"curso", cond:{$eq:["$$curso.idioma","inglês"]}}}}},{$unwind:"$cursos"},{$sort:{"cursos.progresso":-1}},{$limit:5}])
 
