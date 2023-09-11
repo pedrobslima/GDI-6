@@ -193,3 +193,8 @@ db.alunos.aggregate([ {
         progressoTotal: { $sum: "$cursos.progresso" }
     }
 }]);
+
+/* -> Remoção de dados: Removendo usuários que não usam a conta desde 1996 
+    e que possuem pelo menos dois cursos atribuídos a si*/
+
+db.alunos.deleteMany({$and: [{"acesso.ultimo": {$lt: new ISODate( "1997-01-01" )}}, {$nor: [{"cursos": {$size: 0}}, {"cursos": {$size: 1}}]}] });

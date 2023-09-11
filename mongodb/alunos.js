@@ -505,6 +505,53 @@ db.alunos.insertMany([
             ultimo: new Date("2023-08-21"),
             sequencia: 5
         }
+    },
+    {
+        nome: "Rogério Palmeira",
+        cpf: "800854444-44",
+        aniversario: new Date("1964-06-30"),
+        acesso: {
+            ultimo: new Date("1996-06-10"),
+            sequencia: 0
+        },
+        cursos: [
+            {
+                idioma: "espanhol",
+                progresso: 0.3,
+                ult_atividade: 10
+            },
+            {
+                idioma: "francês",
+                progresso: 0.6,
+                ult_atividade: 3
+            },
+            {
+                idioma: "coreano",
+                progresso: 0.1,
+                ult_atividade: 2
+            }
+        ]
+    },
+    {
+        nome: "Flavia Palmeira",
+        cpf: "711854444-44",
+        aniversario: new Date("1963-07-20"),
+        acesso: {
+            ultimo: new Date("1996-06-10"),
+            sequencia: 0
+        },
+        cursos: [
+            {
+                idioma: "francês",
+                progresso: 0.6,
+                ult_atividade: 3
+            },
+            {
+                idioma: "coreano",
+                progresso: 0.2,
+                ult_atividade: 4
+            }
+        ]
     }
   ]
 );  
