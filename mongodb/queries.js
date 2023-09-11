@@ -148,3 +148,26 @@ db.alunos.find({
         { cursos: { $size: 0 } }
     ]
 })
+
+
+// CONSULTA ESTUDANTES E QNTD DE ATIVIDADES
+db.idiomas.aggregate([
+    {
+        $lookup: {
+            from: "alunos",
+            localField: "lingua",
+            foreignField: "cursos.idioma",
+            as: "alunos_info"
+        }
+    },
+    {
+        $unwind: "$alunos_info"
+    },
+    {
+        $group: {
+            _id: "$lingua",
+            alunos_count: { $sum: 1 },
+            atividades_count: { $first: { $size: "$atividades" } }
+        }
+    }
+]).pretty();
