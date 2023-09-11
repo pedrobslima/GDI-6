@@ -42,7 +42,7 @@ db.students.aggregate([{$match:{"learning.Japanese":{$exists: true}}}, {$group:{
 # Consulta o nome e o progresso atual dos 5 estudantes de inglês mais avançados no idioma ordenados de maneira decrescente
 db.alunos.aggregate([{$match:{"cursos.idioma":"inglês"}},{$project:{_id:false, nome:true, cursos:{$filter:{input:"$cursos", as:"curso", cond:{$eq:["$$curso.idioma","inglês"]}}}}},{$unwind:"$cursos"},{$sort:{"cursos.progresso":-1}},{$limit:5}])
 
-# Consulta quais alunos já concluíram ao menos 50% de algum dos cursos disponíveis
+# Consulta quantos alunos já concluíram ao menos 50% de algum dos cursos disponíveis
 db.alunos.find({"cursos.progresso":{$gte:0.5}}, {_id:false, nome:true, "cursos.$":true}).count()
 
 # [EM TESTES]
