@@ -1,5 +1,5 @@
 // Seleciona o banco de dados
-//use escola-idiomas
+use(cursos_bd);
 
 // Consulta o nome dos estudantes que estão aprendendo espanhol, assim como o seu progresso no idioma e o número da última atividade concluída
 db.alunos.find({"cursos.idioma":"espanhol"}, {_id:false, "nome":true, "cursos.$":true});
