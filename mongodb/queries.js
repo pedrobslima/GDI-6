@@ -129,10 +129,6 @@ db.alunos.aggregate( [
   ] 
 );
 
-// -> COUNT: quant de alunos cursando inglês
-
-db.alunos.find({"cursos.idioma": "inglês"}).count();
-
 // -> CONSULTA USUARIOS QUE ACESSARAM NOS ULTIMOS TRES DIAS
 
 db.alunos.find({
