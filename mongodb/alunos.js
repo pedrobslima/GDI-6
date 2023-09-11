@@ -14,7 +14,7 @@ db.alunos.insertMany([
                 ult_atividade: 2
             },
             {
-                idioma: "ingles",
+                idioma: "inglês",
                 progresso: 0.7,
                 ult_atividade: 5
             }
@@ -35,9 +35,14 @@ db.alunos.insertMany([
                 ult_atividade: 3
             },
             {
-                idioma: "frances",
+                idioma: "francês",
                 progresso: 0.6,
                 ult_atividade: 4
+            },
+            {
+                idioma: "italiano",
+                progresso: 0.8,
+                ult_atividade: 6
             }
         ]
     },
@@ -54,11 +59,6 @@ db.alunos.insertMany([
                 idioma: "alemão",
                 progresso: 0.3,
                 ult_atividade: 2
-            },
-            {
-                idioma: "italiano",
-                progresso: 0.8,
-                ult_atividade: 6
             }
         ]
     },
@@ -77,9 +77,19 @@ db.alunos.insertMany([
                 ult_atividade: 4
             },
             {
-                idioma: "frances",
+                idioma: "francês",
                 progresso: 0.5,
                 ult_atividade: 3
+            },
+            {
+                idioma: "japonês",
+                progresso: 0.4,
+                ult_atividade: 2
+            },
+            {
+                idioma: "coreano",
+                progresso: 0.3,
+                ult_atividade: 1
             }
         ]
     },
@@ -101,6 +111,11 @@ db.alunos.insertMany([
                 idioma: "espanhol",
                 progresso: 0.4,
                 ult_atividade: 2
+            },
+            {  
+                idioma: "francês",
+                progresso: 0.5,
+                ult_atividade: 3
             }
         ]
     },
@@ -114,12 +129,12 @@ db.alunos.insertMany([
         },
         cursos: [
             {
-                idioma: "ingles",
+                idioma: "inglês",
                 progresso: 0.9,
                 ult_atividade: 7
             },
             {
-                idioma: "frances",
+                idioma: "francês",
                 progresso: 0.6,
                 ult_atividade: 4
             }
@@ -143,6 +158,11 @@ db.alunos.insertMany([
                 idioma: "espanhol",
                 progresso: 0.7,
                 ult_atividade: 6
+            },
+            {
+                idioma: "árabe",
+                progresso: 0.6,
+                ult_atividade: 4
             }
         ]
     },
@@ -156,14 +176,29 @@ db.alunos.insertMany([
         },
         cursos: [
             {
-                idioma: "ingles",
+                idioma: "inglês",
                 progresso: 0.5,
                 ult_atividade: 3
             },
             {
-                idioma: "frances",
+                idioma: "francês",
                 progresso: 0.4,
                 ult_atividade: 2
+            },
+            {
+                idioma: "latim",
+                progresso: 0.3,
+                ult_atividade: 1
+            },
+            {
+                idioma: "árabe",
+                progresso: 0.7,
+                ult_atividade: 5
+            },
+            {
+                idioma: "japonês",
+                progresso: 0.1,
+                ult_atividade: 1
             }
         ]
     },
@@ -203,9 +238,14 @@ db.alunos.insertMany([
                 ult_atividade: 5
             },
             {
-                idioma: "frances",
+                idioma: "francês",
                 progresso: 0.5,
                 ult_atividade: 3
+            },
+            {
+                idioma: "coreano",
+                progresso: 0.4,
+                ult_atividade: 2
             }
         ]
     },
@@ -219,7 +259,7 @@ db.alunos.insertMany([
         },
         cursos: [
             {
-                idioma: "ingles",
+                idioma: "inglês",
                 progresso: 0.9,
                 ult_atividade: 7
             },
@@ -261,7 +301,7 @@ db.alunos.insertMany([
         },
         cursos: [
             {
-                idioma: "frances",
+                idioma: "francês",
                 progresso: 0.7,
                 ult_atividade: 5
             },
@@ -269,6 +309,11 @@ db.alunos.insertMany([
                 idioma: "italiano",
                 progresso: 0.6,
                 ult_atividade: 4
+            },
+            {
+                idioma: "japonês",
+                progresso: 0.5,
+                ult_atividade: 3
             }
         ]
     },
@@ -282,7 +327,7 @@ db.alunos.insertMany([
         },
         cursos: [
             {
-                idioma: "ingles",
+                idioma: "inglês",
                 progresso: 0.8,
                 ult_atividade: 6
             },
@@ -306,11 +351,6 @@ db.alunos.insertMany([
                 idioma: "espanhol",
                 progresso: 0.5,
                 ult_atividade: 3
-            },
-            {
-                idioma: "frances",
-                progresso: 0.4,
-                ult_atividade: 2
             }
         ]
     },
@@ -345,7 +385,8 @@ db.alunos.insertMany([
         },
         cursos: [
             { idioma: 'espanhol', progresso: 0.3, ult_atividade: 1 },
-            { idioma: 'italiano', progresso: 0.2, ult_atividade: 2 }
+            { idioma: 'italiano', progresso: 0.2, ult_atividade: 2 },
+            { idioma: 'coreano', progresso: 0.1, ult_atividade: 1 }
         ]
     },
     {
@@ -358,7 +399,8 @@ db.alunos.insertMany([
         },
         cursos: [
             { idioma: 'alemão', progresso: 0.15, ult_atividade: 1 },
-            { idioma: 'inglês', progresso: 0.6, ult_atividade: 3 }
+            { idioma: 'inglês', progresso: 0.6, ult_atividade: 3 },
+            { idioma: 'árabe', progresso: 0.4, ult_atividade: 2 }
         ]
     },
     {
@@ -371,7 +413,10 @@ db.alunos.insertMany([
         },
         cursos: [
             { idioma: 'francês', progresso: 0.5, ult_atividade: 3 },
-            { idioma: 'espanhol', progresso: 0.4, ult_atividade: 2 }
+            { idioma: 'espanhol', progresso: 0.4, ult_atividade: 2 },
+            { idioma: 'japonês', progresso: 0.3, ult_atividade: 1 },
+            { idioma: 'coreano', progresso: 0.2, ult_atividade: 1 },
+            { idioma: 'latim', progresso: 0.1, ult_atividade: 1 }
         ]
     },
     {
@@ -384,7 +429,8 @@ db.alunos.insertMany([
         },
         cursos: [
             { idioma: 'italiano', progresso: 0.3, ult_atividade: 2 },
-            { idioma: 'francês', progresso: 0.2, ult_atividade: 1 }
+            { idioma: 'francês', progresso: 0.2, ult_atividade: 1 },
+            { idioma: 'coreano', progresso: 0.1, ult_atividade: 1 }
         ]
     },
     {
@@ -396,8 +442,7 @@ db.alunos.insertMany([
             sequencia: 3
         },
         cursos: [
-            { idioma: 'inglês', progresso: 0.4, ult_atividade: 3 },
-            { idioma: 'espanhol', progresso: 0.5, ult_atividade: 4 }
+            { idioma: 'inglês', progresso: 0.4, ult_atividade: 3 }
         ]
     },
     {
@@ -410,7 +455,9 @@ db.alunos.insertMany([
         },
         cursos: [
             { idioma: 'alemão', progresso: 0.25, ult_atividade: 1 },
-            { idioma: 'francês', progresso: 0.6, ult_atividade: 2 }
+            { idioma: 'francês', progresso: 0.6, ult_atividade: 2 },
+            { idioma: 'latim', progresso: 0.4, ult_atividade: 2 },
+            { idioma: 'árabe', progresso: 0.2, ult_atividade: 1 }
         ]
     },
     {
@@ -436,7 +483,8 @@ db.alunos.insertMany([
         },
         cursos: [
             { idioma: 'alemão', progresso: 0.2, ult_atividade: 2 },
-            { idioma: 'inglês', progresso: 0.5, ult_atividade: 4 }
+            { idioma: 'inglês', progresso: 0.5, ult_atividade: 4 },
+            { idioma: 'japonês', progresso: 0.3, ult_atividade: 1 }
         ]
     }
   ]
