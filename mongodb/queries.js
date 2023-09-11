@@ -1,25 +1,25 @@
-# Seleciona o banco de dados
+// Seleciona o banco de dados
 use escola-idiomas
 
-# Consulta o nome dos estudantes que estão aprendendo espanhol, assim como o seu progresso no idioma e o número da última atividade concluída
+// Consulta o nome dos estudantes que estão aprendendo espanhol, assim como o seu progresso no idioma e o número da última atividade concluída
 db.alunos.find({"cursos.idioma":"espanhol"}, {_id:false, "nome":true, "cursos.$":true})
 
-# Consulta o nome e o progresso atual dos 5 estudantes de inglês mais avançados no idioma ordenados de maneira decrescente
+// Consulta o nome e o progresso atual dos 5 estudantes de inglês mais avançados no idioma ordenados de maneira decrescente
 db.alunos.aggregate([{$match:{"cursos.idioma":"inglês"}},{$project:{_id:false, nome:true, cursos:{$filter:{input:"$cursos", as:"curso", cond:{$eq:["$$curso.idioma","inglês"]}}}}},{$unwind:"$cursos"},{$sort:{"cursos.progresso":-1}},{$limit:5}])
 
-# Consulta quantos alunos já concluíram ao menos 50% de algum dos cursos disponíveis
+// Consulta quantos alunos já concluíram ao menos 50% de algum dos cursos disponíveis
 db.alunos.find({"cursos.progresso":{$gte:0.5}}, {_id:false, nome:true, "cursos.$":true}).count()
 
-# Atualiza quantidade de alunos que estudam o idioma francês
+// Atualiza quantidade de alunos que estudam o idioma francês
 db.idiomas.updateOne({lingua:"francês"}, {$set:{qtd_alunos:36}})
 
-# -> A consulta cria um índice de texto no campo "descricao" dentro do array "atividades" na coleção "idiomas" e,  em seguida, busca onde pelo menos uma atividade no array "atividades" contenha a palavra "comida" na descrição.
+// -> A consulta cria um índice de texto no campo "descricao" dentro do array "atividades" na coleção "idiomas" e,  em seguida, busca onde pelo menos uma atividade no array "atividades" contenha a palavra "comida" na descrição.
 
 db.idiomas.createIndex({ "atividades.descricao": "text" })
 db.idiomas.find({ $text: { $search: "comida" } })
 
 
-# -> Insere um tema na lista de atividades da lingua ingles 
+// -> Insere um tema na lista de atividades da lingua ingles 
 db.idiomas.updateOne(
     { "lingua": "inglês" },
     {
@@ -35,7 +35,7 @@ db.idiomas.updateOne(
 )
 
 
-#-> A primeira condição procura por uma pessoa com o nome "Ana", e a segunda condição procura por um cpf que uma das Ana cadastradas podem ter. Em seguida, são projetados os campos "nome" e "cpf" para serem incluídos no resultado da consulta. 
+// -> A primeira condição procura por uma pessoa com o nome "Ana", e a segunda condição procura por um cpf que uma das Ana cadastradas podem ter. Em seguida, são projetados os campos "nome" e "cpf" para serem incluídos no resultado da consulta. 
 
 db.alunos.findOne(
     {
@@ -51,7 +51,7 @@ db.alunos.findOne(
 )
 
 
-# PROJECT - AVG
+// PROJECT - AVG
 db.alunos.aggregate([{
   $project: {
     _id:0
@@ -64,7 +64,7 @@ db.alunos.aggregate([{
   }
 ]);
 
-# PROJECT - SIZE
+// PROJECT - SIZE
 db.alunos.aggregate([
     {
         $project: {
@@ -76,7 +76,7 @@ db.alunos.aggregate([
  ]);
 
 
-# PROJECT - AVG
+// PROJECT - AVG
 db.alunos.aggregate([{
   $project: {
     _id:0
@@ -89,7 +89,7 @@ db.alunos.aggregate([{
   }
 ]);
 
-# PROJECT - SIZE
+// PROJECT - SIZE
 db.alunos.aggregate([
     {
         $project: {
@@ -101,7 +101,7 @@ db.alunos.aggregate([
  ]);
 
 
--> MAPREDUCE Q FOI DESCONTINUADO (NÃO SEI SE ESTÁ CORRETO):
+// -> MAPREDUCE Q FOI DESCONTINUADO (NÃO SEI SE ESTÁ CORRETO):
 db.alunos.mapReduce(
     function() { emit(this.cursos.idioma, this.cursos.progresso); },
     function(cursoIdioma, progressoAluno) { return Array.avg(progressoAluno) },
@@ -110,7 +110,7 @@ db.alunos.mapReduce(
         query: {aniversario : {"$gte" : ISODate("1995-01-01T00:00:00Z")}}
     });
 
--> UPDATEMANY: mudar o nome do idioma de "chines" para "chinês"
+// -> UPDATEMANY: mudar o nome do idioma de "chines" para "chinês"
 
 db.alunos.updateMany(
     {
@@ -123,7 +123,7 @@ db.alunos.updateMany(
     }
 );
 
--> GTE, AGGREGATE, AVG e SORT: agregar os idiomas e apresentar, ordenadamente, 
+// -> GTE, AGGREGATE, AVG e SORT: agregar os idiomas e apresentar, ordenadamente, 
 a média de progresso de seus alunos nascidos a partir de 1995
 
 db.alunos.aggregate( [
@@ -146,11 +146,11 @@ db.alunos.aggregate( [
   ] 
 );
 
--> COUNT: quant de alunos cursando inglês
+// -> COUNT: quant de alunos cursando inglês
 
 db.alunos.find({"cursos.idioma": "inglês"}).count();
 
--> CONSULTA USUARIOS QUE ACESSARAM NOS ULTIMOS TRES DIAS
+// -> CONSULTA USUARIOS QUE ACESSARAM NOS ULTIMOS TRES DIAS
 
 db.alunos.find({
     $where: function() {
@@ -167,7 +167,7 @@ db.alunos.find({
 }).sort({ "acesso.sequencia": -1 });
 
 
-# CONSULTA OS USUARIOS QUE NÃO CURSAM NADA
+// CONSULTA OS USUARIOS QUE NÃO CURSAM NADA
 db.alunos.find({
     $or: [
         { cursos: { $exists: false } },
