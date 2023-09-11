@@ -180,3 +180,20 @@ db.idiomas.aggregate([
         }
     }
 ]).pretty();
+
+
+
+// CONSULTA PROGRESSO TOTAL DO ALUNO
+db.alunos.aggregate([ {
+        $match: {
+            "cursos.progresso": { $exists: true, $ne: null }
+        }
+    },{
+        $unwind: "$cursos"
+    },{
+    $group: {
+        _id: "$cpf",
+        nome: { $first: "$nome" },
+        progressoTotal: { $sum: "$cursos.progresso" }
+    }
+}]);
