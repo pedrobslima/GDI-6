@@ -1,6 +1,6 @@
 # USE ✓
 # FIND ✓
-# SIZE
+# SIZE ✓
 # AGGREGATE ✓
 # MATCH ✓
 # PROJECT ✓
