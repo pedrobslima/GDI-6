@@ -7,7 +7,7 @@
 # GTE ✓
 # GROUP ✓
 # SUM
-# COUNT (COUNTDOCUMENTS) 
+# COUNT (COUNTDOCUMENTS) ✓
 # MAX
 # AVG ✓
 # EXISTS
@@ -43,7 +43,7 @@ db.students.aggregate([{$match:{"learning.Japanese":{$exists: true}}}, {$group:{
 db.alunos.aggregate([{$match:{"cursos.idioma":"inglês"}},{$project:{_id:false, nome:true, cursos:{$filter:{input:"$cursos", as:"curso", cond:{$eq:["$$curso.idioma","inglês"]}}}}},{$unwind:"$cursos"},{$sort:{"cursos.progresso":-1}},{$limit:5}])
 
 # Consulta quais alunos já concluíram ao menos 50% de algum dos cursos disponíveis
-db.alunos.find({"cursos.progresso":{$gte:0.5}}, {_id:false, nome:true, "cursos.$":true})
+db.alunos.find({"cursos.progresso":{$gte:0.5}}, {_id:false, nome:true, "cursos.$":true}).count()
 
 # [EM TESTES]
 
