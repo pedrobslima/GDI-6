@@ -2,6 +2,7 @@ db.idiomas.insertMany([
     {
       _id: ObjectId("64fe33bdf758ac124aab120b"),
       lingua: 'francês',
+      qtd_alunos: 35,
       atividades: [
         {
           tema: 'Saudações',
@@ -32,6 +33,7 @@ db.idiomas.insertMany([
     {
       _id: ObjectId("64fe33bdf758ac124aab120c"),
       lingua: 'inglês',
+      qtd_alunos: 41,
       atividades: [
         {
           tema: 'Saudações',
@@ -56,6 +58,7 @@ db.idiomas.insertMany([
     {
       _id: ObjectId("64fe33bdf758ac124aab120d"),
       lingua: 'espanhol',
+      qtd_alunos: 38,
       atividades: [
         {
           tema: 'Saudações',
@@ -80,6 +83,7 @@ db.idiomas.insertMany([
     {
       _id: ObjectId("64fe33bdf758ac124aab120e"),
       lingua: 'alemão',
+      qtd_alunos: 29,
       atividades: [
         {
           tema: 'Saudações',
@@ -110,6 +114,7 @@ db.idiomas.insertMany([
     {
       _id: ObjectId("64fe33bdf758ac124aab120f"),
       lingua: 'italiano',
+      qtd_alunos: 28,
       atividades: [
         {
           tema: 'Saudações',
@@ -139,6 +144,7 @@ db.idiomas.insertMany([
     },
     {
         lingua: 'japonês',
+        qtd_alunos: 31,
         atividades: [
             {
                 tema: 'Saudações',
@@ -168,6 +174,7 @@ db.idiomas.insertMany([
     },
     {
         lingua: 'coreano',
+        qtd_alunos: 26,
         atividades: [
             {
                 tema: 'Saudações',
@@ -203,6 +210,7 @@ db.idiomas.insertMany([
     },
     {
         lingua: 'árabe',
+        qtd_alunos: 25,
         atividades: [
             {
                 tema: 'Saudações',
@@ -232,6 +240,7 @@ db.idiomas.insertMany([
     },
     {
         lingua: 'latim',
+        qtd_alunos: 21,
         atividades: [
             {
                 tema: 'Saudações',
@@ -267,6 +276,7 @@ db.idiomas.insertMany([
     },
     {
         lingua: 'chines',
+        qtd_alunos: 27,
         atividades: [
             {
                 tema: 'Saudações',
