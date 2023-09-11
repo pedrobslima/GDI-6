@@ -1,35 +1,3 @@
-# USE ✓
-# FIND ✓
-# SIZE ✓
-# AGGREGATE ✓
-# MATCH ✓
-# PROJECT ✓
-# GTE ✓
-# GROUP ✓
-# SUM
-# COUNT (COUNTDOCUMENTS) ✓
-# MAX
-# AVG ✓
-# EXISTS ✓
-# SORT ✓
-# LIMIT ✓
-# $WHERE ✓
-# MAPREDUCE [DESCONTINUADO]
-# FUNCTION ✓
-# PRETTY ✓
-# ALL
-# SET 
-# TEXT
-# SEARCH
-# FILTER ✓
-# UPDATE (UPDATEONE/UPDATEMANY) ✓
-# SAVE (UPDATEONE/INSERTONE)
-# RENAMECOLLECTION
-# COND ✓
-# LOOKUP
-# FINDONE
-# ADDTOSET
-
 # Seleciona o banco de dados
 use escola-idiomas
 
@@ -44,6 +12,9 @@ db.alunos.aggregate([{$match:{"cursos.idioma":"inglês"}},{$project:{_id:false, 
 
 # Consulta quantos alunos já concluíram ao menos 50% de algum dos cursos disponíveis
 db.alunos.find({"cursos.progresso":{$gte:0.5}}, {_id:false, nome:true, "cursos.$":true}).count()
+
+# Atualiza quantidade de alunos que estudam o idioma francês
+db.idiomas.updateOne({lingua:"francês"}, {$set:{qtd_alunos:36}})
 
 # -> A consulta cria um índice de texto no campo "descricao" dentro do array "atividades" na coleção "idiomas" e,  em seguida, busca onde pelo menos uma atividade no array "atividades" contenha a palavra "comida" na descrição.
 
