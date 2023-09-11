@@ -5,7 +5,7 @@
 # MATCH ✓
 # PROJECT ✓
 # GTE ✓
-# GROUP ✓
+# GROUP 
 # SUM
 # COUNT (COUNTDOCUMENTS) ✓
 # MAX
@@ -13,9 +13,9 @@
 # EXISTS
 # SORT ✓
 # LIMIT ✓
-# $WHERE
+# $WHERE ✓
 # MAPREDUCE
-# FUNCTION
+# FUNCTION ✓
 # PRETTY ✓
 # ALL
 # SET 
