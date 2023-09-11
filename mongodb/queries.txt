@@ -105,21 +105,18 @@ db.alunos.aggregate([
  ]);
 
 
-# Consulta dos usuarios que acessaram recentemente, ordenados por qntd de acesso
-db.alunos.aggregate([{
-        $match: {
-            // MES E DATA SÃO EXPRESSOS POR INDEX
-            "acesso.ultimo": { $gte: new Date(2023, 8, 9) }
-            //                                YYYY, M, D
-        }
-    },{
-        $group: {
-            _id: "$cpf",
-            nome: { $first: "$nome" },
-            sequenciaAtual: { $sum: "$acesso.sequencia" },
-            ultimoacesso: { $first: "$acesso.ultimo" },
-        }
-    },{
-        $sort: { sequenciaAtual: -1 }
+
+# CONSULTA USUARIOS QUE ACESSARAM NOS ULTIMOS TRES DIAS
+db.alunos.find({
+    $where: function() {
+        const diasAtras = 3;
+        var _data = new Date();
+        _data.setDate(_data.getDate() - diasAtras);
+        return this.acesso.ultimo.getTime() >= _data.getTime();
     }
-]);
+}, {
+    nome: 1,
+    _id: "$cpf",
+    "acesso.sequencia": 1,
+    "acesso.ultimo": 1,
+}).sort({ "acesso.sequencia": -1 });
