@@ -106,7 +106,7 @@ db.alunos.updateMany(
     }
 );
 
-/* -> GTE, AGGREGATE, AVG e SORT: agregar os idiomas e apresentar, ordenadamente, 
+/* -> GTE, AGGREGATE, GROUP, AVG e SORT: agregar os idiomas e apresentar, ordenadamente, 
  a média de progresso de seus alunos nascidos a partir de 1995*/
 
 db.alunos.aggregate( [
