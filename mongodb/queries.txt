@@ -5,7 +5,7 @@
 # MATCH ✓
 # PROJECT ✓
 # GTE ✓
-# GROUP 
+# GROUP ✓
 # SUM
 # COUNT (COUNTDOCUMENTS) ✓
 # MAX
@@ -14,7 +14,7 @@
 # SORT ✓
 # LIMIT ✓
 # $WHERE ✓
-# MAPREDUCE
+# MAPREDUCE [DESCONTINUADO]
 # FUNCTION ✓
 # PRETTY ✓
 # ALL
@@ -22,7 +22,7 @@
 # TEXT
 # SEARCH
 # FILTER ✓
-# UPDATE (UPDATEONE/UPDATEMANY)
+# UPDATE (UPDATEONE/UPDATEMANY) ✓
 # SAVE (UPDATEONE/INSERTONE)
 # RENAMECOLLECTION
 # COND ✓
@@ -108,8 +108,82 @@ db.alunos.aggregate([
  ]);
 
 
+# PROJECT - AVG
+db.alunos.aggregate([{
+  $project: {
+    _id:0
+    nome: 1,
+    cpf:  1,
+    mediaProgresso: {
+      $avg: "$cursos.progresso"
+      },
+    }
+  }
+]);
 
-# CONSULTA USUARIOS QUE ACESSARAM NOS ULTIMOS TRES DIAS
+# PROJECT - SIZE
+db.alunos.aggregate([
+    {
+        $project: {
+            _id: '$cpf',
+            nome: 1,
+            idiomasEmProgresso: { $size: '$cursos' }
+       }
+    }
+ ]);
+
+
+-> MAPREDUCE Q FOI DESCONTINUADO (NÃO SEI SE ESTÁ CORRETO):
+db.alunos.mapReduce(
+    function() { emit(this.cursos.idioma, this.cursos.progresso); },
+    function(cursoIdioma, progressoAluno) { return Array.avg(progressoAluno) },
+    {
+        out: "medias_idiomas",
+        query: {aniversario : {"$gte" : ISODate("1995-01-01T00:00:00Z")}}
+    });
+
+-> UPDATEMANY: mudar o nome do idioma de "chines" para "chinês"
+
+db.alunos.updateMany(
+    {
+        "cursos.idioma": "chines"
+    }, 
+    {
+        $set: {
+            "cursos.$.idioma": "chinês"
+        }
+    }
+);
+
+-> GTE, AGGREGATE, AVG e SORT: agregar os idiomas e apresentar, ordenadamente, 
+a média de progresso de seus alunos nascidos a partir de 1995
+
+db.alunos.aggregate( [
+    // Stage 1: filtra para contar apenas os usuários nascidos a partir de 1995 
+    {$match:{"aniversario": {$gte: new ISODate( "1995-01-01" )}}},
+
+    {$unwind: "$cursos"},
+    // Stage 2: agrupa e calcula a média
+    {
+       $group:
+       {
+          _id: "$cursos.idioma",
+          avgProgress: { $avg: "$cursos.progresso" }
+       }
+    },
+    // Stage 3: ordena de maior para menor
+    {
+       $sort: { avgProgress: -1 }
+    }
+  ] 
+);
+
+-> COUNT: quant de alunos cursando inglês
+
+db.alunos.find({"cursos.idioma": "inglês"}).count();
+
+-> CONSULTA USUARIOS QUE ACESSARAM NOS ULTIMOS TRES DIAS
+
 db.alunos.find({
     $where: function() {
         const diasAtras = 3;
