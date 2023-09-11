@@ -75,7 +75,7 @@ db.alunos.aggregate([
     }
  ]);
 
-// -> MAPREDUCE Q FOI DESCONTINUADO (NÃO SEI SE ESTÁ CORRETO):
+// -> MAPREDUCE:
 db.alunos.mapReduce(
     function() { emit(this.aniversario.getFullYear(), this.acesso.sequencia); },
     function(anoAluno, sequenciaAluno) { return Array.avg(sequenciaAluno) },
