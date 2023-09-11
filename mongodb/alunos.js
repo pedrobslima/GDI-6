@@ -486,6 +486,25 @@ db.alunos.insertMany([
             { idioma: 'inglês', progresso: 0.5, ult_atividade: 4 },
             { idioma: 'japonês', progresso: 0.3, ult_atividade: 1 }
         ]
+    },
+    {
+        nome: 'Alex Ferreia',
+        cpf: '52352525-79',
+        aniversario: ISODate("1999-02-02T00:00:00.000Z"),
+        acesso: {
+            ultimo: new Date("2023-07-01"),
+            sequencia: 5
+        },
+        cursos: []
+    },
+    {
+        nome: 'Roger Guedes',
+        cpf: '5264686-72',
+        aniversario: ISODate("1991-11-27T00:00:00.000Z"),
+        acesso: {
+            ultimo: new Date("2023-08-21"),
+            sequencia: 5
+        }
     }
   ]
 );  

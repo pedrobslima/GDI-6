@@ -10,7 +10,7 @@
 # COUNT (COUNTDOCUMENTS) ✓
 # MAX
 # AVG ✓
-# EXISTS
+# EXISTS ✓
 # SORT ✓
 # LIMIT ✓
 # $WHERE ✓
@@ -197,3 +197,12 @@ db.alunos.find({
     "acesso.sequencia": 1,
     "acesso.ultimo": 1,
 }).sort({ "acesso.sequencia": -1 });
+
+
+# CONSULTA OS USUARIOS QUE NÃO CURSAM NADA
+db.alunos.find({
+    $or: [
+        { cursos: { $exists: false } },
+        { cursos: { $size: 0 } }
+    ]
+})
